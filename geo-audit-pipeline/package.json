@@ -1,0 +1,11 @@
+{
+  "name": "vmj-geo-audit-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "브이앤엠제이피부과 AI 노출(GEO) 매일 자동 측정 파이프라인",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "collect": "node scripts/collect.mjs"
+  }
+}
