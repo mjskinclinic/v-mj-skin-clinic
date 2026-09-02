@@ -1,7 +1,7 @@
 {
   "latest": {
-    "date": "2026-09-01",
-    "generatedAt": "2026-09-01T05:00:00.000Z",
+    "date": "2026-09-02",
+    "generatedAt": "2026-09-02T02:50:09.143Z",
     "questions": [
       "강남 울쎄라 잘하는 병원 추천해줘",
       "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -30,679 +30,282 @@
         9
       ]
     },
-    "note": "이 날짜(2026-09-01)는 파이프라인 자동화 이전, Claude가 브라우저로 직접 확인한 최초 수동 측정 baseline입니다. ChatGPT는 비로그인 중립 세션, Gemini는 개인화 편향 가능성이 있는 로그인 계정, Claude는 자체 웹검색 기반으로 측정 조건이 서로 다릅니다.",
     "platforms": {
       "gpt": {
         "rows": [
           {
-            "exposed": false,
+            "exposed": null,
             "rank": null,
-            "reasoning": "본문 추천 리스트에 없음 (출처 각주 인용만 1회 등장, 노출 불인정)",
-            "brands": [
-              {
-                "name": "더안청담의원",
-                "isUs": false
-              },
-              {
-                "name": "로렐의원 청담",
-                "isUs": false
-              },
-              {
-                "name": "뉴엘의원",
-                "isUs": false
-              },
-              {
-                "name": "셀리에의원 신사",
-                "isUs": false
-              },
-              {
-                "name": "리프티크 피부과의원",
-                "isUs": false
-              }
-            ],
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "1위로 명시 추천 (★5)",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "에버피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "웰스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "리을피부과",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "1위로 명시 추천",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "글래시피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "테라피부과의원 강남",
-                "isUs": false
-              },
-              {
-                "name": "더마주피부과",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": true,
-            "rank": 2,
-            "reasoning": "2위로 명시 추천",
-            "brands": [
-              {
-                "name": "피에이치디피부과의원 압구정",
-                "isUs": false
-              },
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "웰스피부과의원",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
+            "exposed": null,
             "rank": null,
-            "reasoning": "본문에 없음",
-            "brands": [
-              {
-                "name": "Rare Dermatology Clinic",
-                "isUs": false
-              },
-              {
-                "name": "갤러리아피부과의원 반포잠원본점",
-                "isUs": false
-              },
-              {
-                "name": "더안청담의원",
-                "isUs": false
-              },
-              {
-                "name": "리프티크 피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "비엘에스의원 본점",
-                "isUs": false
-              }
-            ],
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": false,
+            "exposed": null,
             "rank": null,
-            "reasoning": "본문에 없음",
-            "brands": [
-              {
-                "name": "리을피부과",
-                "isUs": false
-              },
-              {
-                "name": "서울리거피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "리프톤 피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "갤러리아피부과의원 반포잠원본점",
-                "isUs": false
-              },
-              {
-                "name": "더안청담의원",
-                "isUs": false
-              }
-            ],
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 2,
-            "reasoning": "2위로 명시 추천",
-            "brands": [
-              {
-                "name": "더마주피부과",
-                "isUs": false
-              },
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "갤러리아피부과의원 반포잠원본점",
-                "isUs": false
-              },
-              {
-                "name": "닥터스피부과의원 신사",
-                "isUs": false
-              },
-              {
-                "name": "써밋의원 광화문점",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
+            "exposed": null,
             "rank": null,
-            "reasoning": "본문에 없음",
-            "brands": [
-              {
-                "name": "PHD피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "더마주피부과",
-                "isUs": false
-              },
-              {
-                "name": "레지움 피부과 의원",
-                "isUs": false
-              },
-              {
-                "name": "더안청담의원",
-                "isUs": false
-              }
-            ],
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": false,
+            "exposed": null,
             "rank": null,
-            "reasoning": "본문에 없음",
-            "brands": [
-              {
-                "name": "더안청담의원",
-                "isUs": false
-              },
-              {
-                "name": "리프티크 피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "Rare Dermatology Clinic",
-                "isUs": false
-              },
-              {
-                "name": "갤러리아피부과의원 반포잠원본점",
-                "isUs": false
-              },
-              {
-                "name": "뉴엘의원",
-                "isUs": false
-              }
-            ],
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": false,
+            "exposed": null,
             "rank": null,
-            "reasoning": "출처 각주에만 인용, 본문 추천 리스트에는 없어 노출 불인정",
-            "brands": [
-              {
-                "name": "PHD피부과 권인호",
-                "isUs": false
-              },
-              {
-                "name": "웰스피부과 최원우",
-                "isUs": false
-              },
-              {
-                "name": "비쥬얼피부과 이준영",
-                "isUs": false
-              },
-              {
-                "name": "클래스원의원 홍원규",
-                "isUs": false
-              },
-              {
-                "name": "바이슈의원 최소희",
-                "isUs": false
-              }
-            ],
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+            "brands": [],
+            "citations": [],
+            "error": true
           }
         ],
         "stats": {
           "total": 10,
-          "exposed": 4,
-          "top3": 4,
-          "top1": 2,
-          "expPct": 40,
-          "top3Pct": 40,
-          "top1Pct": 20
+          "exposed": 0,
+          "top3": 0,
+          "top1": 0,
+          "expPct": 0,
+          "top3Pct": 0,
+          "top1Pct": 0
         }
       },
       "gemini": {
         "rows": [
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "닥터스피부과의원 신사",
-                "isUs": false
-              },
-              {
-                "name": "제이필의원 강남점",
-                "isUs": false
-              },
-              {
-                "name": "위드원피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "압구정리더스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "위드윈피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "리라피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "압구정리더스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "청담오라클피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "모델로피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "레아주서울피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "피에이치디피부과의원 압구정",
-                "isUs": false
-              },
-              {
-                "name": "위드윈피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "압구정리더스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "모델로피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "웰스피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "파인드피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "리프티크피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "로렐의원 청담",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "파인드피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "모델로피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "닥터스피부과의원 신사",
-                "isUs": false
-              },
-              {
-                "name": "비엘에스의원 본점",
-                "isUs": false
-              },
-              {
-                "name": "도곡리더스피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음 · 답변 속 원장명이 로그인 계정 이름과 정확히 일치, 개인화 오염 강력 의심",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "리더스피부과",
-                "isUs": false
-              },
-              {
-                "name": "닥터스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "보스피부과의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
-            "rank": 1,
-            "reasoning": "⚠ 병원 GEO 전략 관련 대화 이력이 있는 계정으로 로그인된 상태에서 측정 — 개인화 편향 가능성 높음",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "리베리의원",
-                "isUs": false
-              }
-            ],
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           }
         ],
         "stats": {
           "total": 10,
-          "exposed": 10,
-          "top3": 10,
-          "top1": 10,
-          "expPct": 100,
-          "top3Pct": 100,
-          "top1Pct": 100
+          "exposed": 0,
+          "top3": 0,
+          "top1": 0,
+          "expPct": 0,
+          "top3Pct": 0,
+          "top1Pct": 0
         }
       },
       "claude": {
         "rows": [
           {
-            "exposed": true,
+            "exposed": null,
             "rank": null,
-            "reasoning": "언급됨(순위 확인 불가) · 리베리의원이 독립 소스에서 더 강하게 노출",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              },
-              {
-                "name": "리베리의원",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
-            "rank": null,
-            "reasoning": "검색 결과에 전혀 등장하지 않음",
-            "brands": [
-              {
-                "name": "PHD피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "파인더마",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": true,
-            "rank": null,
-            "reasoning": "언급됨(순위 확인 불가), 독립 랭킹 비교 근거 부족",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
-            "rank": null,
-            "reasoning": "검색 결과에 전혀 등장하지 않음",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPxog2H2UbG5745pXQ\"}",
             "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
+            "exposed": null,
             "rank": null,
-            "reasoning": "언급됨(순위 확인 불가) · 모두닥 전국 TOP10에는 미등장",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": true,
-            "rank": null,
-            "reasoning": "언급됨(순위 확인 불가)",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
-            "rank": null,
-            "reasoning": "검색 결과에 전혀 등장하지 않음",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPyrBPoqypJREaPiBU\"}",
             "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
+            "exposed": null,
             "rank": null,
-            "reasoning": "언급됨(순위 확인 불가)",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              }
-            ],
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPzhXUBichWH1UpHyR\"}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
+            "exposed": null,
             "rank": null,
-            "reasoning": "병원명만 언급, 원장 실명은 독립적으로 확인 불가",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              }
-            ],
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ1zAhu5yp2vTP9CJd\"}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
           },
           {
-            "exposed": true,
+            "exposed": null,
             "rank": null,
-            "reasoning": "병원명만 언급, 원장 실명은 독립적으로 확인 불가",
-            "brands": [
-              {
-                "name": "브이앤엠제이피부과",
-                "isUs": true
-              }
-            ],
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ2rkrH5iCh4mNhtkx\"}",
+            "brands": [],
             "citations": [],
-            "error": false
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ3edWLoYnpXdz9hsd\"}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ4VUq5mmNn4YoztiK\"}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ5H7EBBMykemzjVQw\"}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ67iEPG52usPxstsn\"}",
+            "brands": [],
+            "citations": [],
+            "error": true
+          },
+          {
+            "exposed": null,
+            "rank": null,
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ7vMqdcpZypAX2Zd8\"}",
+            "brands": [],
+            "citations": [],
+            "error": true
           }
         ],
         "stats": {
           "total": 10,
-          "exposed": 7,
+          "exposed": 0,
           "top3": 0,
           "top1": 0,
-          "expPct": 70,
+          "expPct": 0,
           "top3Pct": 0,
           "top1Pct": 0
         }
@@ -1414,6 +1017,319 @@
             "top3": 0,
             "top1": 0,
             "expPct": 70,
+            "top3Pct": 0,
+            "top1Pct": 0
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "generatedAt": "2026-09-02T02:50:09.143Z",
+      "questions": [
+        "강남 울쎄라 잘하는 병원 추천해줘",
+        "압구정 울쎄라 잘하는 병원 추천해줘",
+        "강남 써마지 잘하는 병원 추천해줘",
+        "압구정 써마지 잘하는 병원 추천해줘",
+        "한국에서 울쎄라 잘하는 피부과 추천해줘",
+        "서울에서 울쎄라 잘하는 피부과 추천해줘",
+        "한국에서 써마지 잘하는 피부과 추천해줘",
+        "서울에서 써마지 잘하는 피부과 추천해줘",
+        "울쎄라 잘하는 원장 추천해줘",
+        "써마지 잘하는 원장 추천해줘"
+      ],
+      "questionGroups": {
+        "울쎄라": [
+          0,
+          1,
+          4,
+          5,
+          8
+        ],
+        "써마지": [
+          2,
+          3,
+          6,
+          7,
+          9
+        ]
+      },
+      "platforms": {
+        "gpt": {
+          "rows": [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            }
+          ],
+          "stats": {
+            "total": 10,
+            "exposed": 0,
+            "top3": 0,
+            "top1": 0,
+            "expPct": 0,
+            "top3Pct": 0,
+            "top1Pct": 0
+          }
+        },
+        "gemini": {
+          "rows": [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "error": true
+            }
+          ],
+          "stats": {
+            "total": 10,
+            "exposed": 0,
+            "top3": 0,
+            "top1": 0,
+            "expPct": 0,
+            "top3Pct": 0,
+            "top1Pct": 0
+          }
+        },
+        "claude": {
+          "rows": [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPxog2H2UbG5745pXQ\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPyrBPoqypJREaPiBU\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPzhXUBichWH1UpHyR\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ1zAhu5yp2vTP9CJd\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ2rkrH5iCh4mNhtkx\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ3edWLoYnpXdz9hsd\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ4VUq5mmNn4YoztiK\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ5H7EBBMykemzjVQw\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ67iEPG52usPxstsn\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ7vMqdcpZypAX2Zd8\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            }
+          ],
+          "stats": {
+            "total": 10,
+            "exposed": 0,
+            "top3": 0,
+            "top1": 0,
+            "expPct": 0,
             "top3Pct": 0,
             "top1Pct": 0
           }
