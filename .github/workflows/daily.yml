@@ -1,0 +1,40 @@
+name: Daily GEO check
+
+# 매일 한국시간(KST) 오전 8시 = UTC 23:00(전날) 에 자동 실행됩니다.
+# cron은 UTC 기준입니다. 시간을 바꾸고 싶으면 "0 23 * * *" 부분만 수정하세요.
+#   예) 한국시간 오전 7시 -> "0 22 * * *"
+#   예) 한국시간 오후 9시 -> "0 12 * * *"
+on:
+  schedule:
+    - cron: "0 23 * * *"
+  workflow_dispatch: {} # Actions 탭에서 "Run workflow" 버튼으로 수동 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 내려받기
+        uses: actions/checkout@v4
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 3개 AI 플랫폼 측정 실행
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/collect.mjs
+
+      - name: 결과 커밋 & 푸시 (대시보드가 이 파일을 읽습니다)
+        run: |
+          git config user.name "geo-audit-bot"
+          git config user.email "geo-audit-bot@users.noreply.github.com"
+          git add docs/data/results.json
+          git diff --cached --quiet && echo "변경 없음 — 커밋 생략" || git commit -m "chore: daily GEO results $(date -u +%Y-%m-%d)"
+          git push
