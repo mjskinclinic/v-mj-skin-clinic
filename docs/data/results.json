@@ -1,7 +1,7 @@
 {
   "latest": {
     "date": "2026-09-02",
-    "generatedAt": "2026-09-02T02:50:09.143Z",
+    "generatedAt": "2026-09-02T23:04:54.567Z",
     "questions": [
       "강남 울쎄라 잘하는 병원 추천해줘",
       "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -222,7 +222,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPxog2H2UbG5745pXQ\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2ftRzcf8eJ5B2znpc\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -230,7 +230,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPyrBPoqypJREaPiBU\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2h2tVKuXTqdovYY1x\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -238,7 +238,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPzhXUBichWH1UpHyR\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2i1BC3g1DSCEWiXr9\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -246,7 +246,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ1zAhu5yp2vTP9CJd\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2j1wwyrsaPofvhG2h\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -254,7 +254,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ2rkrH5iCh4mNhtkx\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2jwGRZ3r6hs1eQezp\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -262,7 +262,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ3edWLoYnpXdz9hsd\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2kksjeBCThqfkfRmp\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -270,7 +270,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ4VUq5mmNn4YoztiK\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2mdDJYVrwjtnTLChp\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -278,7 +278,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ5H7EBBMykemzjVQw\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2nUovWDyWBGemtAdw\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -286,7 +286,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ67iEPG52usPxstsn\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2oULnQaBUB3yaP6PK\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -294,7 +294,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ7vMqdcpZypAX2Zd8\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2pFU4DA1fnxjQJVRa\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -1025,7 +1025,7 @@
     },
     {
       "date": "2026-09-02",
-      "generatedAt": "2026-09-02T02:50:09.143Z",
+      "generatedAt": "2026-09-02T23:04:54.567Z",
       "questions": [
         "강남 울쎄라 잘하는 병원 추천해줘",
         "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -1246,7 +1246,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPxog2H2UbG5745pXQ\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2ftRzcf8eJ5B2znpc\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1254,7 +1254,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPyrBPoqypJREaPiBU\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2h2tVKuXTqdovYY1x\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1262,7 +1262,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrPzhXUBichWH1UpHyR\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2i1BC3g1DSCEWiXr9\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1270,7 +1270,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ1zAhu5yp2vTP9CJd\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2j1wwyrsaPofvhG2h\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1278,7 +1278,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ2rkrH5iCh4mNhtkx\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2jwGRZ3r6hs1eQezp\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1286,7 +1286,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ3edWLoYnpXdz9hsd\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2kksjeBCThqfkfRmp\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1294,7 +1294,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ4VUq5mmNn4YoztiK\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2mdDJYVrwjtnTLChp\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1302,7 +1302,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ5H7EBBMykemzjVQw\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2nUovWDyWBGemtAdw\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1310,7 +1310,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ67iEPG52usPxstsn\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2oULnQaBUB3yaP6PK\"}",
               "brands": [],
               "citations": [],
               "error": true
@@ -1318,7 +1318,7 @@
             {
               "exposed": null,
               "rank": null,
-              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CedrQ7vMqdcpZypAX2Zd8\"}",
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2pFU4DA1fnxjQJVRa\"}",
               "brands": [],
               "citations": [],
               "error": true
