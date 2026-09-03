@@ -1,7 +1,7 @@
 {
   "latest": {
-    "date": "2026-09-02",
-    "generatedAt": "2026-09-02T23:04:54.567Z",
+    "date": "2026-09-03",
+    "generatedAt": "2026-09-03T08:02:58.533Z",
     "questions": [
       "강남 울쎄라 잘하는 병원 추천해줘",
       "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -129,82 +129,296 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
-            "citations": [],
-            "error": true
+            "citations": [
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJIVFJFu5WWovsq-5erTeCy7CjAlunAB7CzXLclj2BApzNXB_TyTNHFMgs89-LollLd_iJ0hc9QfZaEf88F7reQyZibcThMX0oTqc3Y9zFvvojuQu6jFnjbDoxI9Lbt2lz37HBOmj9Di5FhRfegqiHQC_s9veEclbRVY7L0jnp8kah6aprKu_R2UPQxOaXGlZg9XAyXLVN6vWNJwajC_EiRGoB_vU3dV6rHV40zfFDJ7Fq-q7jxBiX2V_xph-2RY-B8thTBd92CeYAqy94RPNvvghyHot8n8Dfm8IIgq1d615KDcg_cVJrB8vb4onGcKdSoECEJN05tSk0Pvw=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbcfSWkGBI9WYyfpftnIUOoDoUeG9BnytffrIvNCxDVQdKy-rbNloM9P5AKXEtrvpQGM_GOBajOlFNuZNV1W--OPEZ7Hf4gUNjUrpt_p2BD8P7siBHZd5zZAFetQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpulyb3R1a95kFyJxkTC8aYlDi3L-K7i3DPbm3Z7OT--u7-WJP9jgZYNYz1GkgkdfJZaAi2JX6-ReetQZOjXN1sxV-YbB5iu7IbBaDluH6qL-iExCKKzM7He8=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHr1-7nU0WqMx_REgmfY8uqYzkYrxHwVKNx9JVRdKv65B_31iCiIr0ItE7kqVgnnmPT37Z_Ka_X3XerEjobEWPm0ln3HuGdaDc2txfZ7Kx-bPXGRGisKl91qklKxBuxRqXfSX-P9F7uG2itSGg9Shj_JnaHxZLnkRUszFaPlXHoYHU-JupFG-uDBl4IsaTPwqEF5RDW-KmwS-2X8_066HOE7vjrH5bjDObAnd_an87orBWX6Lm87qkQ6Ubp9mLgcDOb_lFxMbkIds2iqQjCjHA1S5SWjW0jnk_VcaW-6lFXNPti8WN9yfPDeaVZ8GZz0-bdmt-GHhhV",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeRNNbRCAMUxV3a_bSG_J_IHxgRZ6qT6rbyStADm6UVIrd_vXUYOkqF3AKY_mR_D95g-gx-8Lnx2IpFqZv5KpAqMZN6hplzTMxuxxMuZTMDsxZbTKNnZroRN5qFPny0HZpnpsNVq0Qe0SuwjEkAGUvWawB0H02hTg=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdLP-D466IpeUHGgxhRnle5AlA_DSyPk5q2WRyDUpLP1wguTa30NIzxeY_iznMsMs8eO44SD-uC43ZGzilSz7hQq0LI29WKJL8IZDBG2u0HiPEx2wuOg6VJvQ-cvqspVb_",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5bKSSauI3gygln4ZQTkMWHsJ6yrr0FGDiW3VzYQj3XDxImBodoTEl836MPf54RTFnP23KEU8IOcxwbf4WldvbUh2jBpPr_ydLc69_E8xhOCsD",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXRQ4afijzWJFAhXax4pgAxvCfCFDC6d-WOqZk9y3zaxCQGbzWnGr3tR9ay5nFyjxYb5TlQFt_6Bzcg6lfqjuKh6MK_Nz-4zsjIw3UKGuuToAoXrlzbXiIKh2pLXAmdL-wZjyDXSehGepahHvftOdsUxTRV8i4KKkXlXV3UAtTEAC7tD0YkSLgcW5nFuL2OBs=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTXUFhJkVzlotYNHdXhbUUwDzwwhs47K8TjQh8XIvrULbaWmPc1t12Jb7Eo5T8xJTtIgC9IPAyO4pjQmMY1Pa2R7anb71UvSwUu8xc7IZWQHoHaynmAyYg",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbcfSWkGBI9WYyfpftnIUOoDoUeG9BnytffrIvNCxDVQdKy-rbNloM9P5AKXEtrvpQGM_GOBajOlFNuZNV1W--OPEZ7Hf4gUNjUrpt_p2BD8P7siBHZd5zZAFetQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              }
+            ],
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
-            "citations": [],
-            "error": true
+            "citations": [
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNCTrCzGg5Ph8lJsm-2_4m6vnEBbT5MyS3_LEq9oE6m8H7AghvpsB9sTQiSTFh5DVbKDEK55QAQ7xEckrZE_9EMOaYaW0CYPckMQfvHVbmwn9TzoX7oFJeNo6YEEvdDm-deL0EiJoi",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmbvKjO22qcyam0wSFZEgsbcIsY5KesqmZMNrb08-ivrfeiAfHRFiqZqjdmldwv0dh12F9-Z6CjO3bnqf31sh3coZrknnxE70UTa2Q-g==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9OAMCcNM5iDlU07WDTziFYiclxiendEL2xNe865I4sZzzf-Z4t7h0ueXyDr402Jz9TgLCVH5RRQtwy9EKznzBmLxZghdWZ1VN6ykYaCeWZZAdpBJaSzVUKJsiXFzVHM4=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpwbbZNsGl4k8CS_de3kE9lvDVrYKCSW-AnKpAh0doq0w06KRuBeRjQIj1wHsc_f871CXpFCVU7T8Qo9BM1YGU4G3aUMvLSnkp5YKiiJ866nlW7EI31kt35mxKpUwAno3Ud6e6iGuubQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHA9Gt2P5bYYzZ0iC2eLDanNu-raMiBfB3iIuCbXdttnYQe5roe8CqHYMSG62ZrEFBSjpwWmraPPn_j8GrgpG3Ks9Zkx9mcwtahQCl4BTiGGqDJ_3Z9e9yDFoGJdwkTga10UOrPihn7DEeoJ5Bi",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkkatkENTYBYleaidZp8a_sAvR1CE178J4a0BIVMpip5jurt6tw8579hhpkDAsEg2pkEKX_TpV84BZMiUzXdsYAti2QKnNWRhQ0ZsV_uJQPT7yuywo3jwcBN4C",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWHxFZ8ZgducjN-EUbfF2769cLu2foS-1PSwuphZSmH1VCZB62Jze4wk7h8gtxhDAl_sl8FqAMPjxXK5eLr5ijbQwk0YsU2CBulK5u4hph1ZJaucl0kUGVHlPC-Frqgp_4M24kM4ytkZ8hCQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_I1n5Gyrxc1610dQBpdDnCY1-tDckiALrSfSQLzTWEOujxpIr-C8xNV2atX8Bkiz94_AbvVToKgF_uL99H6BY8K1s3xNvAtZcwkSgjTA5hhxaN2qSzZL-EFJtoZ9FnNn2_eU8FIBkVScEplVCkCPx83WFdnhaW4NqDRSGwfQX8pBnobURFVyZ2KOlnCD3JNSmdLKnbzdUuV9T",
+                "domain": "vertexaisearch.cloud.google.com"
+              }
+            ],
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
             "citations": [],
-            "error": true
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
-            "citations": [],
-            "error": true
+            "citations": [
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIbkIzLcmUF3c5NhkIvEhDEB8OX3dzxVwp7KKgKp1O6RlisLMMrkjLZsY1qsbaCgY7hdZZeaFslDHARXdzGtsMp9saSwYEh_2c4SKVWl_MHbgmWpeOmbXr4lqai5KKCIVkt0JnBYECUZtLrQXCPA==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnJOoKwDua8atFmGmfjpHr1lauxoHfkf625kTSKC4vQvxIV-Iv-NGW1gsKeCbBhGokpnwEnakNU4xCmGp5DoJ_YaiyDxJSdSDBlf1byp0VMf-0uBj22Lh-z4EJ",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSu541KuOqlypVzsLm8lulbYCiOn6Iwxc23AAolGPOmzOqZpeSFU6DanGoHWlcdTfGLvh5krO2k67AkixzXrHlyPUgR64yhYuxlWYRg02KBg==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_rjevHCLJdmv4JEhtIfAHbhc_5aEWTbijoKm1cUAnEKFMajhWcm_kTzpvPWpBzsyJZEaU2Z5Ex0mGwhLCqQp173DYupohlQLHkwjWHJin9i3pL4m7EWtSqIGyTzGh1xEUWHhOfUcU-AdEdyuekYKtWp5txg==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXlol2elXCKXfr94cOsbCfKBem335GFwpW8T5JCuAxGXpZD_O7JB76d-MbU3dU93q4zcZm6yIOr4gYOVdE2wwsUCs0quZKAJ-rKA==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXlol2elXCKXfr94cOsbCfKBem335GFwpW8T5JCuAxGXpZD_O7JB76d-MbU3dU93q4zcZm6yIOr4gYOVdE2wwsUCs0quZKAJ-rKA==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHymDK1WYANVoeF2rwXCRn47VTx44pufAWUrhSuIT6xb6a_jC9NdIGQc5rZjx71G9-tQ_-Qe1FbsbEthrVPVr-2v34cujK-asGSMtCW1g==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERKc-UbDCKwQj_ws4bhjTuh5ma2C9asHTRAVDVRMLizng_UAuwpfdvApw-GlcUAmCtoJVEQWAQGZ3ivx6Fmr7cdGUGQYCt_ZNtgzoDP5TpsC3T8g==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBfDQTlBVX1PIo0oj37EE2A7i4X3sp_sz3uXIntG_B3KnmyJZgNO5xBHB9WdOBJCdXZbE46vT7ffmtDe_TRbf3zcX1egqABzemy_3_OUZ3iVBMCA==",
+                "domain": "vertexaisearch.cloud.google.com"
+              }
+            ],
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
             "citations": [],
-            "error": true
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
-            "citations": [],
-            "error": true
+            "citations": [
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiLSoiCnFGO539uzJx6n2bP7zJt8KC0kotoP8c4Jqf9uZl66yMDXLEAdyQk2jRiDsJKVmg-IQtKSUWUYGsndyKh2QSJM42dZFGPLIJePKzIn3JaNizdRsIw8iWuU1hCq9UbYGnOCgIFXIrneQNFJ7Oa5X319y6WMZAmSnw1SxhXpY3X6IuVnQ-nx-odrPxCZsMUndiaZbqB-ZgN5ADXB3-Rfu3_KKOTrPRUt7B1tGecOipFpzmf2BXvIrVffmJxFsSLeUTdJxno5budUIJ3_rkMxMvmeIoc3-Qa9YFtPXP3d1eRQ9QGpnJB2A4sGDxO2AGBbqCumXLwA1VbXNq",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCEKvD5O7aBgk135L9FvcgRok0BojIziFx-DcFkPjW8MOIhEMm2HQkvWZMTLNhTrzc_F5-JTsqpVVh9ymZJ7Gr0Dce-Ghq7nNXM2yrT0-n86K-Eeo=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWO4Ce5mfUHTh7K9J4nNTKLfGKXHjSsBUCtaYcMlAzaGqWY2_mRMRpsZMX6C9NpV6lN_WcFklh1UYTqTMZrSO7MZqapjteKzA1ckFFUw-cQxkf2irSU-Wt8ecPTteVZx7uAKkB8ho-vQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5G_5HOAV24PAtUOXtpxcX7hXAXt1FuzoK4alzT7JlN3_M13V5onJDQknp3eKxIkHXM6SeKoR5lH6ZSBzD0uEXmyj22XmEXFyFqc0qDw4IcmY2GkCFyBZKqQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHko1vuIzyqkcMCvdlnWHVoYysyQoCeh4h4w2akt4qcyvB2axT4sUdpJ81HMGMydxMhvebIdJGntVQVf9dGow0CGJPJXuCXWS4t6-RwHtHD2OAiqhxEYOH_eZRDwoo6JgRjQco=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxeicgcv9LnxYjqzaQlnF4rCVh_SJaqhjVzw8ZOj5tElikIvq9wSbYO5y6jY1ex3iKwHGG91WVRgX0E4cxsAqIZZoxqea9fiTpH7o8XjsueQIX2p6K1W_0kQPMWDghX8Zz",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYP-x12UeqsXvmy7YFP0vqW1uTCCnV_G_YWAheesjwt_syhVXmfTWSonISLtkLZHK1U9kJWbNx1Bvy3MDnVXmuMKGt3sTswWtUQ9pblEZSYr5X0p1mP3AavCtqdFKqKE5tZ5eDjM25_x68xF3I12XjnrFHr8TgO9-EbdjzbSLhtI0c2QyBMhUC_B3jBzY28RKSA2r7-9cRhCzQ2Cn3ugLcrkpNkagxIXq-_0K4YnkWjLB-5ODE0YDk1GDhW0t-jVjCjrGv2WeRqsc66QzaRzzM1BG07ilXKFmlbJVPLfMqCOr86yvRQIZ7uckCk1yPTEDOORjC",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMdhSfCzMS2bgwhLrTO38Czmu2GleZtsl2HNdpxpguXlhSC-KrYOCNbV4oeZI6PahjUiNDe2qZLchRiSDDssRNiCvJalMgInCKYKzPwsRP9AjKOQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3n3h-DjDerTk2sro4gQPhCwgPzWSHzEdQncBDTu_24dokGiSc22vFh-yBs-6ZgsyzgzpYGxYT-Bn5v-KnKvlUsN4411m_-QuZQ1jqXKmERyKiRg==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4RATwKzXrMdXvUXDfa-A8BXrpMjmnkMMheAtm-7uNUrgQtPFMDpqgAIlH5Rt7li3q3IxSVtqTpSvjFcDLJ7Jt-GZqnCpS8x7TCgteJdNyNc6sw3kAhLuOTR3js40=",
+                "domain": "vertexaisearch.cloud.google.com"
+              }
+            ],
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
             "citations": [],
-            "error": true
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
             "citations": [],
-            "error": true
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
-            "citations": [],
-            "error": true
+            "citations": [
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_Sos3Jp89uD49mXGUffO_V3dpu53VcCpVurHMhmwjzS0K5fcAOB2TkmJUlvuOEnLgDiG6dVm9Z1Fb3RtxFyyPUg2dUwzEZl-4GzKyfixWLaFegl7f4yfBtb7745fa3w_b",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsaZdjBCdH07V-ny9TkPlr6VKjz8BWnKcNr2WVYe9LVDWxJZFn2NmQc0sckAfudtkIyzbPx_9x5_4T8NY6tVMHeHXk-NmZDMBmHtQmbHmi4kCL2mH3naQRfbgIqE2KHXh4VIj6gmflU4E=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP4EuCoJknAQ97oXPPNEVDo6b6kfDqaf8HbxyoBiSNzIZ5Bx8gT63PNb4SFBsL8iHTCZzTUG8bY83KgeRVQ34jyN4zgUduKFmJPTOciLgGB9GbzXvKP64mrCHKa-g00rTjVcgteARj-g==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHUmD4rW4pjjZ1zUQSNBWg9IxT_agFDJXhDKRSKj_BZJ5zg7HAoed9zmDsgWDIOZcUSQWCNHem_JHc2cLdPpW-S3v39fMHrdTpG6GxRoJWPck-brPJJ20-CRGJN910M74=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdzDchRGWIcO_zW8SvTbLdxmQD_RpDJo67Kx1AM42B7Is-hSyu7EA4jHjPUrpPFCOtRzs004-5SqUO-nCgrIx29jJhf7gBGkZmCoof3uWht7C3CWEiH4WqSceTRTU7_2K1ceIfcuXBqPQnPqzEM80Yq6ZVrvDIS8q3Njqj1Tcx50RhHWbmVw8VZ2p4HFtFnqdp77c=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEz69dOxPMFhhdfO6y1fpvof6Fk3c6QuvTEdv-A-KvA75_TlILU-TP3hodtTrUNWp4hIhxa4mRQ3YKdw5n3r86KMfyzwZwKCFZI5aeWkopXQMYqfTQt0SdDgPbp1OQgGcZZP4_cTJjwnXXSL2oBm0-CqCEo_8CRGRttaoE37j3C5VBb1EYBdk022G2yRlw72L8epXE2cYeETxg7jO4wPJecUNjGIKMw7VxNC5DgRLAtiQMv8MvMK_Uwv9WmNA_iq-HBQ9tTx2Hg_QZMW9I1n-DOlWQZ4gPSRT8wzd5RVAQ21vKcoYJ1-LFdTcbDnb0JHt8xdFZsS_E1VA==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEFsNP9KXVWsIv6smLk1zV-369Rn1JSCup1pdlXdxKlstY6dFpGVe_70PNNgsYjf-Rx6QCZXwyA-BjJZlCuKO98fmQ9lwCadCYpN-WDBvlLNvYcWXCTx26iaBRopM=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkLAxIrfLFV04_5SGF_VRiVXOzjOZ4fEnsTRbenudCezWrMZRffsyMB0pQ-adzCiqc2C5WQJnA-wxKLL5dfP69V2OL1VBNQxPQDunaQoGrIgiMgQ==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgXlZe8LDA51ec-jLEarVTqfOQot-JTmb0kF4J1VJRJ1flao8kQhcZGySJI0jLFCCuJPttG-QP9pb2lmmNiYu_AhNGOPK4NrMXvA0RmacJbZDGjHq6jdKkD_-I1ms3yRDm",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjunhWuSZpJmKHwDQ3-90YCe-namRn6Tdqj2rJKFFG-Rz_m44q2mMpaYfT-iIH4zUUQXFme3d5Vu7S8Ws0Pxucf3xRX1vywoeky_rgV0bTwYNbIm1fcszF_4VbA1iHgeVxyVXMhh8fpPoI3w8q2lgFM5BqKHFur2fVbWTWl7CndavpWRwV4y8tJRpWU8POgLq877FpILD9pflMpDQ=",
+                "domain": "vertexaisearch.cloud.google.com"
+              }
+            ],
+            "error": false
           },
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+            "reasoning": "판정 실패",
             "brands": [],
-            "citations": [],
-            "error": true
+            "citations": [
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYpzv0LmGQ6txX58fzXJ9YtJP6KSHVn03U1wWZEk2d244Sq91ek8NePpt0GFC5FCh2hTKjW_zhilFx4CarHb29X1waUkrUzyF2M1R83cYNTnvFCk29I7ugWVeHotGGgOqbcQSaqgGoEfR0CK57ghVX6GzW7TSRABGjif9NJy5uKQt0ST2lxVH_Cx_hn1-7UyJjfn43rdjMsdx1iVI8CWHCOHKwn4RDMXpCYWgeiOsRlHw2Yht0CGoyv6cL0FBNQ86t8mydgUaBPTbLFARo-s2iH6G74M7wzD-uOnxQCP0eh7eY3vnGoFKAToArfVn0FOIe1hTh2EJdLWGCNSmUF_iSCUBF_M-qUmmNOrf1SOa8ieeMRYS6JwpweebT8FjpD4d-arW4HpoW9XZdHjIdXahN3Xs8Y4CoypvRZd19vebS_xJk2UVlghKK7ePaZyo97_4yR3K-2wvKr9otschW8bObpdumPfHZpNqHP5Hej1F1jR3aciwOL-rMsRALV8OoGsRH2XgJkQXhW4PHcevXfkUtmv6OloOkbu1vsD-f_GgCkcnlmRHEnxJELpFMQnOcVKVQAVMUTMb6J_BjItOuIBGGtembXwK9BNUlB2sPgbqdOgXK7UcMnEOqOZYxIATagehAckI1-z5VQsaUa05xlevhHgwP4hND34C9_afJgydGuUqDk3uQH8uhAezI0edF2brdBkL_IpBlGfQ5pZEmQjsiVGdfauHyCC_mRp02LEgB89-7GLrd7bj63vzH7_khb4tHmU95Cpc8S8vpAwn__8Q3srMi_xE4w5WGRfUmMVfy6Fe68Ov1I0dc69pnSTCpCw4opfrc3kt6CAcXMMTLxJ1kSad1fEl7DZiiwFEKqJAhwLQpnrxtiMUZV59k2FN7Aq9vt5ZQw-ZxItQwWEuyehEFb9Gwodh3DudBzsZOokHr7g==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvYuSzDBrEyy2pDH98_YZpzNJ81hpyv7oLf1IqITsXrqR-Scp28ZuM07_MwGYh4fCEd9dKiqRydqk5Jm-WCeow9Ki6YN8g7E15PaJT9OK3K1GJJ66lHzmsDGOyTqg=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0EGiHMWMN25WVR5AJDXCTaY_B0SqgrhbufRKPkAPkje1MgujOm1TE9QT9q-bufaHyAkHnRE-5dlY4kcFptjJJIMBBcrdOv_iPMYrZuBjmuKrKa28STVg-NlHwt7mHTWNdeIEu67sfcXJGHL1GMswiOj9-biSHkSIgmlidrZiNZgk=",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxB6BHsIxnbJqLrWD5WTQKwQYn1EGAg_4770ffRLgmAdS6VK68pFCzfrBb5-nKMtPrxEEK1gnXlqltiYc2ZOqZcUAJvZaycPFmxTwuy7eGSRYpl-I6J9rlGJvMSyppCqpThnoduUXQ",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyHG19ZSUuNqaMl_UqeOoIJLiJ4vyjyGfian3kbTQNX-JQb14xxIA1VVE8gaPP3UYp3KTvsX8ssrUCMu03efJA9VfLkT5y_tpEx7k0ttUkXg==",
+                "domain": "vertexaisearch.cloud.google.com"
+              }
+            ],
+            "error": false
           }
         ],
         "stats": {
@@ -222,7 +436,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2ftRzcf8eJ5B2znpc\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9wzmNeg29cwSPT8L2D\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -230,7 +444,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2h2tVKuXTqdovYY1x\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9xiyP8N41PQ8wbpL9f\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -238,7 +452,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2i1BC3g1DSCEWiXr9\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9yYT9CMKtPSTYNauh6\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -246,7 +460,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2j1wwyrsaPofvhG2h\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9z4LEzSeUcwxv72QPp\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -254,7 +468,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2jwGRZ3r6hs1eQezp\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9ziEHuPJe7AWXw7N5n\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -262,7 +476,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2kksjeBCThqfkfRmp\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA1PA6hWzn7gDDN7VQD\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -270,7 +484,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2mdDJYVrwjtnTLChp\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA27FfL9XrA6xFM117n\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -278,7 +492,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2nUovWDyWBGemtAdw\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA2opCncE86dr7G3J8V\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -286,7 +500,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2oULnQaBUB3yaP6PK\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA3TUcQxuLoRXHBEhp7\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -294,7 +508,7 @@
           {
             "exposed": null,
             "rank": null,
-            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2pFU4DA1fnxjQJVRa\"}",
+            "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA413ufodmMDv8ZSXGy\"}",
             "brands": [],
             "citations": [],
             "error": true
@@ -1319,6 +1533,533 @@
               "exposed": null,
               "rank": null,
               "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CefT2pFU4DA1fnxjQJVRa\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            }
+          ],
+          "stats": {
+            "total": 10,
+            "exposed": 0,
+            "top3": 0,
+            "top1": 0,
+            "expPct": 0,
+            "top3Pct": 0,
+            "top1Pct": 0
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "generatedAt": "2026-09-03T08:02:58.533Z",
+      "questions": [
+        "강남 울쎄라 잘하는 병원 추천해줘",
+        "압구정 울쎄라 잘하는 병원 추천해줘",
+        "강남 써마지 잘하는 병원 추천해줘",
+        "압구정 써마지 잘하는 병원 추천해줘",
+        "한국에서 울쎄라 잘하는 피부과 추천해줘",
+        "서울에서 울쎄라 잘하는 피부과 추천해줘",
+        "한국에서 써마지 잘하는 피부과 추천해줘",
+        "서울에서 써마지 잘하는 피부과 추천해줘",
+        "울쎄라 잘하는 원장 추천해줘",
+        "써마지 잘하는 원장 추천해줘"
+      ],
+      "questionGroups": {
+        "울쎄라": [
+          0,
+          1,
+          4,
+          5,
+          8
+        ],
+        "써마지": [
+          2,
+          3,
+          6,
+          7,
+          9
+        ]
+      },
+      "platforms": {
+        "gpt": {
+          "rows": [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 401: {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: ''. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            }
+          ],
+          "stats": {
+            "total": 10,
+            "exposed": 0,
+            "top3": 0,
+            "top1": 0,
+            "expPct": 0,
+            "top3Pct": 0,
+            "top1Pct": 0
+          }
+        },
+        "gemini": {
+          "rows": [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJIVFJFu5WWovsq-5erTeCy7CjAlunAB7CzXLclj2BApzNXB_TyTNHFMgs89-LollLd_iJ0hc9QfZaEf88F7reQyZibcThMX0oTqc3Y9zFvvojuQu6jFnjbDoxI9Lbt2lz37HBOmj9Di5FhRfegqiHQC_s9veEclbRVY7L0jnp8kah6aprKu_R2UPQxOaXGlZg9XAyXLVN6vWNJwajC_EiRGoB_vU3dV6rHV40zfFDJ7Fq-q7jxBiX2V_xph-2RY-B8thTBd92CeYAqy94RPNvvghyHot8n8Dfm8IIgq1d615KDcg_cVJrB8vb4onGcKdSoECEJN05tSk0Pvw=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbcfSWkGBI9WYyfpftnIUOoDoUeG9BnytffrIvNCxDVQdKy-rbNloM9P5AKXEtrvpQGM_GOBajOlFNuZNV1W--OPEZ7Hf4gUNjUrpt_p2BD8P7siBHZd5zZAFetQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpulyb3R1a95kFyJxkTC8aYlDi3L-K7i3DPbm3Z7OT--u7-WJP9jgZYNYz1GkgkdfJZaAi2JX6-ReetQZOjXN1sxV-YbB5iu7IbBaDluH6qL-iExCKKzM7He8=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHr1-7nU0WqMx_REgmfY8uqYzkYrxHwVKNx9JVRdKv65B_31iCiIr0ItE7kqVgnnmPT37Z_Ka_X3XerEjobEWPm0ln3HuGdaDc2txfZ7Kx-bPXGRGisKl91qklKxBuxRqXfSX-P9F7uG2itSGg9Shj_JnaHxZLnkRUszFaPlXHoYHU-JupFG-uDBl4IsaTPwqEF5RDW-KmwS-2X8_066HOE7vjrH5bjDObAnd_an87orBWX6Lm87qkQ6Ubp9mLgcDOb_lFxMbkIds2iqQjCjHA1S5SWjW0jnk_VcaW-6lFXNPti8WN9yfPDeaVZ8GZz0-bdmt-GHhhV",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeRNNbRCAMUxV3a_bSG_J_IHxgRZ6qT6rbyStADm6UVIrd_vXUYOkqF3AKY_mR_D95g-gx-8Lnx2IpFqZv5KpAqMZN6hplzTMxuxxMuZTMDsxZbTKNnZroRN5qFPny0HZpnpsNVq0Qe0SuwjEkAGUvWawB0H02hTg=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdLP-D466IpeUHGgxhRnle5AlA_DSyPk5q2WRyDUpLP1wguTa30NIzxeY_iznMsMs8eO44SD-uC43ZGzilSz7hQq0LI29WKJL8IZDBG2u0HiPEx2wuOg6VJvQ-cvqspVb_",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5bKSSauI3gygln4ZQTkMWHsJ6yrr0FGDiW3VzYQj3XDxImBodoTEl836MPf54RTFnP23KEU8IOcxwbf4WldvbUh2jBpPr_ydLc69_E8xhOCsD",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXRQ4afijzWJFAhXax4pgAxvCfCFDC6d-WOqZk9y3zaxCQGbzWnGr3tR9ay5nFyjxYb5TlQFt_6Bzcg6lfqjuKh6MK_Nz-4zsjIw3UKGuuToAoXrlzbXiIKh2pLXAmdL-wZjyDXSehGepahHvftOdsUxTRV8i4KKkXlXV3UAtTEAC7tD0YkSLgcW5nFuL2OBs=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTXUFhJkVzlotYNHdXhbUUwDzwwhs47K8TjQh8XIvrULbaWmPc1t12Jb7Eo5T8xJTtIgC9IPAyO4pjQmMY1Pa2R7anb71UvSwUu8xc7IZWQHoHaynmAyYg",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbcfSWkGBI9WYyfpftnIUOoDoUeG9BnytffrIvNCxDVQdKy-rbNloM9P5AKXEtrvpQGM_GOBajOlFNuZNV1W--OPEZ7Hf4gUNjUrpt_p2BD8P7siBHZd5zZAFetQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNCTrCzGg5Ph8lJsm-2_4m6vnEBbT5MyS3_LEq9oE6m8H7AghvpsB9sTQiSTFh5DVbKDEK55QAQ7xEckrZE_9EMOaYaW0CYPckMQfvHVbmwn9TzoX7oFJeNo6YEEvdDm-deL0EiJoi",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmbvKjO22qcyam0wSFZEgsbcIsY5KesqmZMNrb08-ivrfeiAfHRFiqZqjdmldwv0dh12F9-Z6CjO3bnqf31sh3coZrknnxE70UTa2Q-g==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9OAMCcNM5iDlU07WDTziFYiclxiendEL2xNe865I4sZzzf-Z4t7h0ueXyDr402Jz9TgLCVH5RRQtwy9EKznzBmLxZghdWZ1VN6ykYaCeWZZAdpBJaSzVUKJsiXFzVHM4=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpwbbZNsGl4k8CS_de3kE9lvDVrYKCSW-AnKpAh0doq0w06KRuBeRjQIj1wHsc_f871CXpFCVU7T8Qo9BM1YGU4G3aUMvLSnkp5YKiiJ866nlW7EI31kt35mxKpUwAno3Ud6e6iGuubQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHA9Gt2P5bYYzZ0iC2eLDanNu-raMiBfB3iIuCbXdttnYQe5roe8CqHYMSG62ZrEFBSjpwWmraPPn_j8GrgpG3Ks9Zkx9mcwtahQCl4BTiGGqDJ_3Z9e9yDFoGJdwkTga10UOrPihn7DEeoJ5Bi",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkkatkENTYBYleaidZp8a_sAvR1CE178J4a0BIVMpip5jurt6tw8579hhpkDAsEg2pkEKX_TpV84BZMiUzXdsYAti2QKnNWRhQ0ZsV_uJQPT7yuywo3jwcBN4C",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWHxFZ8ZgducjN-EUbfF2769cLu2foS-1PSwuphZSmH1VCZB62Jze4wk7h8gtxhDAl_sl8FqAMPjxXK5eLr5ijbQwk0YsU2CBulK5u4hph1ZJaucl0kUGVHlPC-Frqgp_4M24kM4ytkZ8hCQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_I1n5Gyrxc1610dQBpdDnCY1-tDckiALrSfSQLzTWEOujxpIr-C8xNV2atX8Bkiz94_AbvVToKgF_uL99H6BY8K1s3xNvAtZcwkSgjTA5hhxaN2qSzZL-EFJtoZ9FnNn2_eU8FIBkVScEplVCkCPx83WFdnhaW4NqDRSGwfQX8pBnobURFVyZ2KOlnCD3JNSmdLKnbzdUuV9T",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIbkIzLcmUF3c5NhkIvEhDEB8OX3dzxVwp7KKgKp1O6RlisLMMrkjLZsY1qsbaCgY7hdZZeaFslDHARXdzGtsMp9saSwYEh_2c4SKVWl_MHbgmWpeOmbXr4lqai5KKCIVkt0JnBYECUZtLrQXCPA==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnJOoKwDua8atFmGmfjpHr1lauxoHfkf625kTSKC4vQvxIV-Iv-NGW1gsKeCbBhGokpnwEnakNU4xCmGp5DoJ_YaiyDxJSdSDBlf1byp0VMf-0uBj22Lh-z4EJ",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSu541KuOqlypVzsLm8lulbYCiOn6Iwxc23AAolGPOmzOqZpeSFU6DanGoHWlcdTfGLvh5krO2k67AkixzXrHlyPUgR64yhYuxlWYRg02KBg==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_rjevHCLJdmv4JEhtIfAHbhc_5aEWTbijoKm1cUAnEKFMajhWcm_kTzpvPWpBzsyJZEaU2Z5Ex0mGwhLCqQp173DYupohlQLHkwjWHJin9i3pL4m7EWtSqIGyTzGh1xEUWHhOfUcU-AdEdyuekYKtWp5txg==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXlol2elXCKXfr94cOsbCfKBem335GFwpW8T5JCuAxGXpZD_O7JB76d-MbU3dU93q4zcZm6yIOr4gYOVdE2wwsUCs0quZKAJ-rKA==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXlol2elXCKXfr94cOsbCfKBem335GFwpW8T5JCuAxGXpZD_O7JB76d-MbU3dU93q4zcZm6yIOr4gYOVdE2wwsUCs0quZKAJ-rKA==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHymDK1WYANVoeF2rwXCRn47VTx44pufAWUrhSuIT6xb6a_jC9NdIGQc5rZjx71G9-tQ_-Qe1FbsbEthrVPVr-2v34cujK-asGSMtCW1g==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERKc-UbDCKwQj_ws4bhjTuh5ma2C9asHTRAVDVRMLizng_UAuwpfdvApw-GlcUAmCtoJVEQWAQGZ3ivx6Fmr7cdGUGQYCt_ZNtgzoDP5TpsC3T8g==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBfDQTlBVX1PIo0oj37EE2A7i4X3sp_sz3uXIntG_B3KnmyJZgNO5xBHB9WdOBJCdXZbE46vT7ffmtDe_TRbf3zcX1egqABzemy_3_OUZ3iVBMCA==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiLSoiCnFGO539uzJx6n2bP7zJt8KC0kotoP8c4Jqf9uZl66yMDXLEAdyQk2jRiDsJKVmg-IQtKSUWUYGsndyKh2QSJM42dZFGPLIJePKzIn3JaNizdRsIw8iWuU1hCq9UbYGnOCgIFXIrneQNFJ7Oa5X319y6WMZAmSnw1SxhXpY3X6IuVnQ-nx-odrPxCZsMUndiaZbqB-ZgN5ADXB3-Rfu3_KKOTrPRUt7B1tGecOipFpzmf2BXvIrVffmJxFsSLeUTdJxno5budUIJ3_rkMxMvmeIoc3-Qa9YFtPXP3d1eRQ9QGpnJB2A4sGDxO2AGBbqCumXLwA1VbXNq",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCEKvD5O7aBgk135L9FvcgRok0BojIziFx-DcFkPjW8MOIhEMm2HQkvWZMTLNhTrzc_F5-JTsqpVVh9ymZJ7Gr0Dce-Ghq7nNXM2yrT0-n86K-Eeo=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWO4Ce5mfUHTh7K9J4nNTKLfGKXHjSsBUCtaYcMlAzaGqWY2_mRMRpsZMX6C9NpV6lN_WcFklh1UYTqTMZrSO7MZqapjteKzA1ckFFUw-cQxkf2irSU-Wt8ecPTteVZx7uAKkB8ho-vQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5G_5HOAV24PAtUOXtpxcX7hXAXt1FuzoK4alzT7JlN3_M13V5onJDQknp3eKxIkHXM6SeKoR5lH6ZSBzD0uEXmyj22XmEXFyFqc0qDw4IcmY2GkCFyBZKqQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHko1vuIzyqkcMCvdlnWHVoYysyQoCeh4h4w2akt4qcyvB2axT4sUdpJ81HMGMydxMhvebIdJGntVQVf9dGow0CGJPJXuCXWS4t6-RwHtHD2OAiqhxEYOH_eZRDwoo6JgRjQco=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxeicgcv9LnxYjqzaQlnF4rCVh_SJaqhjVzw8ZOj5tElikIvq9wSbYO5y6jY1ex3iKwHGG91WVRgX0E4cxsAqIZZoxqea9fiTpH7o8XjsueQIX2p6K1W_0kQPMWDghX8Zz",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYP-x12UeqsXvmy7YFP0vqW1uTCCnV_G_YWAheesjwt_syhVXmfTWSonISLtkLZHK1U9kJWbNx1Bvy3MDnVXmuMKGt3sTswWtUQ9pblEZSYr5X0p1mP3AavCtqdFKqKE5tZ5eDjM25_x68xF3I12XjnrFHr8TgO9-EbdjzbSLhtI0c2QyBMhUC_B3jBzY28RKSA2r7-9cRhCzQ2Cn3ugLcrkpNkagxIXq-_0K4YnkWjLB-5ODE0YDk1GDhW0t-jVjCjrGv2WeRqsc66QzaRzzM1BG07ilXKFmlbJVPLfMqCOr86yvRQIZ7uckCk1yPTEDOORjC",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMdhSfCzMS2bgwhLrTO38Czmu2GleZtsl2HNdpxpguXlhSC-KrYOCNbV4oeZI6PahjUiNDe2qZLchRiSDDssRNiCvJalMgInCKYKzPwsRP9AjKOQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3n3h-DjDerTk2sro4gQPhCwgPzWSHzEdQncBDTu_24dokGiSc22vFh-yBs-6ZgsyzgzpYGxYT-Bn5v-KnKvlUsN4411m_-QuZQ1jqXKmERyKiRg==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4RATwKzXrMdXvUXDfa-A8BXrpMjmnkMMheAtm-7uNUrgQtPFMDpqgAIlH5Rt7li3q3IxSVtqTpSvjFcDLJ7Jt-GZqnCpS8x7TCgteJdNyNc6sw3kAhLuOTR3js40=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_Sos3Jp89uD49mXGUffO_V3dpu53VcCpVurHMhmwjzS0K5fcAOB2TkmJUlvuOEnLgDiG6dVm9Z1Fb3RtxFyyPUg2dUwzEZl-4GzKyfixWLaFegl7f4yfBtb7745fa3w_b",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsaZdjBCdH07V-ny9TkPlr6VKjz8BWnKcNr2WVYe9LVDWxJZFn2NmQc0sckAfudtkIyzbPx_9x5_4T8NY6tVMHeHXk-NmZDMBmHtQmbHmi4kCL2mH3naQRfbgIqE2KHXh4VIj6gmflU4E=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP4EuCoJknAQ97oXPPNEVDo6b6kfDqaf8HbxyoBiSNzIZ5Bx8gT63PNb4SFBsL8iHTCZzTUG8bY83KgeRVQ34jyN4zgUduKFmJPTOciLgGB9GbzXvKP64mrCHKa-g00rTjVcgteARj-g==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHUmD4rW4pjjZ1zUQSNBWg9IxT_agFDJXhDKRSKj_BZJ5zg7HAoed9zmDsgWDIOZcUSQWCNHem_JHc2cLdPpW-S3v39fMHrdTpG6GxRoJWPck-brPJJ20-CRGJN910M74=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdzDchRGWIcO_zW8SvTbLdxmQD_RpDJo67Kx1AM42B7Is-hSyu7EA4jHjPUrpPFCOtRzs004-5SqUO-nCgrIx29jJhf7gBGkZmCoof3uWht7C3CWEiH4WqSceTRTU7_2K1ceIfcuXBqPQnPqzEM80Yq6ZVrvDIS8q3Njqj1Tcx50RhHWbmVw8VZ2p4HFtFnqdp77c=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEz69dOxPMFhhdfO6y1fpvof6Fk3c6QuvTEdv-A-KvA75_TlILU-TP3hodtTrUNWp4hIhxa4mRQ3YKdw5n3r86KMfyzwZwKCFZI5aeWkopXQMYqfTQt0SdDgPbp1OQgGcZZP4_cTJjwnXXSL2oBm0-CqCEo_8CRGRttaoE37j3C5VBb1EYBdk022G2yRlw72L8epXE2cYeETxg7jO4wPJecUNjGIKMw7VxNC5DgRLAtiQMv8MvMK_Uwv9WmNA_iq-HBQ9tTx2Hg_QZMW9I1n-DOlWQZ4gPSRT8wzd5RVAQ21vKcoYJ1-LFdTcbDnb0JHt8xdFZsS_E1VA==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEFsNP9KXVWsIv6smLk1zV-369Rn1JSCup1pdlXdxKlstY6dFpGVe_70PNNgsYjf-Rx6QCZXwyA-BjJZlCuKO98fmQ9lwCadCYpN-WDBvlLNvYcWXCTx26iaBRopM=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkLAxIrfLFV04_5SGF_VRiVXOzjOZ4fEnsTRbenudCezWrMZRffsyMB0pQ-adzCiqc2C5WQJnA-wxKLL5dfP69V2OL1VBNQxPQDunaQoGrIgiMgQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgXlZe8LDA51ec-jLEarVTqfOQot-JTmb0kF4J1VJRJ1flao8kQhcZGySJI0jLFCCuJPttG-QP9pb2lmmNiYu_AhNGOPK4NrMXvA0RmacJbZDGjHq6jdKkD_-I1ms3yRDm",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjunhWuSZpJmKHwDQ3-90YCe-namRn6Tdqj2rJKFFG-Rz_m44q2mMpaYfT-iIH4zUUQXFme3d5Vu7S8Ws0Pxucf3xRX1vywoeky_rgV0bTwYNbIm1fcszF_4VbA1iHgeVxyVXMhh8fpPoI3w8q2lgFM5BqKHFur2fVbWTWl7CndavpWRwV4y8tJRpWU8POgLq877FpILD9pflMpDQ=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "error": false
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYpzv0LmGQ6txX58fzXJ9YtJP6KSHVn03U1wWZEk2d244Sq91ek8NePpt0GFC5FCh2hTKjW_zhilFx4CarHb29X1waUkrUzyF2M1R83cYNTnvFCk29I7ugWVeHotGGgOqbcQSaqgGoEfR0CK57ghVX6GzW7TSRABGjif9NJy5uKQt0ST2lxVH_Cx_hn1-7UyJjfn43rdjMsdx1iVI8CWHCOHKwn4RDMXpCYWgeiOsRlHw2Yht0CGoyv6cL0FBNQ86t8mydgUaBPTbLFARo-s2iH6G74M7wzD-uOnxQCP0eh7eY3vnGoFKAToArfVn0FOIe1hTh2EJdLWGCNSmUF_iSCUBF_M-qUmmNOrf1SOa8ieeMRYS6JwpweebT8FjpD4d-arW4HpoW9XZdHjIdXahN3Xs8Y4CoypvRZd19vebS_xJk2UVlghKK7ePaZyo97_4yR3K-2wvKr9otschW8bObpdumPfHZpNqHP5Hej1F1jR3aciwOL-rMsRALV8OoGsRH2XgJkQXhW4PHcevXfkUtmv6OloOkbu1vsD-f_GgCkcnlmRHEnxJELpFMQnOcVKVQAVMUTMb6J_BjItOuIBGGtembXwK9BNUlB2sPgbqdOgXK7UcMnEOqOZYxIATagehAckI1-z5VQsaUa05xlevhHgwP4hND34C9_afJgydGuUqDk3uQH8uhAezI0edF2brdBkL_IpBlGfQ5pZEmQjsiVGdfauHyCC_mRp02LEgB89-7GLrd7bj63vzH7_khb4tHmU95Cpc8S8vpAwn__8Q3srMi_xE4w5WGRfUmMVfy6Fe68Ov1I0dc69pnSTCpCw4opfrc3kt6CAcXMMTLxJ1kSad1fEl7DZiiwFEKqJAhwLQpnrxtiMUZV59k2FN7Aq9vt5ZQw-ZxItQwWEuyehEFb9Gwodh3DudBzsZOokHr7g==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvYuSzDBrEyy2pDH98_YZpzNJ81hpyv7oLf1IqITsXrqR-Scp28ZuM07_MwGYh4fCEd9dKiqRydqk5Jm-WCeow9Ki6YN8g7E15PaJT9OK3K1GJJ66lHzmsDGOyTqg=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0EGiHMWMN25WVR5AJDXCTaY_B0SqgrhbufRKPkAPkje1MgujOm1TE9QT9q-bufaHyAkHnRE-5dlY4kcFptjJJIMBBcrdOv_iPMYrZuBjmuKrKa28STVg-NlHwt7mHTWNdeIEu67sfcXJGHL1GMswiOj9-biSHkSIgmlidrZiNZgk=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxB6BHsIxnbJqLrWD5WTQKwQYn1EGAg_4770ffRLgmAdS6VK68pFCzfrBb5-nKMtPrxEEK1gnXlqltiYc2ZOqZcUAJvZaycPFmxTwuy7eGSRYpl-I6J9rlGJvMSyppCqpThnoduUXQ",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyHG19ZSUuNqaMl_UqeOoIJLiJ4vyjyGfian3kbTQNX-JQb14xxIA1VVE8gaPP3UYp3KTvsX8ssrUCMu03efJA9VfLkT5y_tpEx7k0ttUkXg==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "error": false
+            }
+          ],
+          "stats": {
+            "total": 10,
+            "exposed": 0,
+            "top3": 0,
+            "top1": 0,
+            "expPct": 0,
+            "top3Pct": 0,
+            "top1Pct": 0
+          }
+        },
+        "claude": {
+          "rows": [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9wzmNeg29cwSPT8L2D\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9xiyP8N41PQ8wbpL9f\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9yYT9CMKtPSTYNauh6\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9z4LEzSeUcwxv72QPp\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011Ceg9ziEHuPJe7AWXw7N5n\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA1PA6hWzn7gDDN7VQD\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA27FfL9XrA6xFM117n\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA2opCncE86dr7G3J8V\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA3TUcQxuLoRXHBEhp7\"}",
+              "brands": [],
+              "citations": [],
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Claude 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"x-api-key header is required\"},\"request_id\":\"req_011CegA413ufodmMDv8ZSXGy\"}",
               "brands": [],
               "citations": [],
               "error": true
