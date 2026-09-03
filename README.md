@@ -1,6 +1,6 @@
 # 브이앤엠제이피부과 AI 노출(GEO) 자동 측정 대시보드
 
-매일 아침 8시(한국시간)에 자동으로 ChatGPT · Gemini · Claude에게 10개 질문을 던지고,
+매일 아침 8시(한국시간)에 자동으로 ChatGPT · Gemini에게 10개 질문을 던지고,
 "실제로 병원이 추천/언급됐는지"를 엄격한 규칙으로 채점해서 웹 대시보드에 쌓아줍니다.
 서버를 따로 구입/운영할 필요 없이 **GitHub의 무료 기능만으로** 동작합니다.
 
@@ -35,17 +35,16 @@
    > `.github` 폴더처럼 점(.)으로 시작하는 폴더도 반드시 함께 올려야 자동 실행이 동작합니다. 브라우저 업로드 창에 폴더째로 드래그하면 하위 파일까지 그대로 올라갑니다.
 3. 아래 **Commit changes** 클릭
 
-## 4단계. API 키 3개 발급받기
+## 4단계. API 키 2개 발급받기
 
-세 회사 사이트에서 각각 가입하고 API 키(비밀 문자열)를 발급받으세요. (이 부분은 결제/계정 등록이 필요해 원장님이 직접 진행하셔야 합니다.)
+두 회사 사이트에서 각각 가입하고 API 키(비밀 문자열)를 발급받으세요. (이 부분은 결제/계정 등록이 필요해 원장님이 직접 진행하셔야 합니다.)
 
 | 플랫폼 | 발급 위치 |
 |---|---|
 | OpenAI | https://platform.openai.com/api-keys |
 | Google Gemini | https://aistudio.google.com/app/apikey |
-| Anthropic (Claude) | https://console.anthropic.com/settings/keys |
 
-각 사이트에서 결제 수단을 등록해야 API를 쓸 수 있는 경우가 많습니다. 사용량은 하루 40회 호출 수준이라 비용은 한 달 몇 달러 이내입니다.
+각 사이트에서 결제 수단을 등록해야 API를 쓸 수 있는 경우가 많습니다. 사용량은 하루 30회 호출 수준이라 비용은 한 달 몇 달러 이내입니다.
 
 ## 5단계. 저장소에 API 키 등록하기 (Secrets)
 
@@ -53,10 +52,9 @@
 
 1. 저장소 페이지에서 **Settings** 탭 클릭
 2. 왼쪽 메뉴에서 **Secrets and variables → Actions**
-3. **New repository secret** 클릭, 아래 3개를 하나씩 등록:
+3. **New repository secret** 클릭, 아래 2개를 하나씩 등록:
    - Name: `OPENAI_API_KEY` / Secret: (OpenAI에서 받은 키)
    - Name: `GEMINI_API_KEY` / Secret: (Gemini에서 받은 키)
-   - Name: `ANTHROPIC_API_KEY` / Secret: (Anthropic에서 받은 키)
 
 ## 6단계. GitHub Pages 켜기
 
@@ -95,15 +93,15 @@
 
 ## 모델명이 바뀌어서 오류가 날 때
 
-OpenAI · Google · Anthropic은 몇 달에 한 번씩 기본 모델을 교체합니다. `Daily GEO check`가 실패하기 시작하면:
+OpenAI · Google은 몇 달에 한 번씩 기본 모델을 교체합니다. `Daily GEO check`가 실패하기 시작하면:
 
-1. `scripts/collect.mjs` 상단의 `OPENAI_MODEL`, `GEMINI_MODEL`, `CLAUDE_MODEL` 값을 각 회사 문서에서 확인한 최신 모델명으로 교체
+1. `scripts/collect.mjs` 상단의 `OPENAI_MODEL`, `GEMINI_MODEL` 값을 각 회사 문서에서 확인한 최신 모델명으로 교체
 2. Actions 탭에서 **Run workflow**로 다시 테스트
 
 ## 알아두실 점
 
 - 이 파이프라인은 각 회사의 **공식 API**(웹검색 기능 포함)를 사용합니다. chatgpt.com·gemini.google.com 같은 소비자용 웹/앱 화면과는 결과가 다소 다를 수 있습니다(지도·업체 평점 카드, 로그인 개인화 등은 API에 없음). 다만 로그인 개인화로 인한 왜곡(예: 최초 수동 측정 때 발견된 Gemini 계정 편향 문제)은 API 방식에서는 발생하지 않습니다.
-- 노출 판정은 Claude API를 "심판"으로 세워 자동 채점합니다. 병원이 지정한 원래 규칙(본문 추천만 인정, 순위 불명확 시 확인 불가, 추측 금지)을 그대로 프롬프트에 반영해뒀습니다.
+- 노출 판정은 Gemini API를 "심판"으로 세워 자동 채점합니다. 병원이 지정한 원래 규칙(본문 추천만 인정, 순위 불명확 시 확인 불가, 추측 금지)을 그대로 프롬프트에 반영해뒀습니다. 다만 심판을 측정 대상 엔진(Gemini)이 겸하고 있어, Gemini 자신의 답변을 채점할 때는 완전히 중립적인 제3자 채점은 아닙니다.
 - 특정 플랫폼 호출이 실패하면 "미노출"이 아니라 "확인 오류"로 별도 표시되어, 오류를 미노출로 오인하지 않도록 했습니다.
 
 ## 화면 구성
@@ -114,7 +112,7 @@ OpenAI · Google · Anthropic은 몇 달에 한 번씩 기본 모델을 교체�
 
 ## 데이터 구조 (참고용)
 
-`docs/data/results.json`은 `{ latest, history }` 형태이며, `history`는 날짜별 스냅샷 배열입니다. 각 스냅샷의 `platforms.{gpt|gemini|claude}.rows[i]`는 질문 i번에 대한 판정 결과로, 다음을 담습니다:
+`docs/data/results.json`은 `{ latest, history }` 형태이며, `history`는 날짜별 스냅샷 배열입니다. 각 스냅샷의 `platforms.{gpt|gemini}.rows[i]`는 질문 i번에 대한 판정 결과로, 다음을 담습니다:
 
 - `exposed` / `rank` — 우리 병원 노출 여부와 순위(불명확하면 `null`)
 - `brands` — 그 답변에 실제로 등장한 병원들을 언급 순서대로 나열한 배열 (`{ name, isUs }`). 브랜드 랭킹·모델별/시술별 순위 표는 전부 이 배열을 집계해서 계산합니다.
