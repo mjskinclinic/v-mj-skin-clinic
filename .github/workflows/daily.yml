@@ -24,11 +24,10 @@ jobs:
         with:
           node-version: "20"
 
-      - name: 3개 AI 플랫폼 측정 실행
+      - name: 2개 AI 플랫폼 측정 실행
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/collect.mjs
 
       - name: 결과 커밋 & 푸시 (대시보드가 이 파일을 읽습니다)
