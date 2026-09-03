@@ -2,13 +2,13 @@
 // geo-audit-pipeline / scripts/collect.mjs
 //
 // 매일 아침 GitHub Actions가 이 스크립트를 실행합니다.
-// 1) 10개 질문을 ChatGPT / Gemini / Claude API에 "웹검색 켠 상태"로 각각 전송
-// 2) 세 답변을 Claude API에 다시 보내 "실제로 어떤 병원들을 추천/언급했는지"를
+// 1) 10개 질문을 ChatGPT / Gemini API에 "웹검색 켠 상태"로 각각 전송
+// 2) 두 답변을 Gemini API에 다시 보내 "실제로 어떤 병원들을 추천/언급했는지"를
 //    엄격한 규칙으로 판정 (우리 병원 노출 여부 + 함께 언급된 전체 브랜드 순서)
 // 3) 결과를 docs/data/results.json 에 저장 (대시보드가 이 파일을 읽습니다)
 //
 // 실행: node scripts/collect.mjs
-// 필요한 환경변수: OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY
+// 필요한 환경변수: OPENAI_API_KEY, GEMINI_API_KEY
 // ============================================================================
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
@@ -20,8 +20,7 @@ import path from "node:path";
 // ---------------------------------------------------------------------------
 const OPENAI_MODEL = "gpt-5.6";
 const GEMINI_MODEL = "gemini-3.7-flash";
-const CLAUDE_MODEL = "claude-opus-5";
-const CLAUDE_JUDGE_MODEL = "claude-opus-5"; // 판정에 쓰는 모델 (검색 없이 텍스트만 판단)
+const GEMINI_JUDGE_MODEL = "gemini-3.7-flash"; // 판정에 쓰는 모델 (검색 없이 텍스트만 판단)
 
 const RESULTS_PATH = path.join(process.cwd(), "docs", "data", "results.json");
 const MAX_HISTORY = 120; // 최근 120일치만 보관
@@ -60,7 +59,7 @@ function domainOf(url) {
 }
 
 // ---------------------------------------------------------------------------
-// 1) 세 플랫폼에 실제 질문 보내기 (웹검색 도구 켠 상태)
+// 1) 두 플랫폼에 실제 질문 보내기 (웹검색 도구 켠 상태)
 //    각각 { text, citations: [{domain, url}] } 를 반환
 // ---------------------------------------------------------------------------
 
@@ -113,36 +112,13 @@ async function askGemini(question) {
   return { text, citations };
 }
 
-async function askClaude(question) {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "x-api-key": process.env.ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      model: CLAUDE_MODEL,
-      max_tokens: 1024,
-      messages: [{ role: "user", content: question }],
-      tools: [{ type: "web_search_20250305", name: "web_search", max_uses: 5 }],
-    }),
-  });
-  if (!res.ok) throw new Error(`Claude ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const textBlocks = (data.content || []).filter((b) => b.type === "text");
-  const finalBlock = textBlocks[textBlocks.length - 1];
-  if (!finalBlock) throw new Error("Claude: 응답에서 본문 텍스트를 찾지 못함");
-  const citations = (finalBlock.citations || [])
-    .filter((c) => c.type === "web_search_result_location" && c.url)
-    .map((c) => ({ url: c.url, domain: domainOf(c.url) }))
-    .filter((c) => c.domain);
-  return { text: finalBlock.text, citations };
-}
-
 // ---------------------------------------------------------------------------
-// 2) 판정(judge) — 클로드 API를 심판으로 사용해 "실제 노출"만 엄격하게 채점
+// 2) 판정(judge) — 제미나이 API를 심판으로 사용해 "실제 노출"만 엄격하게 채점
 //    (병원의 원래 측정 규칙을 그대로 프롬프트에 반영)
+//    ※ 심판을 측정 대상 엔진 중 하나(Gemini)가 겸하는 구조입니다. ChatGPT 답변을
+//      채점할 때는 독립적인 제3자 채점이지만, Gemini 자신의 답변을 채점할 때는
+//      "자기 답을 자기가 채점"하는 셈이라 그 부분만큼은 완전히 중립적이지 않을 수
+//      있습니다 (이전에 Claude가 심판+측정 대상을 겸했을 때와 동일한 구조입니다).
 // ---------------------------------------------------------------------------
 
 const JUDGE_RULE = `
@@ -165,8 +141,7 @@ const JUDGE_RULE = `
 아래 JSON 형식으로만 응답하세요 (설명 문장, 마크다운 코드펜스 없이 순수 JSON만):
 {
   "gpt":    { "exposed": true|false, "rank": number|null, "reasoning": "...", "brands": [{"name":"...","isUs":true|false}, ...] },
-  "gemini": { "exposed": true|false, "rank": number|null, "reasoning": "...", "brands": [...] },
-  "claude": { "exposed": true|false, "rank": number|null, "reasoning": "...", "brands": [...] }
+  "gemini": { "exposed": true|false, "rank": number|null, "reasoning": "...", "brands": [...] }
 }
 `.trim();
 
@@ -180,32 +155,29 @@ ${answers.gpt ?? "(호출 실패 — 판정 불가로 처리)"}
 
 [Gemini 답변]
 ${answers.gemini ?? "(호출 실패 — 판정 불가로 처리)"}
-
-[Claude 답변]
-${answers.claude ?? "(호출 실패 — 판정 불가로 처리)"}
 `;
 
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_JUDGE_MODEL}:generateContent`;
+  const res = await fetch(url, {
     method: "POST",
     headers: {
-      "x-api-key": process.env.ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
-      "content-type": "application/json",
+      "x-goog-api-key": process.env.GEMINI_API_KEY,
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: CLAUDE_JUDGE_MODEL,
-      max_tokens: 1536,
-      messages: [{ role: "user", content: prompt }],
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1536 },
     }),
   });
-  if (!res.ok) throw new Error(`Judge ${res.status}: ${await res.text()}`);
+  if (!res.ok) throw new Error(`Judge(Gemini) ${res.status}: ${await res.text()}`);
   const data = await res.json();
-  const textBlock = (data.content || []).find((b) => b.type === "text");
-  if (!textBlock) throw new Error("Judge: 응답에서 텍스트를 찾지 못함");
+  const cand = data.candidates?.[0];
+  const text = (cand?.content?.parts || []).map((p) => p.text || "").join("");
+  if (!text) throw new Error("Judge: 응답에서 텍스트를 찾지 못함");
 
   // 코드펜스가 섞여 와도 안전하게 JSON만 추출
-  const match = textBlock.text.match(/\{[\s\S]*\}/);
-  if (!match) throw new Error(`Judge: JSON을 찾지 못함 — 원문: ${textBlock.text.slice(0, 200)}`);
+  const match = text.match(/\{[\s\S]*\}/);
+  if (!match) throw new Error(`Judge: JSON을 찾지 못함 — 원문: ${text.slice(0, 200)}`);
   return JSON.parse(match[0]);
 }
 
@@ -226,7 +198,6 @@ async function collectQuestion(question) {
     [
       ["gpt", askOpenAI],
       ["gemini", askGemini],
-      ["claude", askClaude],
     ].map(async ([key, fn]) => {
       try {
         const { text, citations } = await fn(question);
@@ -244,10 +215,10 @@ async function collectQuestion(question) {
     verdicts = await judgeAnswers(question, answers);
   } catch (err) {
     console.error(`[${question}] 판정 실패:`, err.message || err);
-    verdicts = { gpt: emptyVerdict("판정 실패"), gemini: emptyVerdict("판정 실패"), claude: emptyVerdict("판정 실패") };
+    verdicts = { gpt: emptyVerdict("판정 실패"), gemini: emptyVerdict("판정 실패") };
   }
 
-  for (const key of ["gpt", "gemini", "claude"]) {
+  for (const key of ["gpt", "gemini"]) {
     if (errors[key]) {
       verdicts[key] = emptyVerdict(`API 호출 실패: ${errors[key]}`);
     } else {
@@ -280,12 +251,12 @@ async function loadExisting() {
 async function main() {
   console.log(`GEO 측정 시작 — ${new Date().toISOString()}`);
 
-  const perQuestion = { gpt: [], gemini: [], claude: [] };
+  const perQuestion = { gpt: [], gemini: [] };
 
   for (const question of QUESTIONS) {
     console.log(`질문 진행 중: ${question}`);
     const verdicts = await collectQuestion(question);
-    for (const key of ["gpt", "gemini", "claude"]) {
+    for (const key of ["gpt", "gemini"]) {
       perQuestion[key].push(verdicts[key]);
     }
   }
@@ -298,7 +269,6 @@ async function main() {
     platforms: {
       gpt: { rows: perQuestion.gpt, stats: summarize(perQuestion.gpt) },
       gemini: { rows: perQuestion.gemini, stats: summarize(perQuestion.gemini) },
-      claude: { rows: perQuestion.claude, stats: summarize(perQuestion.claude) },
     },
   };
 
