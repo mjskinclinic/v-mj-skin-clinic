@@ -6,9 +6,8 @@
 const PLATFORM_META = {
   gpt:    { name: "ChatGPT", color: "var(--gpt)" },
   gemini: { name: "Gemini",  color: "var(--gemini)" },
-  claude: { name: "Claude",  color: "var(--claude)" },
 };
-const PLATFORMS = ["gpt", "gemini", "claude"];
+const PLATFORMS = ["gpt", "gemini"];
 
 // history(스냅샷 배열, 오래된 순)를 { date, platform, qIdx, ...row } 형태로 평탄화
 function flattenRuns(history, { days = 10, platforms = PLATFORMS, questionIndices = null } = {}) {
