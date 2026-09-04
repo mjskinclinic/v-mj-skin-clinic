@@ -1,7 +1,7 @@
 {
   "latest": {
     "date": "2026-09-04",
-    "generatedAt": "2026-09-04T04:55:59.550Z",
+    "generatedAt": "2026-09-04T23:06:27.572Z",
     "questions": [
       "강남 울쎄라 잘하는 병원 추천해줘",
       "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -129,14 +129,22 @@
           {
             "exposed": false,
             "rank": null,
-            "reasoning": "답변 본문에 오가나셀피부과, 리더스피부과 등 여러 병원이 나열되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+            "reasoning": "답변 본문에서 여러 병원 예시가 제시되었으나 대상 병원은 언급되지 않았습니다.",
             "brands": [
               {
-                "name": "오가나셀피부과",
+                "name": "리더스피부과",
                 "isUs": false
               },
               {
-                "name": "리더스피부과",
+                "name": "웰스피부과",
+                "isUs": false
+              },
+              {
+                "name": "닥터스피부과",
+                "isUs": false
+              },
+              {
+                "name": "모델로피부과",
                 "isUs": false
               },
               {
@@ -144,57 +152,36 @@
                 "isUs": false
               },
               {
-                "name": "청담포레브의원",
+                "name": "오가나셀피부과",
                 "isUs": false
               },
               {
-                "name": "보스피부과의원",
+                "name": "바노바기",
                 "isUs": false
               },
               {
-                "name": "바노바기 피부과/성형외과",
-                "isUs": false
-              },
-              {
-                "name": "아이디병원",
-                "isUs": false
-              },
-              {
-                "name": "디에이성형외과",
+                "name": "디에이",
                 "isUs": false
               }
             ],
-            "citations": [
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJOk5Dg-0nyk1K35BS8yBPINIt3_U2OCttMNTPAvuzq_6KoleajBci0O8cvCGNVbZsZaUuEXoP4AJdp-eXKuN1_umlSklhachGOCKFPTwyMfD8GGCSRtg7d6my6Cml93aA6Zo0UABoVNhsnp5zOTxUSgpu0h6OGatxZZTwfn_BGA28jKZCNSfthkEYsQuOZlPm1vIvtgiKry-X4M7vrvJzQZbv5UD0bklnTE7WKPZ3ErKpyxZ9EW44JipA08KtL5LQN7Blmtfp8eJxh4iwZqcXWy6HvLGVasthYKYzGGbuVAK4gwe-TAbWGpV0ZoSAbyX_6YqIHyWbxLrzEThO",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsULaaasNkdh4Khadc2zxu4X67Dmk_b9Z7Hog2IoN7l_zU5OS7oZo6yV3-3TPEXS1oNzQBmUIj-YXwLA-Ea1X18zcrKdiU9ij-RhuO7tRKISzjSuU=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuVinBbAhoMk1zZ7aAIgTABAZETnyiC0bD1akjPLnM7JjQAnTTgeAuBSEsywhcoQNGU-Ewoqj_UMWFwx2K2ghSXru47ZNQ2rks8ir26BndwXVY2UHtGYDFrYvMvjjOSpOlEJngEWY5GKnXcmD11ZBMbViXHwncwUahd7lvEGjn0lAHdnRGkstH31Rnf61jzCGVy6p4HGgb5lwjB-WXrRDDWF599VXWofWdYPJMjyxY11fTUxss9AvJr9w__I0Oiln9MlJhm2uHQEZDZEhX--f1C-7TceNrLbBtDWQD3G6FZQN3L39v-a7zunK7_rC6ajakyB7KNdKAbt_ihQjub-h1TY8XNog5fybLLwOREkFtH1bDNaM=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5HYoVtLeJBPbvA9bYjtPs08NDarv9vaT81-u2UymEMifoDdbvp9gu_t5G3a4Woc9Aj-RmBHJSqEJUqDE73wfL7fFZEb-SbjTd5JniRPpdo4juqO2kLkLKcyZcxJdqc9SWEpPh_KThUg==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHO-HBYmXHbpPzTiYGSMXsZYajnUyLgdoYcEFapyj4X5_iB1-lzj4JCHZJZrB16hW1qYNS2j6zyIMHDKVplXvUDHPvwRhQ7MoTbWYKptHJ65ngXLAtrPeRBwTOGQHgEFKVgSAbSjZvSPOf1vc4OJygcA9yCjDkR7pR1",
-                "domain": "vertexaisearch.cloud.google.com"
-              }
-            ],
+            "citations": [],
             "error": false
           },
           {
-            "exposed": false,
+            "exposed": true,
             "rank": null,
-            "reasoning": "압구정 울쎄라 추천 병원 목록에 브이앤엠제이피부과가 언급되지 않았습니다.",
+            "reasoning": "Gemini 답변 본문의 압구정/인근 울쎄라 대표 유명 병원군 목록 첫 번째 항목으로 V&MJ피부과가 언급되었습니다.",
             "brands": [
               {
-                "name": "웰스피부과 (압구정본점)",
+                "name": "V&MJ피부과",
+                "isUs": true
+              },
+              {
+                "name": "모즈클리닉",
+                "isUs": false
+              },
+              {
+                "name": "BLS클리닉 압구정점",
                 "isUs": false
               },
               {
@@ -210,61 +197,53 @@
                 "isUs": false
               },
               {
-                "name": "BLS클리닉 (압구정점)",
+                "name": "브랜뉴클리닉",
                 "isUs": false
               },
               {
-                "name": "필로스의원",
+                "name": "심포니의원",
                 "isUs": false
               }
             ],
             "citations": [
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4E8UnHpmvb3w1xzZl3u7AqT5bM8V6tqG6Y8awS2u_do9lwxb77DR-1jx34hyB1kPuaCRW5itdejsdArPnowwQ2EpMXLGdynLmpBNHiq0TljkiQJpL94OGcVJwjOVbCbBqZ_C0fzBrfB238w==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBIO4rg41bgB3jQyzz4eJaY6Y74VgFwoKHcUWiM0Rpp2T1PT5pq6Ct-v2VISGNTFzH82juIAm8UjmeLnWlD6BcVumNlJeHUcDGxL-jmOtaitW29PK9VuTwUuiZyCX_8sPn",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvr5U9PRPEOoMluBggLtuZoTRT4wZquipw_59RBN5ecj9YaAeBYGjDeQFIqPpBfmWi2K-wLf0IQOoiQvyDaZp9xCZkHFQQ2G878NbEj9RXWwFYkimUdXMCUg==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrsGPB6B_ARt82HXZyO1mdqR6M51rmENcrNA85AzfWHYwCFBtQITppHeq4ZkQPmzBrncRT6-A-hFDP7yfs9WHLZV80oowLfwmSxcqGC8Y3JqSnGKC-sqaxYqLU9ZrmAtI0",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyBxPxRJ8hbdT_Q6nRCsHLxt_7qyAfAMLPLspEPhRyoXJ9C-7hpdRKjgF6Nv9Dt-nCBfxrqbR1hNiVbqzUm7kESpmo9MuL-NwJWbUKhw2gkJrCqnvyKmqGEsqoJIwT4S3l",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfdz0U1gxwaZJPoA3_rw1NeBInWWAo1odDbgOh7tL8HGositMqT8HjkrDH5AS8HhjMiGonQlwLevDK8ho6qwDuaZwNrStG0qPqvcdiZ7L7Zw==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWFgQeIS8oiYfEhyrpepcyCVQ7ePZAr_V10xJqEwXc-1ec7EV436fm6UBQWZRSGCyOBrbUviBV1r1u-1WmPYQCKgj7jG67Zw8QEEMILvFoZKIpdTv3EwGw1d6FXvVmuxL_1Zz813z9LEO8ag==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtMYIdF3YROl6w57ufrXWcxT9s-DhUZm_gPEor5HqFgmfTVupggGasq2WKbT7ziawGLYzobdZpiu3z4PNKXRxs7HNBt8b7ln3iKZUrnqlnyjQ__ginVHI9KtPO334-W6TzQibhaAcN2w==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0henEm0zMvBaj74setKRBeDeCiJRpbpO0J7fjXTTEOMocfsFY_mFZgCDcgm--X6eoSk9-oN6y7JbITw6doKuGCjALIsSSGHZ3xN2Pfg==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEj26ir2LGe6eiWbTcmPnGwkEDnDgibSIdkgGEd23jotQw71WMOfIuWAKFRpgHoOynmYNFNsNdTQC4NcLiPdcnD_R4bd1hUgQqTt9jbB3U8ho_z56984ONoTajt2TWoIEQjVARUCFXrzcM2MTv",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcMMNUMVXeJP-Ni6WyWnrlL1Grxfdsplx6-4N_M4PfPy7nH167AHOsCn2RMzp_ogp3YSLDWaeC7rtpodkKpKXcJ-yZ9RS615b-YO6dIe60HXp6sJE05T0ufTfTZ0ybIGF7iQhVtpdsYHhqeM5f",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7nRAemBXCy6BjXrrRBjDQYUQugXDd3acb2hWxJ7DdfjDQ2pIoJpthZJyQf0o4yd4-dEXvUxYzBYHOKBW6F6W69a9lL1wZTj7C2hQ5VQ==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX6IEKrKHccf2uEgGgXhHoPzw7gKPyzLWVlvFY4Hi-j8jlz9pEcqS9z_j9bMG0OpQIrsioo_-dk2ZNWIQosLKI2DyGOo2_maiT2vLaaSKXLES-0C34YLeSTpJ916fz9hj7oMxiTC0DjudSdMZcJ4-7XdAn",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZV4Ky6_JYjHLoO1xvhHruxWGaw24tPS80QAMrn-r-cCeymyLywhsiwfvdaZu6i7XUwvYCUz6ZMhZBBSEBGN9lZevYFo5IquAXfF7Nj7RGZwRfiL99gQ==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVHSBMv4cQGoj6lokAZVNF5BdObqodvx_4zFmE8DAy85yLI33-8BWKxZzfG0L5dD0L2F5MqdlCDvfPIOHFWqu_eEbzFU3nrkgEpFiiNdEgjvWKCBb4ug==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEucPjX8KsuDZxh-oFq3ZSfga3BtoYWizUCfZ4ZRfz_nFT9RjvHiUohE6CmqKn9OEXHn5FqNrK7CM1VMbUbNGBNrtSKrYeQXQlRrKSLCdCccd6ecNQKxB6J6U5mvMDd7fc=",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiawsdXPNmiNrnShkC3W37XN2h8C2XtSBezH65lnJ4H9azOMYXxtpg_-x6U29yq4lTaCSr7a8G8lwpdmXL_4g0S2q2ygR2GJ8cPfaTj_BzTQ3HYZU8B3Vn-544S0bZqfZzCtnYwSMhNQ==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGctQg3lJkwficBipU-hboHvDS-bzN5P5CAgc8EIEiduZWlBG0Z0zRdJlb5PZMpvTnPRV293DWicI_GhvN5KWgCD-EnzQAm_eoV9jo45oInwXCPcTrMqn2YtqufbUnWLpSPGvz0i-D0PEvl",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFJSGzTW0UOalRVXC0wRzfyAZt80Mg7c7m-A3Jf-dkRHtodjo1q-k2ux9moDqYceZEkhYjxiBOXFjRNRp6UapMkwU65PyagATDoTYtv2mtdgL-Lg==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlKdp-dGnqkC2AbLr2yNSJTM6BWsn_2Iq-Pw02We1EIfRPYWZu8m-T-uz6NHMUsAVL_N9tbIkABxRMinoFToBOXE1V6tPfKDZtpm-ga_FMAr72bbYINN3kdY015cW-acAWFgxRS-UFLJ25bdAbovJEnOyocGzaOzI1-GOq2sjxYpTtq6puZA5C2vYnKMQpZSH1ArhpzCz8mkC6ZQdKBXM=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlKdp-dGnqkC2AbLr2yNSJTM6BWsn_2Iq-Pw02We1EIfRPYWZu8m-T-uz6NHMUsAVL_N9tbIkABxRMinoFToBOXE1V6tPfKDZtpm-ga_FMAr72bbYINN3kdY015cW-acAWFgxRS-UFLJ25bdAbovJEnOyocGzaOzI1-GOq2sjxYpTtq6puZA5C2vYnKMQpZSH1ArhpzCz8mkC6ZQdKBXM=",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrti2ZIH6GyhMSF52qxRuN6-qqvaDuMHACkt8wnT5nj-cQQUyMgXqfnAE_iYoJW20nAm9DIyHlXz0r15cih61dHfhUrRtdTqoFPtpLRaEkrHjR7tkPGUppMeOySAfsqiAX",
                 "domain": "vertexaisearch.cloud.google.com"
               }
             ],
@@ -273,26 +252,10 @@
           {
             "exposed": false,
             "rank": null,
-            "reasoning": "답변 본문에서 여러 병원이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+            "reasoning": "답변 본문에 리더스피부과, 메이린클리닉 등 타 병원만 나열되었으며 브이앤엠제이피부과는 언급되지 않았습니다.",
             "brands": [
               {
-                "name": "닥터스피부과",
-                "isUs": false
-              },
-              {
                 "name": "리더스피부과",
-                "isUs": false
-              },
-              {
-                "name": "보스피부과",
-                "isUs": false
-              },
-              {
-                "name": "청담 스킨메디피부과",
-                "isUs": false
-              },
-              {
-                "name": "빌라드스킨피부과",
                 "isUs": false
               },
               {
@@ -300,121 +263,96 @@
                 "isUs": false
               },
               {
-                "name": "디에이치페이스업의원",
+                "name": "엠레드클리닉",
                 "isUs": false
               },
               {
-                "name": "W클리닉",
-                "isUs": false
-              }
-            ],
-            "citations": [
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-iW-oY5AmOYLFAebgnEyKknFW_cck0OuNf3zy4HR6wxjg4n8hDurSn4i603RwdIa7ZEefQgn62-LE1bWWNSiVEJonO7JpA8EtBKuRhHBs5ks=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkAAd_6hHqOtQ7FsCeXXrJuL-k-c-mm4x9paPS-FlAwAy31lhqGzbNpdzwwL6JUJWyZcF1-bPM0qXRKr-hZVDBILiGHmvVS3j05JR9KC3Rq_CCrrP5hisGkt2gb5vQ-I1_WgFk34ILLAQ7xvI6Nz9wj4yimsoU31cputcg0gp9FHBhY-KltCunolqO-j3A3fqAtJzJhiB_vT83rz_bQYDR0EqHSotq0oE0j6sLqZ6bw56BDxR7hMEdw2Lp_5m3AYl_8J1hMVjFWAVAmmp0cPtw0Zqq0Ta-ndBQVRakihBvHIt7eXuxOWE5PA1Z9Kgalyqpi-9Tgh7LhV29OIYO1jJKDvxuCInnnQsMapjxLUvtuqqgSAp7VaYsAMnlbW1p__5NHx1MofaZLyxEuhA6c1gLqcRo5FHm-R6eH6Q7InzdjtMB8jmYO3Kbq2ejVCSVB2VpuUEUMMhzw602fLjNXFJuCBHHWxqhQHXQaTa8M0-4aQASuuh7KT0OQ1cUXzmzHSdRuHJ-RjgrjjYa5hUwZZ3d-D4OOkpvLd6reCb0oB7cXVCTIMoj4phZxokskWiXim5FF8G0gdSW9b_yw-AgD4hIH71ZQ3bSQypF_WHdpT97rTuAFEau5RrSKsf4ns4qxdw074LCBJRt2Iaj-LtEiZSlR2Q3JaS4G7AE_thB6vzPpcQ4_sY_HHRSCqkI13cOs-K6QdDRy2WD8R2F6nR7iUW5mo0_AWl7Vdf3bbxgg8c0BAPpdf-QTpBrnmH3GkTHHr9bJS1BKMryM7lXuN_nUOOpt4bXPSQb80dthZsoahuAMXkrin92NB6UNLvLRCAycZJHetOBsDmqVE-poOIt-YHgisMFmv-nqo1sErPoW8gxO8O0M4ECLVtnxshGaHO30cFFRw1O543rLEaVmuDthl-JA5Klg0iOkOrobmsBo1vbDg==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJQLio2bWfRX0CvIey-MSjAfjn2gNhqBXNWLL35M-TdkJ8w4Qpt4M1hyZMz9h0PGcAGPUct9N-ojaM0gCAJMjGzoQvNv1BjocScN1L-GvHiVR-XYOqwqeSwLi6eS-ADZJoD81BPwA=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaWFyp7jqsHeArggbSNcGo9dYnHcFMLgOcxaV4_uRp6DZrr9ETMVOdpLvHqVZ3RwimeROYJmgodG3I-wIh7YtUDUEsbHUR4vVxjSX2c_V5ZMPdeFFOmI39tCMA-As=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw3r5Y-KvstqJe6TMGbrK32iDRTwvc-0G2ple_bPXEgv7Q1VVEG2Weud5fhC_PFBsEEYsSp0KsiChSaI1xix34OXI53EkZ7lp_yYQtS6ldmGMqEsNQV9OA-N5neuvv24NvzeNAHLQ=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF61Jt6rWGu100_YpdgZozK0Z7IWOO7vx80o7UCVJ4d4UFuo_L_fN4DCtw8ZnQCIZEAmTZx527QIiAOO0_txJDtVgf4JM-NPihLrOveT7yKTPLf2nO2G3gDKe5zhbq0Aef6",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu882KIguc-uj5VPj4T5FViqVo5jgljc6m7PQayJgJty48brGMUtWTZwex6bHt9wIPBr7I81S25A7WLUk-2vs6Iim8MorzQ2KyDctCvxgKLnc0sGmKW8p0M9GvaOVTc-lElA==",
-                "domain": "vertexaisearch.cloud.google.com"
-              }
-            ],
-            "error": false
-          },
-          {
-            "exposed": true,
-            "rank": null,
-            "reasoning": "답변 본문의 인지도 높은 병원 목록 표에서 V&MJ(브이앤엠제이)피부과가 추천 병원으로 언급되었습니다.",
-            "brands": [
-              {
-                "name": "레아주서울피부과",
+                "name": "닥터스피부과",
                 "isUs": false
               },
               {
-                "name": "위드윈피부과",
-                "isUs": false
-              },
-              {
-                "name": "파인드피부과",
-                "isUs": false
-              },
-              {
-                "name": "V&MJ(브이앤엠제이)피부과",
-                "isUs": true
-              },
-              {
-                "name": "더씨엘클리닉",
-                "isUs": false
-              },
-              {
-                "name": "로렐클리닉",
+                "name": "청담 오라클피부과",
                 "isUs": false
               }
             ],
-            "citations": [
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPG_hi_gMRzC_HhYbTzxU2KFxGWvDdSwNXjMkoqvmyaiAcaFPIp24pz3SFdkdXFpXnfSA_Tg2Cru5gv-oLhaCa7DZmBvZZGjnuhQ==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3pbLxBluaJxjsIYlkM4M7QCty5-D-R_bA-UVr6X5iQTT26InJTC9ZOzpgkgNXENv7eAE10FLRzZAUOqMVGOsgcAqCipOn23qlIpiS6g==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ihvUcJOt7y9NqsSKo3m8twJAf9r0ZpZkI4t5j7fnRNQ7b8HjASt2uaImixNT9JSUtdq4zBIJsk_OcrstrQHsV8grborJBy2g4X6sKifgZVyTH9yoXe-2tRC1Dhl0rVinmVItt-mzQMUH0nDLMw==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBB3_tVtNss1B6OLrSpqLwD56MGdPbACO--J_X3D8ICe8xWxpUkFkYvqlajGVaOwgBVnM_85yMReMwX1ce73xxLXOixJ3Ex1MD--T0y194tpLXLg==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0t-xJtQID873GldvPxAuMSpwLYoy4vgYk3YLOiiPBo5pq9hYAedu4c0P98BwhYGaNC1mvnwB4kiGssfS8Xy5QxWB6-Zfr0cy7MQLy804cG2p1R1ak_f3YC3OVhw==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvt0PrD7i1vBEjv5UIIdh54M5ObYn1CMA6CwQ5gJ_RvnxAjEeVBhHahtvrCWFZ61Ai6H50_IPcZFWEpEhrcDsn50pZh_ObGNwB9fd7A1S7fFwBbA==",
-                "domain": "vertexaisearch.cloud.google.com"
-              }
-            ],
+            "citations": [],
             "error": false
           },
           {
             "exposed": false,
             "rank": null,
-            "reasoning": "특정 병원을 추천하지 않고 울쎄라 시술 병원 선택 기준 및 밀집 지역 정보만 제공했습니다.",
-            "brands": [],
+            "reasoning": "답변 본문에 메이린의원, 리더스피부과 등 5곳의 병원이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+            "brands": [
+              {
+                "name": "메이린의원",
+                "isUs": false
+              },
+              {
+                "name": "리더스피부과",
+                "isUs": false
+              },
+              {
+                "name": "모델로피부과",
+                "isUs": false
+              },
+              {
+                "name": "BLS클리닉",
+                "isUs": false
+              },
+              {
+                "name": "오가나셀 피부과",
+                "isUs": false
+              }
+            ],
             "citations": [],
             "error": false
           },
           {
-            "exposed": true,
+            "exposed": false,
             "rank": null,
-            "reasoning": "본문 추천 병원 목록에 브이앤엠제이(V&MJ)가 직접 언급되었으나, 불릿 형태의 나열로 명확한 순위 서열은 제시되지 않았습니다.",
+            "reasoning": "답변 본문에 여러 추천 병원이 나열되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
             "brands": [
               {
                 "name": "모델로피부과",
                 "isUs": false
               },
+              {
+                "name": "보스피부과",
+                "isUs": false
+              },
+              {
+                "name": "닥터스피부과",
+                "isUs": false
+              },
+              {
+                "name": "리더스피부과",
+                "isUs": false
+              },
+              {
+                "name": "오가나셀피부과",
+                "isUs": false
+              },
+              {
+                "name": "쁨클리닉",
+                "isUs": false
+              },
+              {
+                "name": "아이디",
+                "isUs": false
+              },
+              {
+                "name": "바노바기",
+                "isUs": false
+              }
+            ],
+            "citations": [],
+            "error": false
+          },
+          {
+            "exposed": false,
+            "rank": null,
+            "reasoning": "리더스피부과, 닥터스피부과 등 타 병원 5곳이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+            "brands": [
               {
                 "name": "리더스피부과",
                 "isUs": false
@@ -424,57 +362,69 @@
                 "isUs": false
               },
               {
+                "name": "메이린클리닉",
+                "isUs": false
+              },
+              {
+                "name": "오가나셀피부과",
+                "isUs": false
+              },
+              {
                 "name": "바노바기 피부과",
                 "isUs": false
-              },
-              {
-                "name": "브이앤엠제이(V&MJ)",
-                "isUs": true
-              },
-              {
-                "name": "뉴엘클리닉",
-                "isUs": false
               }
             ],
-            "citations": [
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQR381PLnYnmwj9J_EDGb-AeIhu5glouZxyJFxElgSByYJGGH8KTnLFDGaqtyT2ElmLoCYypSisrxV_hSIfLE3HLCAqsDDF-AbEFmH59PEy2ObEOrb6wz7I8TD5oskgp6AeZ3pz6OE5A==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpzxzriwxOJ7OxpS_tmqnxyRL1ZbsGEn3uJallxcK4RVOEFdQxsJIM4MlBbVO4mR0DLHE4MvBJ4eWlBu2G8rjVq_fTJO1WvkolE0hOIuqz3OanxEuYynQcUUzM3HY=",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtPMzDHt9OpAotsWGN0VPJMezxbQj3Gg_CeBIkTRi0ejxoHlgHHNjskqcdwj0efxpIXcjCsG8t0tM9m67bbVfYSklHud8Oc3HSB8AyWvo5wDYMSg==",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyzEddXCrS2O4MIAGr9BdS1zjEQ6NG763COXtcDaI25_UF_slZJYjpBejymuZsO8b2lKbxgrvfBoD25_T4FxFgStGcrwydvcFCwwWbkmg_Ka2JyxJytxv07DMMgHf_X4UU",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjZbAbnhKflzACVDKB2JJ-FUFIm_3w48xrzhQCCddvOpvPo84UkJyAVr3i9S0knxfUcO9S9H5jZ9Vag0gGmTE-dYskARgrgdKJ35hezVXTyDwcIo2dny6bz43PlMNykNHO-9jbuK2bopbhp3D_3d_K",
-                "domain": "vertexaisearch.cloud.google.com"
-              },
-              {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoY4NJZ1TFUHQFOdsiota4am6zMGpXQvXgukRkFqHg_uIMe1uCducssZ41ZeUWtWp3ByxE7RIhgs2i6geljd71sES6fVJaiSOjen03OZvHfOZE8TxSSW4UAlI_SJIYKwU0",
-                "domain": "vertexaisearch.cloud.google.com"
-              }
-            ],
+            "citations": [],
             "error": false
           },
           {
-            "exposed": true,
+            "exposed": false,
             "rank": null,
-            "reasoning": "답변 본문의 대형 리프팅/안티에이징 특화 센터 목록에 V&MJ피부과가 언급되었으나 명확한 순위는 제시되지 않았습니다.",
+            "reasoning": "Gemini 답변 본문에 여러 피부과가 예시로 언급되었으나 브이앤엠제이피부과는 포함되지 않았습니다.",
             "brands": [
               {
                 "name": "모델로피부과",
                 "isUs": false
               },
               {
-                "name": "청담 린클리닉",
+                "name": "뮬피부과",
+                "isUs": false
+              },
+              {
+                "name": "드림피부과",
+                "isUs": false
+              },
+              {
+                "name": "보스피부과",
+                "isUs": false
+              },
+              {
+                "name": "리더스피부과",
+                "isUs": false
+              },
+              {
+                "name": "오라클피부과",
+                "isUs": false
+              },
+              {
+                "name": "바노바기피부과",
+                "isUs": false
+              },
+              {
+                "name": "차앤박피부과",
+                "isUs": false
+              }
+            ],
+            "citations": [],
+            "error": false
+          },
+          {
+            "exposed": false,
+            "rank": null,
+            "reasoning": "모델로피부과, 리더스피부과 등 여러 병원이 추천되었으나 브이앤엠제이피부과는 본문에 언급되지 않았습니다.",
+            "brands": [
+              {
+                "name": "모델로피부과",
                 "isUs": false
               },
               {
@@ -490,126 +440,118 @@
                 "isUs": false
               },
               {
-                "name": "아이디피부과",
+                "name": "메이린의원",
+                "isUs": false
+              },
+              {
+                "name": "바노바기피부과",
                 "isUs": false
               },
               {
                 "name": "오라클피부과",
                 "isUs": false
+              }
+            ],
+            "citations": [],
+            "error": false
+          },
+          {
+            "exposed": false,
+            "rank": null,
+            "reasoning": "특정 병원이나 원장을 추천하지 않고 일반적인 선택 기준과 팁만 제공하여 노출되지 않았습니다.",
+            "brands": [],
+            "citations": [],
+            "error": false
+          },
+          {
+            "exposed": false,
+            "rank": null,
+            "reasoning": "닥터스피부과, 스위츠피부과 등 타 병원 및 원장들이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+            "brands": [
+              {
+                "name": "닥터스피부과 신사점",
+                "isUs": false
               },
               {
-                "name": "V&MJ피부과",
-                "isUs": true
+                "name": "스위츠피부과의원",
+                "isUs": false
+              },
+              {
+                "name": "압구정 PHD피부과",
+                "isUs": false
+              },
+              {
+                "name": "청담스킨메디피부과",
+                "isUs": false
+              },
+              {
+                "name": "부산 뮬피부과",
+                "isUs": false
+              },
+              {
+                "name": "대구 범어로제피부과",
+                "isUs": false
               }
             ],
             "citations": [
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW1PESRmODv-c0GdKzNCv0jVavBfMX2_VdTElS77NPujy66BT9CQP3Na9QJ6FzcRe6vDYHrKvTQJadQBZeHP4veDiNCgrtpmOjtTwNHFb2H_H0ZAt7zWYHOO4=",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFh55uG8iiB2dgwJ4E_3gA4HRqAJgRXFiiDXyDlCRUI5fUl5iTdXdbNmqvu9__0bgKO1m4BbwRMY53EWC5zdkz5Rnm7i-crv2l3W-plxaIKjESza5uv5Pnw6OQ575FEIvK4-cfLMExqsv14jAu4mQKuLSgRz3dHN9H87ViWGLMfC0NG",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3VcHv6nFFOojPAMtqb0NFrW_4meCGp2HnYkNtGN2IB_7j19Gmyolog-NdLEi-NrWU3G9ZLmZGqWVyv1ThtPcMW2dlWRMXf8c-FVRkQosXUwFuWA0VGoGULaOisOjr4ybBNxZos2n9HhnuzLZjNxc24-V0NU7rZslHQPHLXG-dm40YMvnaq2yzvCzW_9V1Ks5Sc4p5wXnKbEoyUHPdJTwgaVCHlrsnh2YaDxSErvu-DD4m8uR9zGQGUdG7_OA-i9gNk_A784hxYMkNlsSjzMVf0aMQDqe5J83BI6RUkKz2wGk7Y0acF6sbWaWGp0fwG6oQhWk09bk94HJxHXNFS2i6yJmgFdg61km0Bmn52XUeXhJAhflripFxbSeb6bVxtwx3Eu8U8p10guSeg3YOGEqNpWvQHPiSs7_zaLzYVyfXyfyHkeTU4F2yQzG-8t1jcpH5mP8_L4k-koUGzjOTsYKoq0ttO36vxlUua4sXI8ghHFB_XJgO5xfaKO2KpCGQPZqeC0sc_kHj6Bv1beBo6lrgnUVYaKrIGOwPAEWhj-UkuPkHdZNkHU_dFhoo905jrPem83RX8Knhvnb2umuPfXManFFp5xeqbEExIL13ZQ8fxyvNMf0J4RcAwO23u-UFdBT6Bt4TuhyfwaG7Pspr7UffbHB4q1edKAa5nkGi6yuDCKWQhyQjWOcmtNBXJPk4I8aLQq63esXWHGdMSpovdE84i6IDStKRvPkb0nISHsk7uhZ3NAiZkr5HockzrEDypZrL3Y4GBeHso9PfFCUG4ZK0XlnpF9JuRwLjeSqODlyXBi0gdfTkyJKYUYEoIUWbHdIM8quamCtMhHCA2MeuJUaClkn6Ia9etMVO1FGD9B1pDzph7DISxzRoumSCvxzZCInUq8CZ220eI3aCC8UJL0bQ5nV9fn7Ubj3JjP8kRz6sVA==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEnHS19czdqpMBLJXTuwG_v3SQJUvlRitey71MpxOcdVmJ7LHSs3gStu2V_vh_Ph3xYJ_vrE4MqA1tmWQ2_cCACyLqSCTUeqJxFka6sE5eRcBMU_fxpRMMM0BY",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN5cD8slN84q3KUxyJly1Akgb_atsCQBJf429a7mk5Mwx1fPU6fToTlR9rbw_BabvxtKB4FVcavqLR-NowM0cCYzOElCbltO8FQRTBegz-oyjKf_m0RFOkgvBDX0Q=",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsVggMDcugnpzbmUdkFrF8_U7sumJ2ad4EQ-ZXEXaj7SOsJpdauSiTlseNdfCHYyhRDXs81aRji91AeoqnWtpNbJ3wdEU57TW3W26-_-y9njrOqG0d-Z5O1xgg6iU=",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWb02b4pC44ujju9FcGHPu7tv2nM2lHLXmWAeXPkp7CirujMKP2GAyKvm-RgbCjLXG5B6laSAuaN4u9AELvxxdlTk1e7l4ieYFCVc1Ebubnxw2UiZKRKLTlX9Ln4oL4Iw6gLfgnoeW8BPrWcyUU5-C3UQ_6nnrS45-DNegFElAVka9QpLRyNrXpQ==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGd6XbNq3rZMLT9vBmRDLAhCzAQbOiTCvQqb0qeQdV5Cz7yS_XUOVOABzhX6fe03yzNWIShAS1zxfnDOp61v_6P9h7fRTbZUcfHuhQbfHvjm-7Ow2zEKT6LPEi1AdRkvVT_LzBG_gv9HQ==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHmkl8TcV_46BXSkvgb3qgi4WnwP8XjNR9RIX7z_7zd0vHqso7FOSh8N2MUNsyBHTncsoXoH4MgJjL6_E40bI9PDTe8Z1A8Y4bPI6G80OjxELFy_Aq5pvKADUPRYBWXj9yrciH4YL11KAjXRv2eW1_IFx3SzMwoQotf8jGolAwSoeyIeSYdpOkxBDhSuc7MOjoEVw=",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtAGiXu8RwjnngdwhQ_0VPN6LiaW6wwTdqGtDZQn7Th3F2cQjs4uZ32yKffzxuy326xRQSH5QOxQuBa4jskiCBIvz9jQpII11DAxxk1y5Y-Fdu1WTG",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBi2V-dvRMuEA0epvAa7Tpw-tdYmN1cDNqT9qagTIDH8j1uhQ38UxLaMI7HvSEmrH5TGB9mkFu_V835M1FKmm3PAr2QsmAgrEuDwrlYh-Df0M_i2UgIrPsSo4YwclKL-a1",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnJLOCa3a8yn6SCAr6f8VEjz3gQdwQ2A3maJ5ijoPz_f5JRzJYNb1vJ6dlOnwG6CSG4f-JFHI60t9bWgH2MAS1lBbebADgA5Pg_5yZ7RJUZzBrM8T9nDS0O4_cj2Y=",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2XGFYpoLdoUTDyGs60njGuZCImwKRokqJMAbTiRu59kBZQdbS0Y4YbuF0Q_fd40F5Lu1y2v_Gmw9JXgYbDLF_cL2ZD891THa3Q5ZcMNhH9a8YhQ==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGm1vLnl_mso1fkhwOCpJoETKoIE0A29vZqEng6GxekiMlmtgcd7plHWgrVC0pXtmLv90oTX60L1fRIAEIgu3RQEpQ5JCVmKXTTblgHPr_kwa0wgoDglsmKz9LI-f8wt788",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiJpa9zDFaptaB3axgMENz5OTU6S60bgDcIlNL45Xc6LWfCb1vRCQ9WlDHXQBZ671GP82RrDXNBs9IwB_imwa7mc2xpr8pgdh9oPJV_5qPTaWrG0rZ0JNLPR2zSsmC7fkzT2kgaZQCAPQq2dbvUg==",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSwRriQ2MvoE_deGYhgl-TxDaPbyCaXjYMFOTf26rNIbqP_nK8VsLwkbN8sEu-nA2WiPogFHZQbywAoK9jKTPb_I8qHF1exoOBZX6FN3V6aUSX_TSO3BPfHbhs6EEdfZJVhYqENQA8DZ1qKTZ9eQ==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGm-SA4pVUt_OqM0edQazJrvbzeR3y1Rf91y41xQ5YpsFc-rO8f0iuGS6x93Os1DyxBIFAbeo52lWvVHRCf-2U6GFSy2olKJcbaEraPDMbi8ZErtpKJ",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfVBtsjsydPn-t9c0ecOyhAvdgIipqIC6hQhO_ifbnE2PcTY4kXbneKlaK7XS5ATc1wQ2gxCmH_y1DdEw-y5sUYrW19HZk8ZwWnjvuzLoQExYsDNbXkq3-zTlBCfW9_C0OEJcM34uLbgmhLmT0UwXLDei3xPnRI2owfI70LkLcPdyanpJ2-7i_Y1oLAl4NvX2GFR_uKvVIsYZCeHS8molv5k0oZ8hbbwyTKTO5azTev6ZEcC8memtFB3BDAauALTOU29-H-s9bQOclvuACDwCvL8tQwm5AZ1uIxsBdHnld6TXKr6euBt9vRkT-TH8DuGjihsp64krOK23GZT5P5-gsJ-Ufz9OwRm29AOy2r2iWHhHjDNAhfcFitToJ-mOjSbh1Gi1eD9b-htDWKWjyZ8RbxsKfDPYuR_RZsUThMAHUhJRIn29Bq4mcuyXarhNFHmCKwc-l-xA_NZAuofgg8D5TSH5Ou0dyregqdK-4C8Z0UqBdyXi_PqNqKyfM0e5iJDVdcEGZUe6VXtKo05TMEyWc6OJDiYzWOQxDNkxBIwd1Olv4Jxx3Gd7f8PH7jD-6dBAYN8M1wLU3TZaeJyJ6qAq_8nk7JO0zWIXmF2SV_4bpdcMJausHhIcJ4ixIiqtvCGjZdX0c-EEZGZrdklg3Bn0rHeHMGkT0pao-z3GA5Go3khVJFBIVf8Po6j6GEkXrpoXhsgyepteExiKGCYKn4LrIWPoer9Iq7SA_DN9iRe9xcEw39PcGuZQNUmt34JfT9hDee_UYt4natsj12NGdkSwAvYeGg6WPW29zlNimeRa458wdLkuULVohZnczUTawhd-JBv-ioU1pFEULhxtNtkDgs0rWDFE87zWV6dkPPwaJYVFT-qzXmtKnsQBt2YRrQdLl1pkTppYdGuTzuCFXhywj2kL_uCb-wVMfjKdXHzoGTQ==",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ1k61hVYVZeGOuCW1zJwPuxH-2PIjIlFS-NG1qAjDs1bBW0eKgpHNv3Z9VacoedTsuTSsiSaSzyePeJdoooZHuCxg9AekVYIm_yT13YZk0Yzt_DmfP321eE0gfmcAT3daebotUm8=",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEx_r1sNnZBsU_8sqkRci2dzsLbb2_m9WmOWyggQTG8oXSaMbpXcR2AwH_Gt0DHWxkqDl8wflVkWkYPu9I-POL1ks6c4wgtF6zrcnDQvZ4zGh7IIQGCeQLB4k8UxzJr4olIvaKCzY5emuhwMtLNeW4izHvucLljKEysFAnm-ApU-27Ud4_T4LPHlMkCKLd5JPqbZQc=",
                 "domain": "vertexaisearch.cloud.google.com"
               },
               {
-                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaDHxt_8OvadmX21pZCxqpNNCO8lA9rBhn7K2hw30dl3VjicUYZfohArmv02l7Ps9SbQk2m0s6dLTxYS5KrWMgRIQWs0L-StP3stKrXUhS9rvRymkO1OpUvDb4",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6RpatJV4lzMfwKP6CcG2LeABJ3y6JgD4_8KVbcq_W5k59DwE7BW6ErgTC5RAN0umfIfoq2SJp2tmYps1ty8banJ356ZICckZTPQdKfiJ7oVEsyMnxfgyzsotnGsoztQz8h3zr9Q==",
+                "domain": "vertexaisearch.cloud.google.com"
+              },
+              {
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFuQ1q2yWjNPmGVq1CR3qkEGh6F9I-EJ8TKDLDgFr_C5JUm_MHUjztsXXZyzs0HqwEiQE66fYi6hJZ-K9-APtyWSOZMrKD313cn3o_3jVQj0k=",
                 "domain": "vertexaisearch.cloud.google.com"
               }
             ],
-            "error": false
-          },
-          {
-            "exposed": false,
-            "rank": null,
-            "reasoning": "답변 본문에서 오가나셀피부과, 모델로피부과 등 여러 병원이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
-            "brands": [
-              {
-                "name": "오가나셀 피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "모델로 피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "청담 닥터스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "보스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "닥터스피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "뮬피부과의원",
-                "isUs": false
-              },
-              {
-                "name": "드레스피부과의원",
-                "isUs": false
-              }
-            ],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
-            "rank": null,
-            "reasoning": "본문에서 특정 병원이나 원장을 언급하지 않고 울쎄라 시술 선택 기준과 찾는 방법만 안내했습니다.",
-            "brands": [],
-            "citations": [],
-            "error": false
-          },
-          {
-            "exposed": false,
-            "rank": null,
-            "reasoning": "특정 병원이나 원장을 언급하지 않고 써마지 시술 병원 및 원장 선택 기준만을 안내했습니다.",
-            "brands": [],
-            "citations": [],
             "error": false
           }
         ],
         "stats": {
           "total": 10,
-          "exposed": 3,
+          "exposed": 1,
           "top3": 0,
           "top1": 0,
-          "expPct": 30,
+          "expPct": 10,
           "top3Pct": 0,
           "top1Pct": 0
         }
@@ -2145,7 +2087,7 @@
     },
     {
       "date": "2026-09-04",
-      "generatedAt": "2026-09-04T04:55:59.550Z",
+      "generatedAt": "2026-09-04T23:06:27.572Z",
       "questions": [
         "강남 울쎄라 잘하는 병원 추천해줘",
         "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -2273,14 +2215,22 @@
             {
               "exposed": false,
               "rank": null,
-              "reasoning": "답변 본문에 오가나셀피부과, 리더스피부과 등 여러 병원이 나열되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+              "reasoning": "답변 본문에서 여러 병원 예시가 제시되었으나 대상 병원은 언급되지 않았습니다.",
               "brands": [
                 {
-                  "name": "오가나셀피부과",
+                  "name": "리더스피부과",
                   "isUs": false
                 },
                 {
-                  "name": "리더스피부과",
+                  "name": "웰스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "닥터스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "모델로피부과",
                   "isUs": false
                 },
                 {
@@ -2288,57 +2238,36 @@
                   "isUs": false
                 },
                 {
-                  "name": "청담포레브의원",
+                  "name": "오가나셀피부과",
                   "isUs": false
                 },
                 {
-                  "name": "보스피부과의원",
+                  "name": "바노바기",
                   "isUs": false
                 },
                 {
-                  "name": "바노바기 피부과/성형외과",
-                  "isUs": false
-                },
-                {
-                  "name": "아이디병원",
-                  "isUs": false
-                },
-                {
-                  "name": "디에이성형외과",
+                  "name": "디에이",
                   "isUs": false
                 }
               ],
-              "citations": [
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJOk5Dg-0nyk1K35BS8yBPINIt3_U2OCttMNTPAvuzq_6KoleajBci0O8cvCGNVbZsZaUuEXoP4AJdp-eXKuN1_umlSklhachGOCKFPTwyMfD8GGCSRtg7d6my6Cml93aA6Zo0UABoVNhsnp5zOTxUSgpu0h6OGatxZZTwfn_BGA28jKZCNSfthkEYsQuOZlPm1vIvtgiKry-X4M7vrvJzQZbv5UD0bklnTE7WKPZ3ErKpyxZ9EW44JipA08KtL5LQN7Blmtfp8eJxh4iwZqcXWy6HvLGVasthYKYzGGbuVAK4gwe-TAbWGpV0ZoSAbyX_6YqIHyWbxLrzEThO",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsULaaasNkdh4Khadc2zxu4X67Dmk_b9Z7Hog2IoN7l_zU5OS7oZo6yV3-3TPEXS1oNzQBmUIj-YXwLA-Ea1X18zcrKdiU9ij-RhuO7tRKISzjSuU=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuVinBbAhoMk1zZ7aAIgTABAZETnyiC0bD1akjPLnM7JjQAnTTgeAuBSEsywhcoQNGU-Ewoqj_UMWFwx2K2ghSXru47ZNQ2rks8ir26BndwXVY2UHtGYDFrYvMvjjOSpOlEJngEWY5GKnXcmD11ZBMbViXHwncwUahd7lvEGjn0lAHdnRGkstH31Rnf61jzCGVy6p4HGgb5lwjB-WXrRDDWF599VXWofWdYPJMjyxY11fTUxss9AvJr9w__I0Oiln9MlJhm2uHQEZDZEhX--f1C-7TceNrLbBtDWQD3G6FZQN3L39v-a7zunK7_rC6ajakyB7KNdKAbt_ihQjub-h1TY8XNog5fybLLwOREkFtH1bDNaM=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5HYoVtLeJBPbvA9bYjtPs08NDarv9vaT81-u2UymEMifoDdbvp9gu_t5G3a4Woc9Aj-RmBHJSqEJUqDE73wfL7fFZEb-SbjTd5JniRPpdo4juqO2kLkLKcyZcxJdqc9SWEpPh_KThUg==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHO-HBYmXHbpPzTiYGSMXsZYajnUyLgdoYcEFapyj4X5_iB1-lzj4JCHZJZrB16hW1qYNS2j6zyIMHDKVplXvUDHPvwRhQ7MoTbWYKptHJ65ngXLAtrPeRBwTOGQHgEFKVgSAbSjZvSPOf1vc4OJygcA9yCjDkR7pR1",
-                  "domain": "vertexaisearch.cloud.google.com"
-                }
-              ],
+              "citations": [],
               "error": false
             },
             {
-              "exposed": false,
+              "exposed": true,
               "rank": null,
-              "reasoning": "압구정 울쎄라 추천 병원 목록에 브이앤엠제이피부과가 언급되지 않았습니다.",
+              "reasoning": "Gemini 답변 본문의 압구정/인근 울쎄라 대표 유명 병원군 목록 첫 번째 항목으로 V&MJ피부과가 언급되었습니다.",
               "brands": [
                 {
-                  "name": "웰스피부과 (압구정본점)",
+                  "name": "V&MJ피부과",
+                  "isUs": true
+                },
+                {
+                  "name": "모즈클리닉",
+                  "isUs": false
+                },
+                {
+                  "name": "BLS클리닉 압구정점",
                   "isUs": false
                 },
                 {
@@ -2354,61 +2283,53 @@
                   "isUs": false
                 },
                 {
-                  "name": "BLS클리닉 (압구정점)",
+                  "name": "브랜뉴클리닉",
                   "isUs": false
                 },
                 {
-                  "name": "필로스의원",
+                  "name": "심포니의원",
                   "isUs": false
                 }
               ],
               "citations": [
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4E8UnHpmvb3w1xzZl3u7AqT5bM8V6tqG6Y8awS2u_do9lwxb77DR-1jx34hyB1kPuaCRW5itdejsdArPnowwQ2EpMXLGdynLmpBNHiq0TljkiQJpL94OGcVJwjOVbCbBqZ_C0fzBrfB238w==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBIO4rg41bgB3jQyzz4eJaY6Y74VgFwoKHcUWiM0Rpp2T1PT5pq6Ct-v2VISGNTFzH82juIAm8UjmeLnWlD6BcVumNlJeHUcDGxL-jmOtaitW29PK9VuTwUuiZyCX_8sPn",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvr5U9PRPEOoMluBggLtuZoTRT4wZquipw_59RBN5ecj9YaAeBYGjDeQFIqPpBfmWi2K-wLf0IQOoiQvyDaZp9xCZkHFQQ2G878NbEj9RXWwFYkimUdXMCUg==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrsGPB6B_ARt82HXZyO1mdqR6M51rmENcrNA85AzfWHYwCFBtQITppHeq4ZkQPmzBrncRT6-A-hFDP7yfs9WHLZV80oowLfwmSxcqGC8Y3JqSnGKC-sqaxYqLU9ZrmAtI0",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyBxPxRJ8hbdT_Q6nRCsHLxt_7qyAfAMLPLspEPhRyoXJ9C-7hpdRKjgF6Nv9Dt-nCBfxrqbR1hNiVbqzUm7kESpmo9MuL-NwJWbUKhw2gkJrCqnvyKmqGEsqoJIwT4S3l",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfdz0U1gxwaZJPoA3_rw1NeBInWWAo1odDbgOh7tL8HGositMqT8HjkrDH5AS8HhjMiGonQlwLevDK8ho6qwDuaZwNrStG0qPqvcdiZ7L7Zw==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWFgQeIS8oiYfEhyrpepcyCVQ7ePZAr_V10xJqEwXc-1ec7EV436fm6UBQWZRSGCyOBrbUviBV1r1u-1WmPYQCKgj7jG67Zw8QEEMILvFoZKIpdTv3EwGw1d6FXvVmuxL_1Zz813z9LEO8ag==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtMYIdF3YROl6w57ufrXWcxT9s-DhUZm_gPEor5HqFgmfTVupggGasq2WKbT7ziawGLYzobdZpiu3z4PNKXRxs7HNBt8b7ln3iKZUrnqlnyjQ__ginVHI9KtPO334-W6TzQibhaAcN2w==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0henEm0zMvBaj74setKRBeDeCiJRpbpO0J7fjXTTEOMocfsFY_mFZgCDcgm--X6eoSk9-oN6y7JbITw6doKuGCjALIsSSGHZ3xN2Pfg==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEj26ir2LGe6eiWbTcmPnGwkEDnDgibSIdkgGEd23jotQw71WMOfIuWAKFRpgHoOynmYNFNsNdTQC4NcLiPdcnD_R4bd1hUgQqTt9jbB3U8ho_z56984ONoTajt2TWoIEQjVARUCFXrzcM2MTv",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcMMNUMVXeJP-Ni6WyWnrlL1Grxfdsplx6-4N_M4PfPy7nH167AHOsCn2RMzp_ogp3YSLDWaeC7rtpodkKpKXcJ-yZ9RS615b-YO6dIe60HXp6sJE05T0ufTfTZ0ybIGF7iQhVtpdsYHhqeM5f",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7nRAemBXCy6BjXrrRBjDQYUQugXDd3acb2hWxJ7DdfjDQ2pIoJpthZJyQf0o4yd4-dEXvUxYzBYHOKBW6F6W69a9lL1wZTj7C2hQ5VQ==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX6IEKrKHccf2uEgGgXhHoPzw7gKPyzLWVlvFY4Hi-j8jlz9pEcqS9z_j9bMG0OpQIrsioo_-dk2ZNWIQosLKI2DyGOo2_maiT2vLaaSKXLES-0C34YLeSTpJ916fz9hj7oMxiTC0DjudSdMZcJ4-7XdAn",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZV4Ky6_JYjHLoO1xvhHruxWGaw24tPS80QAMrn-r-cCeymyLywhsiwfvdaZu6i7XUwvYCUz6ZMhZBBSEBGN9lZevYFo5IquAXfF7Nj7RGZwRfiL99gQ==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVHSBMv4cQGoj6lokAZVNF5BdObqodvx_4zFmE8DAy85yLI33-8BWKxZzfG0L5dD0L2F5MqdlCDvfPIOHFWqu_eEbzFU3nrkgEpFiiNdEgjvWKCBb4ug==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEucPjX8KsuDZxh-oFq3ZSfga3BtoYWizUCfZ4ZRfz_nFT9RjvHiUohE6CmqKn9OEXHn5FqNrK7CM1VMbUbNGBNrtSKrYeQXQlRrKSLCdCccd6ecNQKxB6J6U5mvMDd7fc=",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiawsdXPNmiNrnShkC3W37XN2h8C2XtSBezH65lnJ4H9azOMYXxtpg_-x6U29yq4lTaCSr7a8G8lwpdmXL_4g0S2q2ygR2GJ8cPfaTj_BzTQ3HYZU8B3Vn-544S0bZqfZzCtnYwSMhNQ==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGctQg3lJkwficBipU-hboHvDS-bzN5P5CAgc8EIEiduZWlBG0Z0zRdJlb5PZMpvTnPRV293DWicI_GhvN5KWgCD-EnzQAm_eoV9jo45oInwXCPcTrMqn2YtqufbUnWLpSPGvz0i-D0PEvl",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFJSGzTW0UOalRVXC0wRzfyAZt80Mg7c7m-A3Jf-dkRHtodjo1q-k2ux9moDqYceZEkhYjxiBOXFjRNRp6UapMkwU65PyagATDoTYtv2mtdgL-Lg==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlKdp-dGnqkC2AbLr2yNSJTM6BWsn_2Iq-Pw02We1EIfRPYWZu8m-T-uz6NHMUsAVL_N9tbIkABxRMinoFToBOXE1V6tPfKDZtpm-ga_FMAr72bbYINN3kdY015cW-acAWFgxRS-UFLJ25bdAbovJEnOyocGzaOzI1-GOq2sjxYpTtq6puZA5C2vYnKMQpZSH1ArhpzCz8mkC6ZQdKBXM=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlKdp-dGnqkC2AbLr2yNSJTM6BWsn_2Iq-Pw02We1EIfRPYWZu8m-T-uz6NHMUsAVL_N9tbIkABxRMinoFToBOXE1V6tPfKDZtpm-ga_FMAr72bbYINN3kdY015cW-acAWFgxRS-UFLJ25bdAbovJEnOyocGzaOzI1-GOq2sjxYpTtq6puZA5C2vYnKMQpZSH1ArhpzCz8mkC6ZQdKBXM=",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrti2ZIH6GyhMSF52qxRuN6-qqvaDuMHACkt8wnT5nj-cQQUyMgXqfnAE_iYoJW20nAm9DIyHlXz0r15cih61dHfhUrRtdTqoFPtpLRaEkrHjR7tkPGUppMeOySAfsqiAX",
                   "domain": "vertexaisearch.cloud.google.com"
                 }
               ],
@@ -2417,26 +2338,10 @@
             {
               "exposed": false,
               "rank": null,
-              "reasoning": "답변 본문에서 여러 병원이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+              "reasoning": "답변 본문에 리더스피부과, 메이린클리닉 등 타 병원만 나열되었으며 브이앤엠제이피부과는 언급되지 않았습니다.",
               "brands": [
                 {
-                  "name": "닥터스피부과",
-                  "isUs": false
-                },
-                {
                   "name": "리더스피부과",
-                  "isUs": false
-                },
-                {
-                  "name": "보스피부과",
-                  "isUs": false
-                },
-                {
-                  "name": "청담 스킨메디피부과",
-                  "isUs": false
-                },
-                {
-                  "name": "빌라드스킨피부과",
                   "isUs": false
                 },
                 {
@@ -2444,121 +2349,96 @@
                   "isUs": false
                 },
                 {
-                  "name": "디에이치페이스업의원",
+                  "name": "엠레드클리닉",
                   "isUs": false
                 },
                 {
-                  "name": "W클리닉",
-                  "isUs": false
-                }
-              ],
-              "citations": [
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-iW-oY5AmOYLFAebgnEyKknFW_cck0OuNf3zy4HR6wxjg4n8hDurSn4i603RwdIa7ZEefQgn62-LE1bWWNSiVEJonO7JpA8EtBKuRhHBs5ks=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkAAd_6hHqOtQ7FsCeXXrJuL-k-c-mm4x9paPS-FlAwAy31lhqGzbNpdzwwL6JUJWyZcF1-bPM0qXRKr-hZVDBILiGHmvVS3j05JR9KC3Rq_CCrrP5hisGkt2gb5vQ-I1_WgFk34ILLAQ7xvI6Nz9wj4yimsoU31cputcg0gp9FHBhY-KltCunolqO-j3A3fqAtJzJhiB_vT83rz_bQYDR0EqHSotq0oE0j6sLqZ6bw56BDxR7hMEdw2Lp_5m3AYl_8J1hMVjFWAVAmmp0cPtw0Zqq0Ta-ndBQVRakihBvHIt7eXuxOWE5PA1Z9Kgalyqpi-9Tgh7LhV29OIYO1jJKDvxuCInnnQsMapjxLUvtuqqgSAp7VaYsAMnlbW1p__5NHx1MofaZLyxEuhA6c1gLqcRo5FHm-R6eH6Q7InzdjtMB8jmYO3Kbq2ejVCSVB2VpuUEUMMhzw602fLjNXFJuCBHHWxqhQHXQaTa8M0-4aQASuuh7KT0OQ1cUXzmzHSdRuHJ-RjgrjjYa5hUwZZ3d-D4OOkpvLd6reCb0oB7cXVCTIMoj4phZxokskWiXim5FF8G0gdSW9b_yw-AgD4hIH71ZQ3bSQypF_WHdpT97rTuAFEau5RrSKsf4ns4qxdw074LCBJRt2Iaj-LtEiZSlR2Q3JaS4G7AE_thB6vzPpcQ4_sY_HHRSCqkI13cOs-K6QdDRy2WD8R2F6nR7iUW5mo0_AWl7Vdf3bbxgg8c0BAPpdf-QTpBrnmH3GkTHHr9bJS1BKMryM7lXuN_nUOOpt4bXPSQb80dthZsoahuAMXkrin92NB6UNLvLRCAycZJHetOBsDmqVE-poOIt-YHgisMFmv-nqo1sErPoW8gxO8O0M4ECLVtnxshGaHO30cFFRw1O543rLEaVmuDthl-JA5Klg0iOkOrobmsBo1vbDg==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJQLio2bWfRX0CvIey-MSjAfjn2gNhqBXNWLL35M-TdkJ8w4Qpt4M1hyZMz9h0PGcAGPUct9N-ojaM0gCAJMjGzoQvNv1BjocScN1L-GvHiVR-XYOqwqeSwLi6eS-ADZJoD81BPwA=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaWFyp7jqsHeArggbSNcGo9dYnHcFMLgOcxaV4_uRp6DZrr9ETMVOdpLvHqVZ3RwimeROYJmgodG3I-wIh7YtUDUEsbHUR4vVxjSX2c_V5ZMPdeFFOmI39tCMA-As=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw3r5Y-KvstqJe6TMGbrK32iDRTwvc-0G2ple_bPXEgv7Q1VVEG2Weud5fhC_PFBsEEYsSp0KsiChSaI1xix34OXI53EkZ7lp_yYQtS6ldmGMqEsNQV9OA-N5neuvv24NvzeNAHLQ=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF61Jt6rWGu100_YpdgZozK0Z7IWOO7vx80o7UCVJ4d4UFuo_L_fN4DCtw8ZnQCIZEAmTZx527QIiAOO0_txJDtVgf4JM-NPihLrOveT7yKTPLf2nO2G3gDKe5zhbq0Aef6",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu882KIguc-uj5VPj4T5FViqVo5jgljc6m7PQayJgJty48brGMUtWTZwex6bHt9wIPBr7I81S25A7WLUk-2vs6Iim8MorzQ2KyDctCvxgKLnc0sGmKW8p0M9GvaOVTc-lElA==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                }
-              ],
-              "error": false
-            },
-            {
-              "exposed": true,
-              "rank": null,
-              "reasoning": "답변 본문의 인지도 높은 병원 목록 표에서 V&MJ(브이앤엠제이)피부과가 추천 병원으로 언급되었습니다.",
-              "brands": [
-                {
-                  "name": "레아주서울피부과",
+                  "name": "닥터스피부과",
                   "isUs": false
                 },
                 {
-                  "name": "위드윈피부과",
-                  "isUs": false
-                },
-                {
-                  "name": "파인드피부과",
-                  "isUs": false
-                },
-                {
-                  "name": "V&MJ(브이앤엠제이)피부과",
-                  "isUs": true
-                },
-                {
-                  "name": "더씨엘클리닉",
-                  "isUs": false
-                },
-                {
-                  "name": "로렐클리닉",
+                  "name": "청담 오라클피부과",
                   "isUs": false
                 }
               ],
-              "citations": [
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPG_hi_gMRzC_HhYbTzxU2KFxGWvDdSwNXjMkoqvmyaiAcaFPIp24pz3SFdkdXFpXnfSA_Tg2Cru5gv-oLhaCa7DZmBvZZGjnuhQ==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3pbLxBluaJxjsIYlkM4M7QCty5-D-R_bA-UVr6X5iQTT26InJTC9ZOzpgkgNXENv7eAE10FLRzZAUOqMVGOsgcAqCipOn23qlIpiS6g==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ihvUcJOt7y9NqsSKo3m8twJAf9r0ZpZkI4t5j7fnRNQ7b8HjASt2uaImixNT9JSUtdq4zBIJsk_OcrstrQHsV8grborJBy2g4X6sKifgZVyTH9yoXe-2tRC1Dhl0rVinmVItt-mzQMUH0nDLMw==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBB3_tVtNss1B6OLrSpqLwD56MGdPbACO--J_X3D8ICe8xWxpUkFkYvqlajGVaOwgBVnM_85yMReMwX1ce73xxLXOixJ3Ex1MD--T0y194tpLXLg==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0t-xJtQID873GldvPxAuMSpwLYoy4vgYk3YLOiiPBo5pq9hYAedu4c0P98BwhYGaNC1mvnwB4kiGssfS8Xy5QxWB6-Zfr0cy7MQLy804cG2p1R1ak_f3YC3OVhw==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvt0PrD7i1vBEjv5UIIdh54M5ObYn1CMA6CwQ5gJ_RvnxAjEeVBhHahtvrCWFZ61Ai6H50_IPcZFWEpEhrcDsn50pZh_ObGNwB9fd7A1S7fFwBbA==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                }
-              ],
+              "citations": [],
               "error": false
             },
             {
               "exposed": false,
               "rank": null,
-              "reasoning": "특정 병원을 추천하지 않고 울쎄라 시술 병원 선택 기준 및 밀집 지역 정보만 제공했습니다.",
-              "brands": [],
+              "reasoning": "답변 본문에 메이린의원, 리더스피부과 등 5곳의 병원이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+              "brands": [
+                {
+                  "name": "메이린의원",
+                  "isUs": false
+                },
+                {
+                  "name": "리더스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "모델로피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "BLS클리닉",
+                  "isUs": false
+                },
+                {
+                  "name": "오가나셀 피부과",
+                  "isUs": false
+                }
+              ],
               "citations": [],
               "error": false
             },
             {
-              "exposed": true,
+              "exposed": false,
               "rank": null,
-              "reasoning": "본문 추천 병원 목록에 브이앤엠제이(V&MJ)가 직접 언급되었으나, 불릿 형태의 나열로 명확한 순위 서열은 제시되지 않았습니다.",
+              "reasoning": "답변 본문에 여러 추천 병원이 나열되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
               "brands": [
                 {
                   "name": "모델로피부과",
                   "isUs": false
                 },
+                {
+                  "name": "보스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "닥터스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "리더스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "오가나셀피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "쁨클리닉",
+                  "isUs": false
+                },
+                {
+                  "name": "아이디",
+                  "isUs": false
+                },
+                {
+                  "name": "바노바기",
+                  "isUs": false
+                }
+              ],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": false,
+              "rank": null,
+              "reasoning": "리더스피부과, 닥터스피부과 등 타 병원 5곳이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+              "brands": [
                 {
                   "name": "리더스피부과",
                   "isUs": false
@@ -2568,57 +2448,69 @@
                   "isUs": false
                 },
                 {
+                  "name": "메이린클리닉",
+                  "isUs": false
+                },
+                {
+                  "name": "오가나셀피부과",
+                  "isUs": false
+                },
+                {
                   "name": "바노바기 피부과",
                   "isUs": false
-                },
-                {
-                  "name": "브이앤엠제이(V&MJ)",
-                  "isUs": true
-                },
-                {
-                  "name": "뉴엘클리닉",
-                  "isUs": false
                 }
               ],
-              "citations": [
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQR381PLnYnmwj9J_EDGb-AeIhu5glouZxyJFxElgSByYJGGH8KTnLFDGaqtyT2ElmLoCYypSisrxV_hSIfLE3HLCAqsDDF-AbEFmH59PEy2ObEOrb6wz7I8TD5oskgp6AeZ3pz6OE5A==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpzxzriwxOJ7OxpS_tmqnxyRL1ZbsGEn3uJallxcK4RVOEFdQxsJIM4MlBbVO4mR0DLHE4MvBJ4eWlBu2G8rjVq_fTJO1WvkolE0hOIuqz3OanxEuYynQcUUzM3HY=",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtPMzDHt9OpAotsWGN0VPJMezxbQj3Gg_CeBIkTRi0ejxoHlgHHNjskqcdwj0efxpIXcjCsG8t0tM9m67bbVfYSklHud8Oc3HSB8AyWvo5wDYMSg==",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyzEddXCrS2O4MIAGr9BdS1zjEQ6NG763COXtcDaI25_UF_slZJYjpBejymuZsO8b2lKbxgrvfBoD25_T4FxFgStGcrwydvcFCwwWbkmg_Ka2JyxJytxv07DMMgHf_X4UU",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjZbAbnhKflzACVDKB2JJ-FUFIm_3w48xrzhQCCddvOpvPo84UkJyAVr3i9S0knxfUcO9S9H5jZ9Vag0gGmTE-dYskARgrgdKJ35hezVXTyDwcIo2dny6bz43PlMNykNHO-9jbuK2bopbhp3D_3d_K",
-                  "domain": "vertexaisearch.cloud.google.com"
-                },
-                {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoY4NJZ1TFUHQFOdsiota4am6zMGpXQvXgukRkFqHg_uIMe1uCducssZ41ZeUWtWp3ByxE7RIhgs2i6geljd71sES6fVJaiSOjen03OZvHfOZE8TxSSW4UAlI_SJIYKwU0",
-                  "domain": "vertexaisearch.cloud.google.com"
-                }
-              ],
+              "citations": [],
               "error": false
             },
             {
-              "exposed": true,
+              "exposed": false,
               "rank": null,
-              "reasoning": "답변 본문의 대형 리프팅/안티에이징 특화 센터 목록에 V&MJ피부과가 언급되었으나 명확한 순위는 제시되지 않았습니다.",
+              "reasoning": "Gemini 답변 본문에 여러 피부과가 예시로 언급되었으나 브이앤엠제이피부과는 포함되지 않았습니다.",
               "brands": [
                 {
                   "name": "모델로피부과",
                   "isUs": false
                 },
                 {
-                  "name": "청담 린클리닉",
+                  "name": "뮬피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "드림피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "보스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "리더스피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "오라클피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "바노바기피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "차앤박피부과",
+                  "isUs": false
+                }
+              ],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": false,
+              "rank": null,
+              "reasoning": "모델로피부과, 리더스피부과 등 여러 병원이 추천되었으나 브이앤엠제이피부과는 본문에 언급되지 않았습니다.",
+              "brands": [
+                {
+                  "name": "모델로피부과",
                   "isUs": false
                 },
                 {
@@ -2634,126 +2526,118 @@
                   "isUs": false
                 },
                 {
-                  "name": "아이디피부과",
+                  "name": "메이린의원",
+                  "isUs": false
+                },
+                {
+                  "name": "바노바기피부과",
                   "isUs": false
                 },
                 {
                   "name": "오라클피부과",
                   "isUs": false
+                }
+              ],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": false,
+              "rank": null,
+              "reasoning": "특정 병원이나 원장을 추천하지 않고 일반적인 선택 기준과 팁만 제공하여 노출되지 않았습니다.",
+              "brands": [],
+              "citations": [],
+              "error": false
+            },
+            {
+              "exposed": false,
+              "rank": null,
+              "reasoning": "닥터스피부과, 스위츠피부과 등 타 병원 및 원장들이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
+              "brands": [
+                {
+                  "name": "닥터스피부과 신사점",
+                  "isUs": false
                 },
                 {
-                  "name": "V&MJ피부과",
-                  "isUs": true
+                  "name": "스위츠피부과의원",
+                  "isUs": false
+                },
+                {
+                  "name": "압구정 PHD피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "청담스킨메디피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "부산 뮬피부과",
+                  "isUs": false
+                },
+                {
+                  "name": "대구 범어로제피부과",
+                  "isUs": false
                 }
               ],
               "citations": [
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW1PESRmODv-c0GdKzNCv0jVavBfMX2_VdTElS77NPujy66BT9CQP3Na9QJ6FzcRe6vDYHrKvTQJadQBZeHP4veDiNCgrtpmOjtTwNHFb2H_H0ZAt7zWYHOO4=",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFh55uG8iiB2dgwJ4E_3gA4HRqAJgRXFiiDXyDlCRUI5fUl5iTdXdbNmqvu9__0bgKO1m4BbwRMY53EWC5zdkz5Rnm7i-crv2l3W-plxaIKjESza5uv5Pnw6OQ575FEIvK4-cfLMExqsv14jAu4mQKuLSgRz3dHN9H87ViWGLMfC0NG",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3VcHv6nFFOojPAMtqb0NFrW_4meCGp2HnYkNtGN2IB_7j19Gmyolog-NdLEi-NrWU3G9ZLmZGqWVyv1ThtPcMW2dlWRMXf8c-FVRkQosXUwFuWA0VGoGULaOisOjr4ybBNxZos2n9HhnuzLZjNxc24-V0NU7rZslHQPHLXG-dm40YMvnaq2yzvCzW_9V1Ks5Sc4p5wXnKbEoyUHPdJTwgaVCHlrsnh2YaDxSErvu-DD4m8uR9zGQGUdG7_OA-i9gNk_A784hxYMkNlsSjzMVf0aMQDqe5J83BI6RUkKz2wGk7Y0acF6sbWaWGp0fwG6oQhWk09bk94HJxHXNFS2i6yJmgFdg61km0Bmn52XUeXhJAhflripFxbSeb6bVxtwx3Eu8U8p10guSeg3YOGEqNpWvQHPiSs7_zaLzYVyfXyfyHkeTU4F2yQzG-8t1jcpH5mP8_L4k-koUGzjOTsYKoq0ttO36vxlUua4sXI8ghHFB_XJgO5xfaKO2KpCGQPZqeC0sc_kHj6Bv1beBo6lrgnUVYaKrIGOwPAEWhj-UkuPkHdZNkHU_dFhoo905jrPem83RX8Knhvnb2umuPfXManFFp5xeqbEExIL13ZQ8fxyvNMf0J4RcAwO23u-UFdBT6Bt4TuhyfwaG7Pspr7UffbHB4q1edKAa5nkGi6yuDCKWQhyQjWOcmtNBXJPk4I8aLQq63esXWHGdMSpovdE84i6IDStKRvPkb0nISHsk7uhZ3NAiZkr5HockzrEDypZrL3Y4GBeHso9PfFCUG4ZK0XlnpF9JuRwLjeSqODlyXBi0gdfTkyJKYUYEoIUWbHdIM8quamCtMhHCA2MeuJUaClkn6Ia9etMVO1FGD9B1pDzph7DISxzRoumSCvxzZCInUq8CZ220eI3aCC8UJL0bQ5nV9fn7Ubj3JjP8kRz6sVA==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEnHS19czdqpMBLJXTuwG_v3SQJUvlRitey71MpxOcdVmJ7LHSs3gStu2V_vh_Ph3xYJ_vrE4MqA1tmWQ2_cCACyLqSCTUeqJxFka6sE5eRcBMU_fxpRMMM0BY",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN5cD8slN84q3KUxyJly1Akgb_atsCQBJf429a7mk5Mwx1fPU6fToTlR9rbw_BabvxtKB4FVcavqLR-NowM0cCYzOElCbltO8FQRTBegz-oyjKf_m0RFOkgvBDX0Q=",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsVggMDcugnpzbmUdkFrF8_U7sumJ2ad4EQ-ZXEXaj7SOsJpdauSiTlseNdfCHYyhRDXs81aRji91AeoqnWtpNbJ3wdEU57TW3W26-_-y9njrOqG0d-Z5O1xgg6iU=",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWb02b4pC44ujju9FcGHPu7tv2nM2lHLXmWAeXPkp7CirujMKP2GAyKvm-RgbCjLXG5B6laSAuaN4u9AELvxxdlTk1e7l4ieYFCVc1Ebubnxw2UiZKRKLTlX9Ln4oL4Iw6gLfgnoeW8BPrWcyUU5-C3UQ_6nnrS45-DNegFElAVka9QpLRyNrXpQ==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGd6XbNq3rZMLT9vBmRDLAhCzAQbOiTCvQqb0qeQdV5Cz7yS_XUOVOABzhX6fe03yzNWIShAS1zxfnDOp61v_6P9h7fRTbZUcfHuhQbfHvjm-7Ow2zEKT6LPEi1AdRkvVT_LzBG_gv9HQ==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHmkl8TcV_46BXSkvgb3qgi4WnwP8XjNR9RIX7z_7zd0vHqso7FOSh8N2MUNsyBHTncsoXoH4MgJjL6_E40bI9PDTe8Z1A8Y4bPI6G80OjxELFy_Aq5pvKADUPRYBWXj9yrciH4YL11KAjXRv2eW1_IFx3SzMwoQotf8jGolAwSoeyIeSYdpOkxBDhSuc7MOjoEVw=",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtAGiXu8RwjnngdwhQ_0VPN6LiaW6wwTdqGtDZQn7Th3F2cQjs4uZ32yKffzxuy326xRQSH5QOxQuBa4jskiCBIvz9jQpII11DAxxk1y5Y-Fdu1WTG",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBi2V-dvRMuEA0epvAa7Tpw-tdYmN1cDNqT9qagTIDH8j1uhQ38UxLaMI7HvSEmrH5TGB9mkFu_V835M1FKmm3PAr2QsmAgrEuDwrlYh-Df0M_i2UgIrPsSo4YwclKL-a1",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnJLOCa3a8yn6SCAr6f8VEjz3gQdwQ2A3maJ5ijoPz_f5JRzJYNb1vJ6dlOnwG6CSG4f-JFHI60t9bWgH2MAS1lBbebADgA5Pg_5yZ7RJUZzBrM8T9nDS0O4_cj2Y=",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2XGFYpoLdoUTDyGs60njGuZCImwKRokqJMAbTiRu59kBZQdbS0Y4YbuF0Q_fd40F5Lu1y2v_Gmw9JXgYbDLF_cL2ZD891THa3Q5ZcMNhH9a8YhQ==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGm1vLnl_mso1fkhwOCpJoETKoIE0A29vZqEng6GxekiMlmtgcd7plHWgrVC0pXtmLv90oTX60L1fRIAEIgu3RQEpQ5JCVmKXTTblgHPr_kwa0wgoDglsmKz9LI-f8wt788",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiJpa9zDFaptaB3axgMENz5OTU6S60bgDcIlNL45Xc6LWfCb1vRCQ9WlDHXQBZ671GP82RrDXNBs9IwB_imwa7mc2xpr8pgdh9oPJV_5qPTaWrG0rZ0JNLPR2zSsmC7fkzT2kgaZQCAPQq2dbvUg==",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSwRriQ2MvoE_deGYhgl-TxDaPbyCaXjYMFOTf26rNIbqP_nK8VsLwkbN8sEu-nA2WiPogFHZQbywAoK9jKTPb_I8qHF1exoOBZX6FN3V6aUSX_TSO3BPfHbhs6EEdfZJVhYqENQA8DZ1qKTZ9eQ==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGm-SA4pVUt_OqM0edQazJrvbzeR3y1Rf91y41xQ5YpsFc-rO8f0iuGS6x93Os1DyxBIFAbeo52lWvVHRCf-2U6GFSy2olKJcbaEraPDMbi8ZErtpKJ",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfVBtsjsydPn-t9c0ecOyhAvdgIipqIC6hQhO_ifbnE2PcTY4kXbneKlaK7XS5ATc1wQ2gxCmH_y1DdEw-y5sUYrW19HZk8ZwWnjvuzLoQExYsDNbXkq3-zTlBCfW9_C0OEJcM34uLbgmhLmT0UwXLDei3xPnRI2owfI70LkLcPdyanpJ2-7i_Y1oLAl4NvX2GFR_uKvVIsYZCeHS8molv5k0oZ8hbbwyTKTO5azTev6ZEcC8memtFB3BDAauALTOU29-H-s9bQOclvuACDwCvL8tQwm5AZ1uIxsBdHnld6TXKr6euBt9vRkT-TH8DuGjihsp64krOK23GZT5P5-gsJ-Ufz9OwRm29AOy2r2iWHhHjDNAhfcFitToJ-mOjSbh1Gi1eD9b-htDWKWjyZ8RbxsKfDPYuR_RZsUThMAHUhJRIn29Bq4mcuyXarhNFHmCKwc-l-xA_NZAuofgg8D5TSH5Ou0dyregqdK-4C8Z0UqBdyXi_PqNqKyfM0e5iJDVdcEGZUe6VXtKo05TMEyWc6OJDiYzWOQxDNkxBIwd1Olv4Jxx3Gd7f8PH7jD-6dBAYN8M1wLU3TZaeJyJ6qAq_8nk7JO0zWIXmF2SV_4bpdcMJausHhIcJ4ixIiqtvCGjZdX0c-EEZGZrdklg3Bn0rHeHMGkT0pao-z3GA5Go3khVJFBIVf8Po6j6GEkXrpoXhsgyepteExiKGCYKn4LrIWPoer9Iq7SA_DN9iRe9xcEw39PcGuZQNUmt34JfT9hDee_UYt4natsj12NGdkSwAvYeGg6WPW29zlNimeRa458wdLkuULVohZnczUTawhd-JBv-ioU1pFEULhxtNtkDgs0rWDFE87zWV6dkPPwaJYVFT-qzXmtKnsQBt2YRrQdLl1pkTppYdGuTzuCFXhywj2kL_uCb-wVMfjKdXHzoGTQ==",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ1k61hVYVZeGOuCW1zJwPuxH-2PIjIlFS-NG1qAjDs1bBW0eKgpHNv3Z9VacoedTsuTSsiSaSzyePeJdoooZHuCxg9AekVYIm_yT13YZk0Yzt_DmfP321eE0gfmcAT3daebotUm8=",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEx_r1sNnZBsU_8sqkRci2dzsLbb2_m9WmOWyggQTG8oXSaMbpXcR2AwH_Gt0DHWxkqDl8wflVkWkYPu9I-POL1ks6c4wgtF6zrcnDQvZ4zGh7IIQGCeQLB4k8UxzJr4olIvaKCzY5emuhwMtLNeW4izHvucLljKEysFAnm-ApU-27Ud4_T4LPHlMkCKLd5JPqbZQc=",
                   "domain": "vertexaisearch.cloud.google.com"
                 },
                 {
-                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaDHxt_8OvadmX21pZCxqpNNCO8lA9rBhn7K2hw30dl3VjicUYZfohArmv02l7Ps9SbQk2m0s6dLTxYS5KrWMgRIQWs0L-StP3stKrXUhS9rvRymkO1OpUvDb4",
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6RpatJV4lzMfwKP6CcG2LeABJ3y6JgD4_8KVbcq_W5k59DwE7BW6ErgTC5RAN0umfIfoq2SJp2tmYps1ty8banJ356ZICckZTPQdKfiJ7oVEsyMnxfgyzsotnGsoztQz8h3zr9Q==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFuQ1q2yWjNPmGVq1CR3qkEGh6F9I-EJ8TKDLDgFr_C5JUm_MHUjztsXXZyzs0HqwEiQE66fYi6hJZ-K9-APtyWSOZMrKD313cn3o_3jVQj0k=",
                   "domain": "vertexaisearch.cloud.google.com"
                 }
               ],
-              "error": false
-            },
-            {
-              "exposed": false,
-              "rank": null,
-              "reasoning": "답변 본문에서 오가나셀피부과, 모델로피부과 등 여러 병원이 추천되었으나 브이앤엠제이피부과는 언급되지 않았습니다.",
-              "brands": [
-                {
-                  "name": "오가나셀 피부과의원",
-                  "isUs": false
-                },
-                {
-                  "name": "모델로 피부과의원",
-                  "isUs": false
-                },
-                {
-                  "name": "청담 닥터스피부과의원",
-                  "isUs": false
-                },
-                {
-                  "name": "보스피부과의원",
-                  "isUs": false
-                },
-                {
-                  "name": "닥터스피부과의원",
-                  "isUs": false
-                },
-                {
-                  "name": "뮬피부과의원",
-                  "isUs": false
-                },
-                {
-                  "name": "드레스피부과의원",
-                  "isUs": false
-                }
-              ],
-              "citations": [],
-              "error": false
-            },
-            {
-              "exposed": false,
-              "rank": null,
-              "reasoning": "본문에서 특정 병원이나 원장을 언급하지 않고 울쎄라 시술 선택 기준과 찾는 방법만 안내했습니다.",
-              "brands": [],
-              "citations": [],
-              "error": false
-            },
-            {
-              "exposed": false,
-              "rank": null,
-              "reasoning": "특정 병원이나 원장을 언급하지 않고 써마지 시술 병원 및 원장 선택 기준만을 안내했습니다.",
-              "brands": [],
-              "citations": [],
               "error": false
             }
           ],
           "stats": {
             "total": 10,
-            "exposed": 3,
+            "exposed": 1,
             "top3": 0,
             "top1": 0,
-            "expPct": 30,
+            "expPct": 10,
             "top3Pct": 0,
             "top1Pct": 0
           }
