@@ -4,138 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>브이앤엠제이 AI 노출 감사 — 질문 상세</title>
-<style>
-  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
-
-  :root {
-    color-scheme: light;
-    --paper: #ffffff; --surface: #ffffff; --surface-2: #efece3;
-    --ink: #17160f; --ink-2: #55534a; --ink-muted: #898781;
-    --line: #ddd8cb; --line-strong: #c3beac;
-    --accent: #1f5d4f; --accent-soft: #dbe9e2; --accent-ink: #0f342b;
-    --good: #0ca30c; --warning: #b3790a; --serious: #ec835a; --critical: #d03b3b; --unknown: #6b6a63;
-    --good-bg: #e3f4e0; --warning-bg: #fdedd0; --serious-bg: #fbe3d8; --critical-bg: #f9dcdb; --unknown-bg: #e6e4dc;
-    --gpt: #0f8a6b; --gemini: #3457d5;
-    --grid: #e1e0d9; --up: #0c7a2f; --down: #b3341f;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      color-scheme: dark;
-      --paper: #0d0d0c; --surface: #1a1a19; --surface-2: #222220;
-      --ink: #f5f4ef; --ink-2: #c3c2b7; --ink-muted: #8f8d85;
-      --line: #2c2c2a; --line-strong: #3d3d39;
-      --accent: #5bbfa4; --accent-soft: #1b3a32; --accent-ink: #cdeee2;
-      --good: #37c937; --warning: #fab219; --serious: #ec835a; --critical: #e66767; --unknown: #a3a19a;
-      --good-bg: #163a1c; --warning-bg: #3d2f0f; --serious-bg: #3d241a; --critical-bg: #3d1c1c; --unknown-bg: #2a2a27;
-      --gpt: #17a883; --gemini: #5f7dff;
-      --grid: #2c2c2a; --up: #37c937; --down: #e66767;
-    }
-  }
-  :root[data-theme="dark"] {
-    color-scheme: dark;
-    --paper: #0d0d0c; --surface: #1a1a19; --surface-2: #222220;
-    --ink: #f5f4ef; --ink-2: #c3c2b7; --ink-muted: #8f8d85;
-    --line: #2c2c2a; --line-strong: #3d3d39;
-    --accent: #5bbfa4; --accent-soft: #1b3a32; --accent-ink: #cdeee2;
-    --good: #37c937; --warning: #fab219; --serious: #ec835a; --critical: #e66767; --unknown: #a3a19a;
-    --good-bg: #163a1c; --warning-bg: #3d2f0f; --serious-bg: #3d241a; --critical-bg: #3d1c1c; --unknown-bg: #2a2a27;
-    --gpt: #17a883; --gemini: #5f7dff;
-    --grid: #2c2c2a; --up: #37c937; --down: #e66767;
-  }
-
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Pretendard", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-  .mono { font-family: "Pretendard", system-ui, sans-serif; font-variant-numeric: tabular-nums; }
-  h1, h2 { text-wrap: balance; font-weight: 700; margin: 0; }
-  h1 { font-size: 32px; }
-  h2 { font-size: 20px; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px 96px; }
-
-  .back { font-size: 13px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 5px; margin: 28px 0 16px; }
-  .masthead { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 26px; }
-
-  .masthead .cap { font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
-
-  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
-  @media (max-width: 700px) { .stat-row { grid-template-columns: 1fr; } }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; }
-  .card h2 { font-size: 13px; color: var(--ink-2); font-weight: 600; }
-  .stat-num { font-family: "Pretendard", system-ui, sans-serif; font-size: 30px; font-weight: 600; margin-top: 6px; }
-  .model-chips { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
-  .model-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); }
-  .model-chip i { width: 8px; height: 8px; border-radius: 50%; }
-
-  .chart-card { margin-bottom: 20px; }
-  .chart-card .head { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
-  .toggle-group { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-  .toggle-group button { font-family: "Pretendard", sans-serif; font-size: 12.5px; padding: 6px 14px; border: none; background: var(--surface); color: var(--ink-2); cursor: pointer; border-right: 1px solid var(--line); }
-  .toggle-group button:last-child { border-right: none; }
-  .toggle-group button.active { background: var(--accent); color: #fff; font-weight: 600; }
-  .trend-svg { display: block; overflow: visible; }
-  .grid-line { stroke: var(--grid); stroke-width: 1; }
-  .axis-label { font-family: "Pretendard", system-ui, sans-serif; font-size: 10px; fill: var(--ink-muted); }
-  .trend-dot { cursor: pointer; }
-  .trend-tooltip { position: absolute; background: var(--ink); color: var(--paper); font-size: 11.5px; padding: 6px 10px; border-radius: 6px; pointer-events: none; white-space: nowrap; z-index: 5; line-height: 1.4; }
-  .chart-wrap { position: relative; margin-top: 8px; }
-  .chart-legend { display: flex; gap: 14px; margin-top: 10px; flex-wrap: wrap; }
-  .chart-legend span { font-size: 12px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; }
-  .chart-legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
-
-  .lane-heading { display: flex; align-items: baseline; gap: 10px; margin: 36px 0 14px; }
-
-  .lane-heading .n { font-family: "Pretendard", system-ui, sans-serif; font-size: 12px; color: var(--ink-muted); }
-
-  .rank-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
-  .rank-list li { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 7px; font-size: 13px; }
-  .rank-list li.us { background: var(--accent-soft); font-weight: 600; }
-  .rank-n { font-family: "Pretendard", system-ui, sans-serif; font-size: 11.5px; color: var(--ink-muted); width: 16px; flex-shrink: 0; }
-  .rank-name { flex: 1; }
-  .rank-pct { font-family: "Pretendard", system-ui, sans-serif; font-size: 12.5px; color: var(--ink-2); }
-  .rank-empty, .table-empty { font-size: 12.5px; color: var(--ink-muted); padding: 16px; }
-
-  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
-  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 13px; }
-  thead th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600; padding: 10px 14px; border-bottom: 1px solid var(--line-strong); background: var(--surface-2); }
-  tbody td { padding: 10px 14px; border-bottom: 1px solid var(--line); }
-  tbody tr:last-child td { border-bottom: none; }
-  tbody tr:hover { background: var(--surface-2); }
-
-  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
-  .pill.good { background: var(--good-bg); color: var(--good); }
-  .pill.warning { background: var(--warning-bg); color: var(--warning); }
-  .pill.serious { background: var(--serious-bg); color: var(--serious); }
-  .pill.critical { background: var(--critical-bg); color: var(--critical); }
-  .pill.unknown { background: var(--unknown-bg); color: var(--unknown); }
-  .pill i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-  .platform-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; }
-  .platform-tag i { width: 8px; height: 8px; border-radius: 50%; }
-  .reasoning { font-size: 12px; color: var(--ink-muted); margin-top: 3px; max-width: 46ch; }
-
-  #runBody tr { cursor: pointer; }
-
-  .modal-backdrop { position: fixed; inset: 0; background: rgba(15,14,10,0.55); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50; }
-  .modal-backdrop[hidden] { display: none; }
-  .modal { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; max-width: 640px; width: 100%; max-height: 88vh; overflow-y: auto; padding: 26px 28px 30px; position: relative; }
-  .modal-close { position: absolute; top: 14px; right: 14px; width: 30px; height: 30px; border-radius: 8px; border: none; background: none; color: var(--ink-muted); font-size: 20px; line-height: 1; cursor: pointer; }
-  .modal-close:hover { background: var(--surface-2); color: var(--ink); }
-  .modal-head { display: flex; align-items: center; justify-content: space-between; padding-right: 30px; margin-bottom: 18px; }
-  .modal-platform { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: 13.5px; }
-  .modal-platform i { width: 9px; height: 9px; border-radius: 50%; }
-  .modal-date { font-size: 12px; color: var(--ink-muted); }
-  .modal-section { margin-top: 20px; }
-  .modal-section:first-of-type { margin-top: 0; }
-  .modal-section h3 { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600; margin: 0 0 8px; }
-  .modal-prompt { font-size: 14.5px; font-weight: 600; }
-  .modal-answer { font-size: 13px; color: var(--ink-2); white-space: pre-wrap; background: var(--surface-2); border-radius: 8px; padding: 14px 16px; max-height: 280px; overflow-y: auto; }
-  .modal-citelist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
-  .modal-citelist a { word-break: break-all; font-size: 12.5px; }
-  .modal-empty { font-size: 12.5px; color: var(--ink-muted); }
-</style>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="wrap wrap-narrow">
   <a class="back" href="./index.html">‹ 전체 보기로 돌아가기</a>
   <div class="masthead">
     <h1 id="qTitle">질문을 불러오는 중…</h1>
@@ -241,11 +113,11 @@ function renderStats(latest, question) {
   const statRow = document.createElement("div");
   statRow.className = "stat-row";
   statRow.innerHTML = `
-    <div class="card">
+    <div class="card stat-card">
       <h2>프롬프트 실행 횟수</h2>
       <div class="stat-num mono">${runs.length}</div>
     </div>
-    <div class="card">
+    <div class="card stat-card">
       <h2>분석한 AI 모델</h2>
       <div class="model-chips">
         ${PLATFORMS.map((p) => `<span class="model-chip"><i style="background:${PLATFORM_META[p].color}"></i>${PLATFORM_META[p].name}</span>`).join("")}

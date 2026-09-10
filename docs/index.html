@@ -4,272 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>브이앤엠제이 AI 노출 감사</title>
-<style>
-  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
-
-  :root {
-    color-scheme: light;
-    --paper:        #ffffff;
-    --surface:      #ffffff;
-    --surface-2:    #efece3;
-    --ink:          #17160f;
-    --ink-2:        #55534a;
-    --ink-muted:    #898781;
-    --line:         #ddd8cb;
-    --line-strong:  #c3beac;
-    --accent:       #1f5d4f;
-    --accent-soft:  #dbe9e2;
-    --accent-ink:   #0f342b;
-
-    --good:      #0ca30c;
-    --warning:   #b3790a;
-    --serious:   #ec835a;
-    --critical:  #d03b3b;
-    --unknown:   #6b6a63;
-    --good-bg:     #e3f4e0;
-    --warning-bg:  #fdedd0;
-    --serious-bg:  #fbe3d8;
-    --critical-bg: #f9dcdb;
-    --unknown-bg:  #e6e4dc;
-
-    --gpt:    #0f8a6b;
-    --gemini: #3457d5;
-
-    --grid: #e1e0d9;
-    --up:   #0c7a2f;
-    --down: #b3341f;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      color-scheme: dark;
-      --paper:        #0d0d0c;
-      --surface:      #1a1a19;
-      --surface-2:    #222220;
-      --ink:          #f5f4ef;
-      --ink-2:        #c3c2b7;
-      --ink-muted:    #8f8d85;
-      --line:         #2c2c2a;
-      --line-strong:  #3d3d39;
-      --accent:       #5bbfa4;
-      --accent-soft:  #1b3a32;
-      --accent-ink:   #cdeee2;
-
-      --good:      #37c937;
-      --warning:   #fab219;
-      --serious:   #ec835a;
-      --critical:  #e66767;
-      --unknown:   #a3a19a;
-      --good-bg:     #163a1c;
-      --warning-bg:  #3d2f0f;
-      --serious-bg:  #3d241a;
-      --critical-bg: #3d1c1c;
-      --unknown-bg:  #2a2a27;
-
-      --gpt:    #17a883;
-      --gemini: #5f7dff;
-
-      --grid: #2c2c2a;
-      --up:   #37c937;
-      --down: #e66767;
-    }
-  }
-  :root[data-theme="dark"] {
-    color-scheme: dark;
-    --paper:        #0d0d0c;
-    --surface:      #1a1a19;
-    --surface-2:    #222220;
-    --ink:          #f5f4ef;
-    --ink-2:        #c3c2b7;
-    --ink-muted:    #8f8d85;
-    --line:         #2c2c2a;
-    --line-strong:  #3d3d39;
-    --accent:       #5bbfa4;
-    --accent-soft:  #1b3a32;
-    --accent-ink:   #cdeee2;
-
-    --good:      #37c937;
-    --warning:   #fab219;
-    --serious:   #ec835a;
-    --critical:  #e66767;
-    --unknown:   #a3a19a;
-    --good-bg:     #163a1c;
-    --warning-bg:  #3d2f0f;
-    --serious-bg:  #3d241a;
-    --critical-bg: #3d1c1c;
-    --unknown-bg:  #2a2a27;
-
-    --gpt:    #17a883;
-    --gemini: #5f7dff;
-
-    --grid: #2c2c2a;
-    --up:   #37c937;
-    --down: #e66767;
-  }
-
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: "Pretendard", system-ui, -apple-system, "Segoe UI", sans-serif;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-  }
-  .mono { font-family: "Pretendard", system-ui, sans-serif; font-variant-numeric: tabular-nums; }
-  h1, h2, h3 { text-wrap: balance; font-weight: 700; margin: 0; }
-  h1 { font-size: 32px; }
-  h2 { font-size: 20px; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px 96px; }
-
-  .masthead { border-bottom: 1px solid var(--line); padding: 32px 0 22px; margin-bottom: 28px; display: flex; flex-direction: column; gap: 14px; }
-  .eyebrow { font-family: "Pretendard", system-ui, sans-serif; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
-  .masthead h1 { letter-spacing: -0.01em; }
-  .top-row { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 14px; }
-  .masthead .sub { color: var(--ink-2); font-size: 14px; max-width: 62ch; }
-
-  .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-  select.period {
-    font-family: "Pretendard", system-ui, sans-serif; font-size: 12.5px; border: 1px solid var(--line);
-    border-radius: 999px; padding: 6px 14px; background: var(--surface); color: var(--ink);
-  }
-
-  .empty-state { background: var(--surface); border: 1px dashed var(--line-strong); border-radius: 10px; padding: 40px 32px; text-align: center; color: var(--ink-2); font-size: 14px; max-width: 60ch; margin: 40px auto; }
-  .empty-state h2 { margin-bottom: 10px; color: var(--ink); }
-  .empty-state code { background: var(--surface-2); border-radius: 4px; padding: 1px 6px; font-family: "Pretendard", system-ui, sans-serif; font-size: 12.5px; }
-
-  /* ---- hero + ranking row ---- */
-  .hero-row { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; margin-bottom: 20px; align-items: start; }
-  @media (max-width: 900px) { .hero-row { grid-template-columns: 1fr; } }
-
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; }
-  .card .cap { font-size: 12px; color: var(--ink-muted); margin-top: 3px; }
-
-  .hero-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 4px; flex-wrap: wrap; }
-  .hero-value { display: flex; align-items: baseline; gap: 10px; }
-  .hero-value .num { font-family: "Pretendard", system-ui, sans-serif; font-size: 42px; font-weight: 600; line-height: 1; color: var(--ink); }
-  .hero-label { font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
-  .delta { font-family: "Pretendard", system-ui, sans-serif; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 999px; }
-  .delta.up { color: var(--up); background: color-mix(in srgb, var(--up) 14%, transparent); }
-  .delta.down { color: var(--down); background: color-mix(in srgb, var(--down) 14%, transparent); }
-  .delta.flat { color: var(--ink-muted); background: var(--surface-2); }
-
-  .toggle-group { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-  .toggle-group button {
-    font-family: "Pretendard", sans-serif; font-size: 12.5px; padding: 6px 14px; border: none;
-    background: var(--surface); color: var(--ink-2); cursor: pointer; border-right: 1px solid var(--line);
-  }
-  .toggle-group button:last-child { border-right: none; }
-  .toggle-group button.active { background: var(--accent); color: #fff; font-weight: 600; }
-
-  .trend-svg { display: block; overflow: visible; }
-  .grid-line { stroke: var(--grid); stroke-width: 1; }
-  .axis-label { font-family: "Pretendard", system-ui, sans-serif; font-size: 10px; fill: var(--ink-muted); }
-  .trend-dot { cursor: pointer; transition: r .1s; }
-  .trend-dot:hover { r: 5; }
-  .trend-tooltip {
-    position: absolute; background: var(--ink); color: var(--paper); font-size: 11.5px;
-    padding: 6px 10px; border-radius: 6px; pointer-events: none; white-space: nowrap; z-index: 5;
-    line-height: 1.4;
-  }
-  .chart-wrap { position: relative; margin-top: 8px; }
-  .chart-legend { display: flex; gap: 14px; margin-top: 10px; flex-wrap: wrap; }
-  .chart-legend span { font-size: 12px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; }
-  .chart-legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
-
-  .rank-list { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
-  .rank-list li {
-    display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 7px; font-size: 13px;
-  }
-  .rank-list li.us { background: var(--accent-soft); font-weight: 600; }
-  .rank-n { font-family: "Pretendard", system-ui, sans-serif; font-size: 11.5px; color: var(--ink-muted); width: 16px; flex-shrink: 0; }
-  .rank-list li.us .rank-n { color: var(--accent-ink); }
-  .rank-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .rank-pct { font-family: "Pretendard", system-ui, sans-serif; font-size: 12.5px; color: var(--ink-2); }
-  .rank-list li.us .rank-pct { color: var(--accent-ink); }
-  .rank-empty { font-size: 12.5px; color: var(--ink-muted); padding: 10px 0; }
-
-  /* ---- matrix tables (모델별/그룹별 순위) ---- */
-  .lane-heading { display: flex; align-items: baseline; gap: 10px; margin: 40px 0 14px; }
-  .lane-heading .n { font-family: "Pretendard", system-ui, sans-serif; font-size: 12px; color: var(--ink-muted); }
-  .lane-heading.qlist-heading { justify-content: space-between; flex-wrap: wrap; }
-  .lane-heading.qlist-heading .n { flex: 1; }
-  select.q-filter { margin-left: auto; }
-
-  .matrix-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
-  table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13px; }
-  table.matrix thead th {
-    text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted);
-    font-weight: 600; padding: 10px 14px; border-bottom: 1px solid var(--line-strong); background: var(--surface-2);
-  }
-  table.matrix tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  table.matrix tbody tr:last-child td { border-bottom: none; }
-  table.matrix tbody tr:hover { background: var(--surface-2); }
-  .row-label { font-weight: 600; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
-  .row-label .p-dot { width: 8px; height: 8px; border-radius: 50%; }
-  .cell-brand { font-size: 12.5px; }
-  .cell-brand.us { color: var(--accent); font-weight: 700; }
-  .cell-brand .p { color: var(--ink-muted); font-size: 11px; display: block; margin-top: 1px; }
-  .cell-empty { color: var(--ink-muted); font-size: 12px; }
-
-  /* ---- question list ---- */
-  .qlist-head {
-    display: flex; align-items: center; gap: 14px; padding: 0 16px 8px;
-    font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600;
-  }
-  .qlist { display: flex; flex-direction: column; gap: 8px; }
-  .qrow {
-    display: flex; align-items: center; gap: 14px; padding: 13px 16px; border: 1px solid var(--line);
-    border-radius: 8px; background: var(--surface); transition: border-color .12s, background .12s;
-  }
-  .qrow:hover { border-color: var(--line-strong); background: var(--surface-2); text-decoration: none; }
-  .qlist-head .qn, .qrow .qn { font-size: 11.5px; color: var(--ink-muted); width: 20px; flex-shrink: 0; }
-  .qlist-head .qtext, .qrow .qtext { flex: 1; min-width: 0; }
-  .qrow .qtext { font-size: 13.5px; font-weight: 500; color: var(--ink); }
-  .qlist-head .qgroup-col, .qrow .qgroup-col { width: 90px; flex-shrink: 0; }
-  .qrow .qgroup { font-size: 11px; color: var(--ink-muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; }
-  .qlist-head .qstat-col, .qrow .qstat-col { width: 118px; flex-shrink: 0; }
-  .qlist-head .arrow, .qrow .arrow { width: 12px; flex-shrink: 0; }
-  .qtaghead { display: flex; align-items: center; gap: 8px; margin: 18px 0 8px; }
-  .qtaghead:first-child { margin-top: 0; }
-  .qtaghead .qtagname { font-size: 12.5px; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px; padding: 3px 11px; }
-  .qtaghead .qtagcount { font-size: 11.5px; color: var(--ink-muted); }
-  .status-badge {
-    display: inline-flex; align-items: center; font-size: 11.5px; font-weight: 600;
-    padding: 3px 10px; border-radius: 999px; white-space: nowrap;
-  }
-  .status-badge.good { color: var(--good); background: var(--good-bg); }
-  .status-badge.warning { color: var(--warning); background: var(--warning-bg); }
-  .status-badge.serious { color: var(--serious); background: var(--serious-bg); }
-  .status-badge.critical { color: var(--critical); background: var(--critical-bg); }
-  .status-badge.unknown { color: var(--unknown); background: var(--unknown-bg); }
-  @media (max-width: 700px) {
-    .qlist-head { display: none; }
-    .qrow { flex-wrap: wrap; }
-    .qrow .qgroup-col, .qrow .qstat-col { width: auto; }
-  }
-  .qrow .arrow { color: var(--ink-muted); font-size: 15px; flex-shrink: 0; }
-
-  .rule-note {
-    background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
-    border-radius: 6px; padding: 13px 16px; font-size: 13px; color: var(--ink-2); margin-top: 28px;
-  }
-  .rule-note b { color: var(--ink); }
-
-  .method { margin-top: 44px; }
-  .method h2 { margin-bottom: 14px; }
-  .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  @media (max-width: 760px) { .method-grid { grid-template-columns: 1fr; } }
-  .method-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; font-size: 12.5px; color: var(--ink-2); }
-  .method-card h4 { font-size: 13px; color: var(--ink); margin-bottom: 6px; }
-  .method-card p { margin: 0 0 6px; }
-  .method-card p:last-child { margin-bottom: 0; }
-
-  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 12px; color: var(--ink-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-</style>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <div class="wrap">
@@ -473,66 +208,63 @@ function render() {
   `;
   app.appendChild(qHeading);
 
-  const qlistWrap = document.createElement("div");
-  app.appendChild(qlistWrap);
+  const qTableWrap = document.createElement("div");
+  qTableWrap.className = "matrix-wrap";
+  qTableWrap.innerHTML = `
+    <table class="matrix qtable">
+      <thead>
+        <tr>
+          <th>프롬프트</th>
+          <th style="width:110px">그룹</th>
+          <th style="width:130px">챗지피티</th>
+          <th style="width:130px">제미나이</th>
+        </tr>
+      </thead>
+      <tbody id="qTableBody"></tbody>
+    </table>
+  `;
+  app.appendChild(qTableWrap);
+  const qTableBody = qTableWrap.querySelector("#qTableBody");
+  qTableBody.addEventListener("click", (e) => {
+    const row = e.target.closest("tr[data-href]");
+    if (row) location.href = row.dataset.href;
+  });
 
   function statusBadge(row) {
     const st = row ? statusOf(row) : { cls: "unknown", label: "확인 오류" };
     return `<span class="status-badge ${st.cls}">${st.label}</span>`;
   }
 
-  function renderQRow(i) {
+  function qRowHtml(i) {
     const q = latest.questions[i];
     const groupName = Object.entries(groups).find(([, gIdxs]) => gIdxs.includes(i))?.[0] || "";
     const gptRow = latest.platforms.gpt?.rows?.[i];
     const geminiRow = latest.platforms.gemini?.rows?.[i];
-    const a = document.createElement("a");
-    a.href = `./prompt.html?q=${i}`;
-    a.className = "qrow";
-    a.innerHTML = `
-      <span class="qn mono">${i + 1}</span>
-      <span class="qtext">${q}</span>
-      <span class="qgroup-col">${groupName ? `<span class="qgroup">${groupName}</span>` : `<span class="cell-empty">—</span>`}</span>
-      <span class="qstat-col">${statusBadge(gptRow)}</span>
-      <span class="qstat-col">${statusBadge(geminiRow)}</span>
-      <span class="arrow">›</span>
+    return `
+      <tr data-href="./prompt.html?q=${i}">
+        <td><span class="row-label">${i + 1}. ${q}</span></td>
+        <td>${groupName ? `<span class="qgroup">${groupName}</span>` : `<span class="cell-empty">—</span>`}</td>
+        <td>${statusBadge(gptRow)}</td>
+        <td>${statusBadge(geminiRow)}</td>
+      </tr>
     `;
-    return a;
   }
 
   function renderQList() {
-    qlistWrap.innerHTML = "";
-    const head = document.createElement("div");
-    head.className = "qlist-head";
-    head.innerHTML = `
-      <span class="qn"></span>
-      <span class="qtext">프롬프트</span>
-      <span class="qgroup-col">그룹</span>
-      <span class="qstat-col">챗지피티</span>
-      <span class="qstat-col">제미나이</span>
-      <span class="arrow"></span>
-    `;
-    qlistWrap.appendChild(head);
-
-    const qlist = document.createElement("div");
-    qlist.className = "qlist";
-
+    let rowsHtml = "";
     if (QLIST_FILTER === "all") {
       byTag.forEach((idxs, tagName) => {
-        const tagHead = document.createElement("div");
-        tagHead.className = "qtaghead";
-        tagHead.innerHTML = `<span class="qtagname">${tagName}</span><span class="qtagcount">${idxs.length}개</span>`;
-        qlist.appendChild(tagHead);
-        idxs.forEach((i) => qlist.appendChild(renderQRow(i)));
+        rowsHtml += `<tr class="qtag-row"><td colspan="4"><span class="qtagname">${tagName}</span><span class="qtagcount">${idxs.length}개</span></td></tr>`;
+        idxs.forEach((i) => { rowsHtml += qRowHtml(i); });
       });
     } else {
       const sep = QLIST_FILTER.indexOf(":");
       const kind = QLIST_FILTER.slice(0, sep);
       const name = QLIST_FILTER.slice(sep + 1);
       const idxs = kind === "tag" ? (byTag.get(name) || []) : [...(groups[name] || [])].sort((a, b) => a - b);
-      idxs.forEach((i) => qlist.appendChild(renderQRow(i)));
+      idxs.forEach((i) => { rowsHtml += qRowHtml(i); });
     }
-    qlistWrap.appendChild(qlist);
+    qTableBody.innerHTML = rowsHtml;
   }
 
   renderQList();
