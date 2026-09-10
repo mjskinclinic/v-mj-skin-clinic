@@ -224,7 +224,7 @@ table.matrix thead th {
 }
 table.matrix tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
 table.matrix tbody tr:last-child td { border-bottom: none; }
-table.matrix tbody tr:hover { background: var(--surface-2); }
+table.matrix tbody tr[data-href]:hover { background: var(--surface-2); }
 .row-label { font-weight: 600; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .row-label .p-dot { width: 8px; height: 8px; border-radius: 5px; }
 .cell-brand { font-size: 12.5px; }
@@ -258,7 +258,7 @@ table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center;
 .table-wrap thead th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600; padding: 10px 14px; border-bottom: 1px solid var(--line-strong); background: var(--surface-2); }
 .table-wrap tbody td { padding: 10px 14px; border-bottom: 1px solid var(--line); }
 .table-wrap tbody tr:last-child td { border-bottom: none; }
-.table-wrap tbody tr:hover { background: var(--surface-2); }
+#runBody tr:hover { background: var(--surface-2); }
 #runBody tr { cursor: pointer; }
 
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 5px; font-size: 12px; font-weight: 600; white-space: nowrap; }
