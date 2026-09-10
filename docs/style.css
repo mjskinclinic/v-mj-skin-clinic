@@ -143,6 +143,8 @@ select.q-filter { margin-left: auto; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 5px; padding: 22px 24px; }
 .card .cap { font-size: 12px; color: var(--ink-muted); margin-top: 3px; }
 /* prompt.html 상단 통계 카드(프롬프트 실행 횟수/분석한 AI 모델)는 캡션 크기의 작은 라벨 */
+.stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+@media (max-width: 700px) { .stat-row { grid-template-columns: 1fr; } }
 .stat-card { padding: 20px 22px; }
 .stat-card h2 { font-size: 13px; color: var(--ink-2); font-weight: 600; }
 .stat-num { font-size: 30px; font-weight: 600; margin-top: 6px; }
@@ -163,7 +165,7 @@ select.q-filter { margin-left: auto; }
 .delta.down { color: var(--down); background: color-mix(in srgb, var(--down) 14%, transparent); }
 .delta.flat { color: var(--ink-muted); background: var(--surface-2); }
 
-.chart-card { margin-bottom: 20px; }
+.chart-card { margin-bottom: 10px; }
 .chart-card .head { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
 
 .toggle-group { display: inline-flex; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
@@ -199,6 +201,11 @@ select.q-filter { margin-left: auto; }
 .rank-pct { font-size: 12.5px; color: var(--ink-2); }
 .rank-list li.us .rank-pct { color: var(--accent-ink); }
 .rank-empty { font-size: 12.5px; color: var(--ink-muted); padding: 10px 0; }
+.rank-pager { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
+.rank-pager-btn { font-size: 12.5px; border: 1px solid var(--line); border-radius: 5px; padding: 5px 12px; background: var(--surface); color: var(--ink-2); cursor: pointer; }
+.rank-pager-btn:hover:not(:disabled) { border-color: var(--line-strong); color: var(--ink); }
+.rank-pager-btn:disabled { opacity: 0.4; cursor: default; }
+.rank-pager-label { font-size: 12px; color: var(--ink-muted); }
 .table-empty { font-size: 12.5px; color: var(--ink-muted); padding: 16px; }
 
 /* ---- lane heading (섹션 제목 줄) ---- */

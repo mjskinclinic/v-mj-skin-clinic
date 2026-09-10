@@ -64,6 +64,7 @@ let FULL_DATA = null;
 let PERIOD_DAYS = 10;
 let CHART_MODE = "total"; // total | engine | rank
 let QLIST_FILTER = "all"; // all | tag:이름 | group:이름
+let RANK_LIST_FULL = [];
 
 function statusOf(row) {
   if (row.error || row.exposed === null || row.exposed === undefined) return { cls: "unknown", label: "확인 오류" };
@@ -138,6 +139,7 @@ function render() {
       <h2>브랜드 랭킹</h2>
       <div class="cap">AI 답변에서 가장 많이 언급된 병원 순위</div>
       <ul class="rank-list" id="rankList"></ul>
+      <div class="rank-pager" id="rankPager"></div>
     </div>
   `;
   app.appendChild(heroRow);
@@ -202,8 +204,8 @@ function render() {
     <span class="n">${latest.questions.length}개 질문 · 클릭하면 상세 추이를 볼 수 있습니다</span>
     <select class="period q-filter" id="qFilterSelect">
       <option value="all"${QLIST_FILTER === "all" ? " selected" : ""}>전체</option>
-      ${tagNames.length ? `<optgroup label="태그">${tagNames.map((t) => `<option value="tag:${t}"${QLIST_FILTER === "tag:" + t ? " selected" : ""}>${t}</option>`).join("")}</optgroup>` : ""}
-      ${groupNames.length ? `<optgroup label="시술 그룹">${groupNames.map((g) => `<option value="group:${g}"${QLIST_FILTER === "group:" + g ? " selected" : ""}>${g}</option>`).join("")}</optgroup>` : ""}
+      ${tagNames.map((t) => `<option value="tag:${t}"${QLIST_FILTER === "tag:" + t ? " selected" : ""}>${t}</option>`).join("")}
+      ${groupNames.map((g) => `<option value="group:${g}"${QLIST_FILTER === "group:" + g ? " selected" : ""}>${g}</option>`).join("")}
     </select>
   `;
   app.appendChild(qHeading);
@@ -300,20 +302,54 @@ function renderChart() {
   }
 }
 
+const RANK_PAGE_SIZE = 7;
+const RANK_MAX = 21;
+let RANK_PAGE = 1;
+
 function renderRankList(allRuns) {
-  const { list } = brandRanking(allRuns, { limit: 7 });
+  RANK_PAGE = 1;
+  RANK_LIST_FULL = brandRanking(allRuns, { limit: RANK_MAX }).list;
+  renderRankPage();
+}
+
+function renderRankPage() {
   const ul = document.getElementById("rankList");
+  const pager = document.getElementById("rankPager");
+  const list = RANK_LIST_FULL;
+
   if (!list.length) {
     ul.innerHTML = `<div class="rank-empty">아직 집계할 데이터가 없습니다.</div>`;
+    pager.innerHTML = "";
     return;
   }
-  ul.innerHTML = list.map((b, i) => `
+
+  const totalPages = Math.ceil(list.length / RANK_PAGE_SIZE);
+  const start = (RANK_PAGE - 1) * RANK_PAGE_SIZE;
+  const pageItems = list.slice(start, start + RANK_PAGE_SIZE);
+
+  ul.innerHTML = pageItems.map((b, i) => `
     <li class="${b.isUs ? "us" : ""}">
-      <span class="rank-n">${i + 1}</span>
+      <span class="rank-n">${start + i + 1}</span>
       <span class="rank-name">${b.name}${b.isUs ? " (우리)" : ""}</span>
       <span class="rank-pct mono">${b.pct}%</span>
     </li>
   `).join("");
+
+  if (totalPages <= 1) {
+    pager.innerHTML = "";
+    return;
+  }
+  pager.innerHTML = `
+    <button type="button" class="rank-pager-btn" id="rankPrev" ${RANK_PAGE === 1 ? "disabled" : ""}>‹ 이전</button>
+    <span class="rank-pager-label mono">페이지 ${RANK_PAGE} of ${totalPages}</span>
+    <button type="button" class="rank-pager-btn" id="rankNext" ${RANK_PAGE === totalPages ? "disabled" : ""}>다음 ›</button>
+  `;
+  document.getElementById("rankPrev")?.addEventListener("click", () => {
+    if (RANK_PAGE > 1) { RANK_PAGE -= 1; renderRankPage(); }
+  });
+  document.getElementById("rankNext")?.addEventListener("click", () => {
+    if (RANK_PAGE < totalPages) { RANK_PAGE += 1; renderRankPage(); }
+  });
 }
 
 function renderMatrix(rows) {
