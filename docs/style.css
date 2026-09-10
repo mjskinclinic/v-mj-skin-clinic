@@ -236,6 +236,7 @@ table.matrix tbody tr[data-href]:hover { background: var(--surface-2); }
 table.qtable td:first-child { max-width: 480px; }
 table.qtable .row-label { white-space: normal; }
 table.qtable tbody tr { cursor: pointer; }
+table.qtable td:nth-child(2), table.qtable th:nth-child(2) { text-align: center; padding-right: 6px; }
 table.qtable td:nth-child(3), table.qtable th:nth-child(3) { text-align: center; padding-right: 6px; }
 table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center; padding-left: 6px; }
 .qtag-row td { padding: 8px 14px; border-bottom: 1px solid var(--line-strong); }
@@ -261,7 +262,7 @@ table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center;
 #runBody tr:hover { background: var(--surface-2); }
 #runBody tr { cursor: pointer; }
 
-.pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 5px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 15px; font-size: 12px; font-weight: 600; white-space: nowrap; }
 .pill.good { background: var(--good-bg); color: var(--good); }
 .pill.warning { background: var(--warning-bg); color: var(--warning); }
 .pill.serious { background: var(--serious-bg); color: var(--serious); }
@@ -286,7 +287,7 @@ table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center;
 .modal-section:first-of-type { margin-top: 0; }
 .modal-section h3 { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600; margin: 0 0 8px; }
 .modal-prompt { font-size: 14.5px; font-weight: 600; }
-.modal-answer { font-size: 13px; color: var(--ink-2); white-space: pre-wrap; background: var(--surface-2); border-radius: 5px; padding: 14px 16px; max-height: 280px; overflow-y: auto; }
+.modal-answer { font-size: 13px; color: var(--ink-2); white-space: pre-wrap; background: var(--surface-2); border-radius: 5px; padding: 14px 16px; }
 .modal-citelist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .modal-citelist a { word-break: break-all; font-size: 12.5px; }
 .modal-empty { font-size: 12.5px; color: var(--ink-muted); }
