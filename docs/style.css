@@ -241,10 +241,10 @@ table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center;
 .qtag-row td { padding: 8px 14px; border-bottom: 1px solid var(--line-strong); }
 .qtag-row .qtagname { font-size: 12.5px; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 3px 11px; margin-right: 8px; }
 .qtag-row .qtagcount { font-size: 11.5px; color: var(--ink-muted); }
-.qgroup { font-size: 11px; color: var(--ink-muted); border: 1px solid var(--line); border-radius: 5px; padding: 2px 9px; white-space: nowrap; }
+.qgroup { font-size: 11px; color: var(--ink-muted); border: 1px solid var(--line); border-radius: 15px; padding: 2px 9px; white-space: nowrap; }
 .status-badge {
   display: inline-flex; align-items: center; font-size: 11.5px; font-weight: 600;
-  padding: 3px 10px; border-radius: 5px; white-space: nowrap;
+  padding: 3px 10px; border-radius: 15px; white-space: nowrap;
 }
 .status-badge.good { color: var(--good); background: var(--good-bg); }
 .status-badge.warning { color: var(--warning); background: var(--warning-bg); }
