@@ -1,8 +1,13 @@
 // ============================================================================
 // geo-audit-pipeline / scripts/collect.mjs
 //
-// 매일 아침 GitHub Actions가 이 스크립트를 실행합니다.
-// 1) 10개 질문을 ChatGPT / Gemini API에 "웹검색 켠 상태"로 각각 전송
+// 이틀에 한 번, 그날 오전/오후 두 번 GitHub Actions가 이 스크립트를 실행합니다 (daily.yml 참고).
+// 1) 각 질문을 ChatGPT / Gemini API에 "웹검색 켠 상태"로 각각 전송합니다. 오전/오후 두 번의
+//    실행이 같은 날짜에 각각 1건씩 이어붙여져서, 하루에 질문당 2건의 독립된 기록이 쌓입니다.
+//    (한 번에 연속으로 2회 반복하지 않고 시간 간격을 두는 이유: 그 사이 웹검색 결과가 바뀔
+//    여지가 생겨야 두 표본이 더 독립적이 되기 때문입니다.) 평균을 내서 하나로 합치지 않고
+//    각 실행 결과를 그대로 저장합니다 — 대시보드의 "노출 점유율"이 이미 "노출된 실행 수 ÷
+//    전체 실행 수"로 계산되는 구조라, 기록이 쌓이는 대로 자동으로 정확한 비율에 반영됩니다.
 // 2) 두 답변을 Gemini API에 다시 보내 "실제로 어떤 병원들을 추천/언급했는지"를
 //    엄격한 규칙으로 판정 (우리 병원 노출 여부 + 함께 언급된 전체 브랜드 순서)
 // 3) 결과를 docs/data/results.json 에 저장 (대시보드가 이 파일을 읽습니다)
@@ -97,7 +102,12 @@ async function askOpenAI(question) {
     },
     body: JSON.stringify({
       model: OPENAI_MODEL,
-      tools: [{ type: "web_search" }],
+      temperature: 0, // 매번 같은 조건으로 재현 가능하도록 고정 (창의성 랜덤성 제거)
+      tools: [{
+        type: "web_search",
+        // 한국 사용자 관점 검색 결과를 유도하기 위한 위치 힌트 (실제 거주지 IP는 아니며, API가 제공하는 근사 위치 힌트)
+        user_location: { type: "approximate", country: "KR", city: "Seoul", region: "Seoul" },
+      }],
       input: question,
     }),
   });
@@ -124,6 +134,7 @@ async function askGemini(question) {
     body: JSON.stringify({
       contents: [{ parts: [{ text: question }] }],
       tools: [{ google_search: {} }],
+      generationConfig: { temperature: 0 }, // 매번 같은 조건으로 재현 가능하도록 고정
     }),
   });
   if (!res.ok) throw new Error(`Gemini ${res.status}: ${await res.text()}`);
@@ -191,7 +202,7 @@ ${answers.gemini ?? "(호출 실패 — 판정 불가로 처리)"}
     },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1536 },
+      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1536, temperature: 0 },
     }),
   });
   if (!res.ok) throw new Error(`Judge(Gemini) ${res.status}: ${await res.text()}`);
@@ -262,8 +273,10 @@ async function collectQuestion(question) {
 }
 
 function summarize(rows) {
-  const total = rows.length;
-  const valid = rows.filter((r) => !r.error);
+  // rows: 질문별 실행 기록 배열의 배열(하루 여러 번 실행) 또는 단일 객체 배열(예전 형식) 모두 지원
+  const flat = rows.flatMap((entry) => (Array.isArray(entry) ? entry : [entry]));
+  const total = flat.length;
+  const valid = flat.filter((r) => !r.error);
   const exposed = valid.filter((r) => r.exposed).length;
   const top3 = valid.filter((r) => r.exposed && r.rank && r.rank <= 3).length;
   const top1 = valid.filter((r) => r.exposed && r.rank === 1).length;
@@ -287,12 +300,39 @@ function purgeOldAnswers(historyArr, refDateStr) {
   for (const snap of historyArr) {
     if (snap.date >= cutoffStr) continue; // 최근 기록은 원문 그대로 둠
     for (const key of Object.keys(snap.platforms || {})) {
-      for (const row of snap.platforms[key]?.rows || []) {
-        if (row.answer) row.answer = "";
+      for (const entry of snap.platforms[key]?.rows || []) {
+        const runList = Array.isArray(entry) ? entry : [entry];
+        for (const row of runList) {
+          if (row.answer) row.answer = "";
+        }
       }
     }
   }
   return historyArr;
+}
+
+// 오전/오후 두 번의 트리거(daily.yml 참고)가 각각 1회씩 측정해서 같은 날짜에 이어붙입니다.
+// (한 번의 실행 안에서 연속으로 반복하지 않는 이유: 시간 간격을 둬야 그 사이 웹검색 결과가
+//  바뀔 여지가 생겨서 두 표본이 더 독립적이 되고, 정확도 개선 효과가 커집니다.)
+// 평균을 내서 하나로 합치지 않고, 각 실행 결과를 개별 기록으로 그대로 저장합니다.
+// (대시보드의 "노출 점유율"은 이미 "노출된 실행 수 ÷ 전체 실행 수"로 계산되므로,
+//  하루에 여러 번 실행한 기록이 그대로 쌓이면 자동으로 정확한 비율에 반영됩니다.
+//  별도로 "하루 치 판정"을 하나로 합치는 규칙이 필요 없습니다.)
+
+// 한국시간(KST, UTC+9) 기준 날짜 문자열. 오전(UTC 전날 23시)/오후(UTC 당일 11시) 두 트리거가
+// 같은 한국 날짜로 정확히 기록되어야 서로 덮어쓰지 않고 이어붙여집니다.
+function kstDateString(d = new Date()) {
+  return new Date(d.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+// prevRows(그날 이미 쌓여있던 질문별 기록)에 이번 실행의 판정 결과를 이어붙입니다.
+// prevRows의 각 항목은 배열(여러 번 실행) 또는 객체(예전 단일 실행 데이터)일 수 있어 둘 다 지원합니다.
+function mergeRows(prevRows, newVerdicts) {
+  return newVerdicts.map((verdict, i) => {
+    const prevEntry = prevRows?.[i];
+    const prevList = prevEntry ? (Array.isArray(prevEntry) ? prevEntry : [prevEntry]) : [];
+    return [...prevList, verdict];
+  });
 }
 
 async function main() {
@@ -303,27 +343,35 @@ async function main() {
   for (const { text: question } of QUESTIONS) {
     console.log(`질문 진행 중: ${question}`);
     const verdicts = await collectQuestion(question);
-    for (const key of ["gpt", "gemini"]) {
-      perQuestion[key].push(verdicts[key]);
-    }
+    perQuestion.gpt.push(verdicts.gpt);
+    perQuestion.gemini.push(verdicts.gemini);
   }
 
+  const today = kstDateString();
+  const existing = await loadExisting();
+  const history = Array.isArray(existing.history) ? existing.history : [];
+  const todayEntry = history.find((h) => h.date === today);
+
+  const gptRows = todayEntry
+    ? mergeRows(todayEntry.platforms?.gpt?.rows, perQuestion.gpt) // 오늘 이미 실행한 적 있으면 이어붙임 (지우지 않음)
+    : perQuestion.gpt.map((r) => [r]); // 오늘 첫 실행이면 1건짜리 배열로 시작
+  const geminiRows = todayEntry
+    ? mergeRows(todayEntry.platforms?.gemini?.rows, perQuestion.gemini)
+    : perQuestion.gemini.map((r) => [r]);
+
   const snapshot = {
-    date: new Date().toISOString().slice(0, 10),
-    generatedAt: new Date().toISOString(),
+    date: today,
+    generatedAt: new Date().toISOString(), // 오늘 마지막 실행 시각으로 갱신됨
     questions: QUESTIONS.map((q) => q.text),
     questionTags: QUESTIONS.map((q) => q.tag || ""),
     questionGroups: QUESTION_GROUPS,
     platforms: {
-      gpt: { rows: perQuestion.gpt, stats: summarize(perQuestion.gpt) },
-      gemini: { rows: perQuestion.gemini, stats: summarize(perQuestion.gemini) },
+      gpt: { rows: gptRows, stats: summarize(gptRows) },
+      gemini: { rows: geminiRows, stats: summarize(geminiRows) },
     },
   };
 
-  const existing = await loadExisting();
-  const history = Array.isArray(existing.history) ? existing.history : [];
-  // 같은 날짜에 재실행된 경우 기존 항목을 교체
-  const filtered = history.filter((h) => h.date !== snapshot.date);
+  const filtered = history.filter((h) => h.date !== today);
   filtered.push(snapshot);
   filtered.sort((a, b) => a.date.localeCompare(b.date));
   const trimmed = filtered.slice(-MAX_HISTORY);
