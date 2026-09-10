@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>브이앤엠제이 AI 노출 감사 — 질문 상세</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
 
   :root {
     color-scheme: light;
-    --paper: #f5f3ee; --surface: #fcfcfb; --surface-2: #efece3;
+    --paper: #ffffff; --surface: #ffffff; --surface-2: #efece3;
     --ink: #17160f; --ink-2: #55534a; --ink-muted: #898781;
     --line: #ddd8cb; --line-strong: #c3beac;
     --accent: #1f5d4f; --accent-soft: #dbe9e2; --accent-ink: #0f342b;
@@ -44,23 +44,25 @@
   }
 
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "IBM Plex Sans KR", "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Pretendard", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  .mono { font-family: "Pretendard", system-ui, sans-serif; font-variant-numeric: tabular-nums; }
   h1, h2 { text-wrap: balance; font-weight: 700; margin: 0; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 20px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px 96px; }
 
   .back { font-size: 13px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 5px; margin: 28px 0 16px; }
   .masthead { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 26px; }
-  .masthead h1 { font-size: 22px; }
+
   .masthead .cap { font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
 
   .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
   @media (max-width: 700px) { .stat-row { grid-template-columns: 1fr; } }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; }
   .card h2 { font-size: 13px; color: var(--ink-2); font-weight: 600; }
-  .stat-num { font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 600; margin-top: 6px; }
+  .stat-num { font-family: "Pretendard", system-ui, sans-serif; font-size: 30px; font-weight: 600; margin-top: 6px; }
   .model-chips { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
   .model-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); }
   .model-chip i { width: 8px; height: 8px; border-radius: 50%; }
@@ -68,12 +70,12 @@
   .chart-card { margin-bottom: 20px; }
   .chart-card .head { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
   .toggle-group { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-  .toggle-group button { font-family: "IBM Plex Sans KR", sans-serif; font-size: 12.5px; padding: 6px 14px; border: none; background: var(--surface); color: var(--ink-2); cursor: pointer; border-right: 1px solid var(--line); }
+  .toggle-group button { font-family: "Pretendard", sans-serif; font-size: 12.5px; padding: 6px 14px; border: none; background: var(--surface); color: var(--ink-2); cursor: pointer; border-right: 1px solid var(--line); }
   .toggle-group button:last-child { border-right: none; }
   .toggle-group button.active { background: var(--accent); color: #fff; font-weight: 600; }
   .trend-svg { display: block; overflow: visible; }
   .grid-line { stroke: var(--grid); stroke-width: 1; }
-  .axis-label { font-family: "IBM Plex Mono", monospace; font-size: 10px; fill: var(--ink-muted); }
+  .axis-label { font-family: "Pretendard", system-ui, sans-serif; font-size: 10px; fill: var(--ink-muted); }
   .trend-dot { cursor: pointer; }
   .trend-tooltip { position: absolute; background: var(--ink); color: var(--paper); font-size: 11.5px; padding: 6px 10px; border-radius: 6px; pointer-events: none; white-space: nowrap; z-index: 5; line-height: 1.4; }
   .chart-wrap { position: relative; margin-top: 8px; }
@@ -82,15 +84,15 @@
   .chart-legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 
   .lane-heading { display: flex; align-items: baseline; gap: 10px; margin: 36px 0 14px; }
-  .lane-heading h2 { font-size: 16.5px; }
-  .lane-heading .n { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-muted); }
+
+  .lane-heading .n { font-family: "Pretendard", system-ui, sans-serif; font-size: 12px; color: var(--ink-muted); }
 
   .rank-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
   .rank-list li { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 7px; font-size: 13px; }
   .rank-list li.us { background: var(--accent-soft); font-weight: 600; }
-  .rank-n { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--ink-muted); width: 16px; flex-shrink: 0; }
+  .rank-n { font-family: "Pretendard", system-ui, sans-serif; font-size: 11.5px; color: var(--ink-muted); width: 16px; flex-shrink: 0; }
   .rank-name { flex: 1; }
-  .rank-pct { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-2); }
+  .rank-pct { font-family: "Pretendard", system-ui, sans-serif; font-size: 12.5px; color: var(--ink-2); }
   .rank-empty, .table-empty { font-size: 12.5px; color: var(--ink-muted); padding: 16px; }
 
   .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
@@ -110,6 +112,26 @@
   .platform-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; }
   .platform-tag i { width: 8px; height: 8px; border-radius: 50%; }
   .reasoning { font-size: 12px; color: var(--ink-muted); margin-top: 3px; max-width: 46ch; }
+
+  #runBody tr { cursor: pointer; }
+
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(15,14,10,0.55); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50; }
+  .modal-backdrop[hidden] { display: none; }
+  .modal { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; max-width: 640px; width: 100%; max-height: 88vh; overflow-y: auto; padding: 26px 28px 30px; position: relative; }
+  .modal-close { position: absolute; top: 14px; right: 14px; width: 30px; height: 30px; border-radius: 8px; border: none; background: none; color: var(--ink-muted); font-size: 20px; line-height: 1; cursor: pointer; }
+  .modal-close:hover { background: var(--surface-2); color: var(--ink); }
+  .modal-head { display: flex; align-items: center; justify-content: space-between; padding-right: 30px; margin-bottom: 18px; }
+  .modal-platform { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: 13.5px; }
+  .modal-platform i { width: 9px; height: 9px; border-radius: 50%; }
+  .modal-date { font-size: 12px; color: var(--ink-muted); }
+  .modal-section { margin-top: 20px; }
+  .modal-section:first-of-type { margin-top: 0; }
+  .modal-section h3 { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600; margin: 0 0 8px; }
+  .modal-prompt { font-size: 14.5px; font-weight: 600; }
+  .modal-answer { font-size: 13px; color: var(--ink-2); white-space: pre-wrap; background: var(--surface-2); border-radius: 8px; padding: 14px 16px; max-height: 280px; overflow-y: auto; }
+  .modal-citelist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .modal-citelist a { word-break: break-all; font-size: 12.5px; }
+  .modal-empty { font-size: 12.5px; color: var(--ink-muted); }
 </style>
 </head>
 <body>
@@ -133,6 +155,36 @@
     <thead><tr><th>실행 일자</th><th>AI 모델</th><th>브랜드 언급</th><th>근거</th></tr></thead>
     <tbody id="runBody"></tbody>
   </table></div>
+</div>
+
+<div class="modal-backdrop" id="runModalBackdrop" hidden>
+  <div class="modal" id="runModal">
+    <button class="modal-close" id="runModalClose" aria-label="닫기">×</button>
+    <div class="modal-head">
+      <span class="modal-platform" id="modalPlatform"></span>
+      <span class="modal-date mono" id="modalDate"></span>
+    </div>
+    <div class="modal-section">
+      <h3>프롬프트</h3>
+      <div class="modal-prompt" id="modalPrompt"></div>
+    </div>
+    <div class="modal-section">
+      <h3>판정 결과</h3>
+      <div id="modalVerdict"></div>
+    </div>
+    <div class="modal-section">
+      <h3>함께 언급된 브랜드</h3>
+      <ul class="rank-list" id="modalBrands"></ul>
+    </div>
+    <div class="modal-section">
+      <h3>대화 내용 (AI 원문 답변)</h3>
+      <div class="modal-answer" id="modalAnswer"></div>
+    </div>
+    <div class="modal-section">
+      <h3>인용 출처</h3>
+      <ul class="modal-citelist" id="modalCitations"></ul>
+    </div>
+  </div>
 </div>
 
 <script src="./lib.js"></script>
@@ -165,7 +217,10 @@ fetch("./data/results.json", { cache: "no-store" })
     if (!question) return renderEmpty();
 
     document.getElementById("qTitle").textContent = question;
-    document.getElementById("qCap").textContent = `최근 ${HIST.length}일 기준`;
+    const qTag = (latest.questionTags || [])[qIdx];
+    document.getElementById("qCap").textContent = qTag
+      ? `최근 ${HIST.length}일 기준 · ${qTag}`
+      : `최근 ${HIST.length}일 기준`;
 
     renderStats(latest, question);
     renderChart();
@@ -239,8 +294,8 @@ function renderChart() {
   const legend = document.getElementById("chartLegend");
   if (CHART_MODE === "total") {
     const points = dailyTrend(HIST, { questionIndices: [qIdx] }).map((d) => ({ x: d.date, y: d.pct }));
-    renderTrendChart(wrap, [{ label: "전체", color: "var(--accent)", points }], { yMax: 100, ySuffix: "%" });
-    legend.innerHTML = `<span><i style="background:var(--accent)"></i>전체 노출 점유율</span>`;
+    renderTrendChart(wrap, [{ label: "전체", color: "#000000", points }], { yMax: 100, ySuffix: "%" });
+    legend.innerHTML = `<span><i style="background:#000000"></i>전체 노출 점유율</span>`;
   } else {
     const series = PLATFORMS.map((p) => ({
       label: PLATFORM_META[p].name,
@@ -299,22 +354,72 @@ function renderRuns() {
   const runs = runsForQuestion(HIST).slice().reverse();
   document.getElementById("runCount").textContent = `${runs.length}건`;
   const tbody = document.getElementById("runBody");
+  tbody.innerHTML = "";
   if (!runs.length) {
     tbody.innerHTML = `<tr><td colspan="4" class="table-empty">실행 기록이 없습니다.</td></tr>`;
     return;
   }
-  tbody.innerHTML = runs.map((r) => {
+  runs.forEach((r) => {
     const st = statusOf(r);
-    return `
-      <tr>
-        <td class="mono">${r.date}</td>
-        <td><span class="platform-tag"><i style="background:${PLATFORM_META[r.platform].color}"></i>${PLATFORM_META[r.platform].name}</span></td>
-        <td><span class="pill ${st.cls}"><i></i>${st.label}</span></td>
-        <td><div class="reasoning">${r.reasoning || ""}</div></td>
-      </tr>
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="mono">${r.date}</td>
+      <td><span class="platform-tag"><i style="background:${PLATFORM_META[r.platform].color}"></i>${PLATFORM_META[r.platform].name}</span></td>
+      <td><span class="pill ${st.cls}"><i></i>${st.label}</span></td>
+      <td><div class="reasoning">${r.reasoning || ""}</div></td>
     `;
-  }).join("");
+    tr.addEventListener("click", () => openRunModal(r));
+    tbody.appendChild(tr);
+  });
 }
+
+function openRunModal(r) {
+  const st = statusOf(r);
+  document.getElementById("modalPlatform").innerHTML =
+    `<i style="background:${PLATFORM_META[r.platform].color}"></i>${PLATFORM_META[r.platform].name}`;
+  document.getElementById("modalDate").textContent = r.date;
+  document.getElementById("modalPrompt").textContent = document.getElementById("qTitle").textContent;
+  document.getElementById("modalVerdict").innerHTML = `
+    <span class="pill ${st.cls}"><i></i>${st.label}</span>
+    ${r.reasoning ? `<div class="reasoning" style="margin-top:8px;max-width:none">${r.reasoning}</div>` : ""}
+  `;
+
+  const brandsEl = document.getElementById("modalBrands");
+  const brands = r.brands || [];
+  brandsEl.innerHTML = brands.length
+    ? brands.map((b, i) => `
+        <li class="${b.isUs ? "us" : ""}">
+          <span class="rank-n">${i + 1}</span>
+          <span class="rank-name">${b.name}${b.isUs ? " (우리)" : ""}</span>
+        </li>
+      `).join("")
+    : `<div class="modal-empty">본문에서 언급된 병원이 없거나 확인할 수 없습니다.</div>`;
+
+  document.getElementById("modalAnswer").textContent =
+    r.answer || (r.error ? "이 실행은 API 호출 또는 판정에 실패해 원문이 없습니다." : "저장된 원문이 없습니다 (오래된 기록이거나, 이전 버전에서 수집된 기록입니다).");
+
+  const citeEl = document.getElementById("modalCitations");
+  const cites = r.citations || [];
+  citeEl.innerHTML = cites.length
+    ? cites.map((c) => `<li><a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.domain}</a></li>`).join("")
+    : `<div class="modal-empty">인용 출처가 없습니다.</div>`;
+
+  document.getElementById("runModalBackdrop").hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeRunModal() {
+  document.getElementById("runModalBackdrop").hidden = true;
+  document.body.style.overflow = "";
+}
+document.getElementById("runModalClose").addEventListener("click", closeRunModal);
+document.getElementById("runModalBackdrop").addEventListener("click", (e) => {
+  if (e.target.id === "runModalBackdrop") closeRunModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeRunModal();
+});
+
 </script>
 </body>
 </html>
