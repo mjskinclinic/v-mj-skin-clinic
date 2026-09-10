@@ -16,9 +16,13 @@ function flattenRuns(history, { days = 10, platforms = PLATFORMS, questionIndice
   for (const snap of recent) {
     for (const platform of platforms) {
       const rows = snap.platforms?.[platform]?.rows || [];
-      rows.forEach((row, qIdx) => {
+      rows.forEach((entry, qIdx) => {
         if (questionIndices && !questionIndices.includes(qIdx)) return;
-        runs.push({ date: snap.date, platform, qIdx, ...row });
+        // entry가 배열이면 하루에 여러 번 실행한 개별 기록들, 객체면(예전 데이터) 단일 실행 기록
+        const runList = Array.isArray(entry) ? entry : [entry];
+        runList.forEach((row) => {
+          runs.push({ date: snap.date, platform, qIdx, ...row });
+        });
       });
     }
   }
