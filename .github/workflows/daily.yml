@@ -1,39 +1,60 @@
 name: Daily GEO check
 
-# 매일 한국시간(KST) 오전 8시 = UTC 23:00(전날) 에 자동 실행됩니다.
-# cron은 UTC 기준입니다. 시간을 바꾸고 싶으면 "0 23 * * *" 부분만 수정하세요.
-#   예) 한국시간 오전 7시 -> "0 22 * * *"
-#   예) 한국시간 오후 9시 -> "0 12 * * *"
+# 이틀에 한 번, 그날 한국시간 08:00 / 14:00 / 20:00 세 번 실행됩니다.
+#   - 08:00 KST = UTC 23:00(전날) → cron "0 23 * * *"
+#   - 14:00 KST = UTC 05:00       → cron "0 5 * * *"
+#   - 20:00 KST = UTC 11:00       → cron "0 11 * * *"
+# "이틀 간격 체크" 단계에서 짝수/홀수 날짜를 걸러서, 실행하는 날에만 세 번 다 돌고
+# 건너뛰는 날에는 셋 다 아무 것도 안 합니다. collect.mjs가 같은 날짜 기록에 결과를 이어붙이므로
+# 앞선 실행 결과가 다음 실행에 지워지지 않고, 그날 질문당 3건이 함께 쌓입니다.
+# Actions 탭에서 수동 실행(workflow_dispatch)하면 간격 체크를 건너뛰고 항상 실행됩니다.
 on:
   schedule:
     - cron: "0 23 * * *"
-  workflow_dispatch: {} # Actions 탭에서 "Run workflow" 버튼으로 수동 실행 가능
-
-permissions:
-  contents: write
+    - cron: "0 5 * * *"
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
 
 jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: 저장소 내려받기
+      - name: 이틀 간격 체크
+        id: gate
+        run: |
+          # UTC epoch에 9시간(KST 보정)을 더한 뒤 날짜 인덱스를 구해서, 세 트리거(23시 전날/5시/11시 UTC)가
+          # 같은 한국 날짜에 대해 항상 같은 값이 나오도록 합니다.
+          DAY=$(( ( $(date -u +%s) + 9*3600 ) / 86400 ))
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $(( DAY % 2 )) -eq 0 ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "오늘은 실행하는 날입니다."
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "오늘은 건너뛰는 날입니다 (이틀에 한 번 스케줄)."
+          fi
+
+      - name: 저장소 체크아웃
+        if: steps.gate.outputs.should_run == 'true'
         uses: actions/checkout@v4
 
-      - name: Node.js 설치
+      - name: Node.js 설정
+        if: steps.gate.outputs.should_run == 'true'
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 20
 
-      - name: 2개 AI 플랫폼 측정 실행
+      - name: GEO 측정 실행 (오전/점심/저녁 중 이번 1회분)
+        if: steps.gate.outputs.should_run == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/collect.mjs
 
-      - name: 결과 커밋 & 푸시 (대시보드가 이 파일을 읽습니다)
+      - name: 결과 커밋 & 푸시
+        if: steps.gate.outputs.should_run == 'true'
         run: |
           git config user.name "geo-audit-bot"
-          git config user.email "geo-audit-bot@users.noreply.github.com"
+          git config user.email "actions@github.com"
           git add docs/data/results.json
-          git diff --cached --quiet && echo "변경 없음 — 커밋 생략" || git commit -m "chore: daily GEO results $(date -u +%Y-%m-%d)"
+          git diff --cached --quiet && echo "변경 없음 — 커밋 생략" || git commit -m "chore: GEO 측정 결과 업데이트 ($(date -u +%F))"
           git push
