@@ -236,9 +236,10 @@ table.matrix tbody tr[data-href]:hover { background: var(--paper); }
 table.qtable td:first-child { max-width: 480px; }
 table.qtable .row-label { white-space: normal; }
 table.qtable tbody tr { cursor: pointer; }
-table.qtable td:nth-child(2), table.qtable th:nth-child(2) { text-align: center; padding-right: 6px; }
+table.qtable td:nth-child(2), table.qtable th:nth-child(2) { text-align: center; }
 table.qtable td:nth-child(3), table.qtable th:nth-child(3) { text-align: center; padding-right: 6px; }
-table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center; padding-left: 6px; }
+table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center; padding-left: 6px; padding-right: 6px; }
+table.qtable td:nth-child(5), table.qtable th:nth-child(5) { text-align: center; padding-left: 6px; }
 .qtag-row td { padding: 8px 14px; border-bottom: 1px solid var(--line-strong); }
 .qtag-row .qtagname { font-size: 12.5px; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 3px 11px; margin-right: 8px; }
 .qtag-row .qtagcount { font-size: 11.5px; color: var(--ink-muted); }

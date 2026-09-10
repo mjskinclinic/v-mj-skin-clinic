@@ -238,9 +238,10 @@ function render() {
       <thead>
         <tr>
           <th>프롬프트</th>
-          <th style="width:110px">그룹</th>
-          <th style="width:130px">챗지피티</th>
-          <th style="width:130px">제미나이</th>
+          <th style="width:100px">그룹</th>
+          <th style="width:100px">전체</th>
+          <th style="width:110px">챗지피티</th>
+          <th style="width:110px">제미나이</th>
         </tr>
       </thead>
       <tbody id="qTableBody"></tbody>
@@ -253,22 +254,35 @@ function render() {
     if (row) location.href = row.dataset.href;
   });
 
-  function statusBadge(row) {
-    const st = row ? statusOf(row) : { cls: "unknown", label: "확인 오류" };
-    return `<span class="status-badge ${st.cls}">${st.label}</span>`;
+  function shareBadge(share) {
+    if (!share.total) return `<span class="status-badge unknown">데이터 없음</span>`;
+    let cls = "critical";
+    if (share.pct >= 50) cls = "good";
+    else if (share.pct >= 20) cls = "warning";
+    else if (share.pct > 0) cls = "serious";
+    return `<span class="status-badge ${cls} mono">${share.pct}%</span>`;
+  }
+
+  // 상단 기간/태그 필터와 무관하게, 저장된 전체 기록(FULL_DATA.history)을 기준으로
+  // 이 질문 하나에 대한 노출 점유율을 계산합니다.
+  function questionShare(qIdx, platforms) {
+    const runs = flattenRuns(FULL_DATA.history, { days: 0, platforms, questionIndices: [qIdx] });
+    return shareOfVoice(runs);
   }
 
   function qRowHtml(i) {
     const q = latest.questions[i];
     const groupName = Object.entries(groups).find(([, gIdxs]) => gIdxs.includes(i))?.[0] || "";
-    const gptRow = latest.platforms.gpt?.rows?.[i];
-    const geminiRow = latest.platforms.gemini?.rows?.[i];
+    const gptShare = questionShare(i, ["gpt"]);
+    const geminiShare = questionShare(i, ["gemini"]);
+    const allShare = questionShare(i, PLATFORMS);
     return `
       <tr data-href="./prompt.html?q=${i}">
         <td><span class="row-label">${i + 1}. ${q}</span></td>
         <td>${groupName ? `<span class="qgroup">${groupName}</span>` : `<span class="cell-empty">—</span>`}</td>
-        <td>${statusBadge(gptRow)}</td>
-        <td>${statusBadge(geminiRow)}</td>
+        <td>${shareBadge(allShare)}</td>
+        <td>${shareBadge(gptShare)}</td>
+        <td>${shareBadge(geminiShare)}</td>
       </tr>
     `;
   }
@@ -277,7 +291,7 @@ function render() {
     let rowsHtml = "";
     if (QLIST_FILTER === "all") {
       byTag.forEach((idxs, tagName) => {
-        rowsHtml += `<tr class="qtag-row"><td colspan="4"><span class="qtagname">${tagName}</span><span class="qtagcount">${idxs.length}개</span></td></tr>`;
+        rowsHtml += `<tr class="qtag-row"><td colspan="5"><span class="qtagname">${tagName}</span><span class="qtagcount">${idxs.length}개</span></td></tr>`;
         idxs.forEach((i) => { rowsHtml += qRowHtml(i); });
       });
     } else {
