@@ -202,7 +202,7 @@ select.q-filter { margin-left: auto; }
 .rank-pct { font-size: 12.5px; color: var(--ink-2); }
 .rank-list li.us .rank-pct { color: var(--accent-ink); }
 .rank-empty { font-size: 12.5px; color: var(--ink-muted); padding: 10px 0; }
-.rank-pager { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
+.rank-pager { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 10px;}
 .rank-pager-btn { font-size: 12.5px; border: 1px solid var(--line); border-radius: 5px; padding: 5px 12px; background: var(--surface); color: var(--ink-2); cursor: pointer; }
 .rank-pager-btn:hover:not(:disabled) { border-color: var(--line-strong); color: var(--ink); }
 .rank-pager-btn:disabled { opacity: 0.4; cursor: default; }
