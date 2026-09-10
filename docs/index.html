@@ -47,7 +47,7 @@
       </div>
       <div class="method-card">
         <h4>오류 처리</h4>
-        <p>특정 플랫폼 호출이 실패하면 "확인 오류"로 표시하고 집계에서 제외하며, 이를 미노출로 간주하지 않습니다.</p>
+        <p>특정 플랫폼 호출이 실패하면 "확인 오류"로 표시하고 집계에서 제외하며, 이를 미언급으로 간주하지 않습니다.</p>
       </div>
     </div>
   </div>
@@ -67,10 +67,10 @@ let QLIST_FILTER = "all"; // all | tag:이름 | group:이름
 
 function statusOf(row) {
   if (row.error || row.exposed === null || row.exposed === undefined) return { cls: "unknown", label: "확인 오류" };
-  if (!row.exposed) return { cls: "critical", label: "미노출" };
-  if (row.rank === 1) return { cls: "good", label: "TOP1" };
-  if (row.rank && row.rank <= 3) return { cls: "warning", label: "TOP" + row.rank };
-  return { cls: "serious", label: "노출 · 순위불가" };
+  if (!row.exposed) return { cls: "critical", label: "미언급" };
+  if (row.rank === 1) return { cls: "good", label: "TOP1 언급" };
+  if (row.rank && row.rank <= 3) return { cls: "warning", label: "TOP" + row.rank + " 언급" };
+  return { cls: "serious", label: "언급 · 순위불가" };
 }
 
 function renderEmpty() {

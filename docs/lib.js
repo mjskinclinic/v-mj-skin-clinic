@@ -33,18 +33,22 @@ function shareOfVoice(runs) {
 }
 
 // 브랜드 랭킹 — 각 실행(run)에 등장한 브랜드들을 집계해 노출율 순으로 정렬
+const OUR_BRAND_NAME = "V&MJ피부과"; // isUs로 표시된 브랜드는 표기(예: 브이앤엠제이피부과/V&MJ피부과)가 달라도 이 이름 하나로 합쳐서 집계합니다.
+
 function brandRanking(runs, { limit = 7 } = {}) {
   const valid = runs.filter((r) => !r.error);
   const counts = new Map();
   for (const r of valid) {
     const seen = new Set();
     for (const b of r.brands || []) {
-      if (!b?.name || seen.has(b.name)) continue;
-      seen.add(b.name);
-      const cur = counts.get(b.name) || { name: b.name, isUs: false, count: 0 };
+      if (!b?.name) continue;
+      const key = b.isUs ? OUR_BRAND_NAME : b.name;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const cur = counts.get(key) || { name: key, isUs: false, count: 0 };
       cur.count += 1;
       cur.isUs = cur.isUs || !!b.isUs;
-      counts.set(b.name, cur);
+      counts.set(key, cur);
     }
   }
   const total = valid.length;
