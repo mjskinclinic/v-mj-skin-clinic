@@ -285,8 +285,7 @@ table.qtable td:nth-child(4), table.qtable th:nth-child(4) { text-align: center;
 .modal-date { font-size: 12px; color: var(--ink-muted); }
 .modal-section { margin-top: 20px; }
 .modal-section:first-of-type { margin-top: 0; }
-.modal-section h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink); font-weight: 600; margin: 0 0 8px; }
-.modal h3:first-of-type{color: var(--ink-muted);}
+.modal-section h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); font-weight: 600; margin: 0 0 8px; }
 .modal-prompt { font-size: 20px; font-weight: 600; }
 .modal-answer { font-size: 13px; color: var(--ink-2); white-space: pre-wrap; background: var(--surface-2); border-radius: 5px; padding: 14px 16px; }
 .modal-citelist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
