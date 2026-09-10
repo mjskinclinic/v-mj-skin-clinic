@@ -12,14 +12,6 @@
     <div class="eyebrow">AI GEO Exposure Audit &middot; 매일 자동 측정</div>
     <div class="top-row">
       <h1>브이앤엠제이피부과 — 노출 점유율</h1>
-      <div class="controls">
-        <select class="period" id="periodSelect">
-          <option value="7">최근 7일</option>
-          <option value="10" selected>최근 10일</option>
-          <option value="30">최근 30일</option>
-          <option value="0">전체 기간</option>
-        </select>
-      </div>
     </div>
     <div class="sub">ChatGPT · Gemini에게 매일 10개 질문을 던지고, AI 답변 본문에 실제로 추천/언급된 경우만 노출로 집계합니다. 날짜를 넘겨가며 우리 병원과 경쟁 병원의 노출 변화를 확인하세요.</div>
   </div>
@@ -65,6 +57,8 @@ let PERIOD_DAYS = 10;
 let CHART_MODE = "total"; // total | engine | rank
 let QLIST_FILTER = "all"; // all | tag:이름 | group:이름
 let RANK_LIST_FULL = [];
+let TAG_FILTER = "all"; // all | 태그명 — 노출 점유율/브랜드 랭킹 카드에 적용
+let HERO_Q_INDICES = null; // TAG_FILTER에 대응하는 질문 인덱스 목록 (null = 전체)
 
 function statusOf(row) {
   if (row.error || row.exposed === null || row.exposed === undefined) return { cls: "unknown", label: "확인 오류" };
@@ -98,14 +92,51 @@ function render() {
 
   document.getElementById("footerStamp").textContent = `AI GEO Exposure Audit · ${latest.date} 기준`;
 
+  // 질문마다 tag(예: 월보고용/강남키워드)를 붙여서, 태그 필터와 "질문 목록" 묶음 보기에 사용합니다.
+  // 실제 데이터 배열(latest.questions)의 순서·인덱스는 전혀 건드리지 않으므로
+  // prompt.html?q=번호 링크나 과거 기록과의 매칭에는 영향이 없습니다.
+  const tags = latest.questionTags || [];
+  const byTag = new Map(); // tagName -> [원래 인덱스, ...] (등장 순서 그대로 보존)
+  latest.questions.forEach((_, i) => {
+    const tagName = tags[i] || "기타";
+    if (!byTag.has(tagName)) byTag.set(tagName, []);
+    byTag.get(tagName).push(i);
+  });
+  const tagNames = [...byTag.keys()];
+  HERO_Q_INDICES = TAG_FILTER === "all" ? null : (byTag.get(TAG_FILTER) || []);
+
   // ---- hero + ranking ----
+  const heroControls = document.createElement("div");
+  heroControls.className = "hero-controls";
+  heroControls.innerHTML = `
+    <select class="period" id="periodSelect">
+      <option value="7"${PERIOD_DAYS === 7 ? " selected" : ""}>최근 7일</option>
+      <option value="10"${PERIOD_DAYS === 10 ? " selected" : ""}>최근 10일</option>
+      <option value="30"${PERIOD_DAYS === 30 ? " selected" : ""}>최근 30일</option>
+      <option value="0"${PERIOD_DAYS === 0 ? " selected" : ""}>전체 기간</option>
+    </select>
+    <select class="period" id="tagFilterSelect">
+      <option value="all"${TAG_FILTER === "all" ? " selected" : ""}>전체</option>
+      ${tagNames.map((t) => `<option value="${t}"${TAG_FILTER === t ? " selected" : ""}>${t}</option>`).join("")}
+    </select>
+  `;
+  app.appendChild(heroControls);
+  document.getElementById("periodSelect").addEventListener("change", (e) => {
+    PERIOD_DAYS = +e.target.value;
+    render();
+  });
+  document.getElementById("tagFilterSelect").addEventListener("change", (e) => {
+    TAG_FILTER = e.target.value;
+    render();
+  });
+
   const heroRow = document.createElement("div");
   heroRow.className = "hero-row";
 
-  const allRuns = flattenRuns(hist, { days: 0 });
+  const allRuns = flattenRuns(hist, { days: 0, questionIndices: HERO_Q_INDICES });
   const sov = shareOfVoice(allRuns);
-  const trendAll = dailyTrend(hist, {});
-  const prevPct = hist.length > 1 ? dailyTrend(hist.slice(0, -1), {}).slice(-1)[0]?.pct : null;
+  const trendAll = dailyTrend(hist, { questionIndices: HERO_Q_INDICES });
+  const prevPct = hist.length > 1 ? dailyTrend(hist.slice(0, -1), { questionIndices: HERO_Q_INDICES }).slice(-1)[0]?.pct : null;
   const delta = pctDelta(sov.pct, hist.length > 1 ? trendAll[trendAll.length - 2].pct : null);
 
   const deltaHtml = delta === null
@@ -184,17 +215,7 @@ function render() {
   ));
 
   // ---- question list ----
-  // 질문마다 tag(예: 월보고용/강남키워드)를 붙여서, "전체" 보기에서는 tag별로 묶어 보여줍니다.
-  // 실제 데이터 배열(latest.questions)의 순서·인덱스는 전혀 건드리지 않으므로
-  // prompt.html?q=번호 링크나 과거 기록과의 매칭에는 영향이 없습니다.
-  const tags = latest.questionTags || [];
-  const byTag = new Map(); // tagName -> [원래 인덱스, ...] (등장 순서 그대로 보존)
-  latest.questions.forEach((_, i) => {
-    const tagName = tags[i] || "기타";
-    if (!byTag.has(tagName)) byTag.set(tagName, []);
-    byTag.get(tagName).push(i);
-  });
-  const tagNames = [...byTag.keys()];
+  // "전체" 보기에서는 위에서 계산한 tag별로 묶어 보여줍니다.
   const groupNames = Object.keys(groups);
 
   const qHeading = document.createElement("div");
@@ -283,19 +304,19 @@ function renderChart() {
   if (!wrap) return;
 
   if (CHART_MODE === "total") {
-    const points = dailyTrend(hist, {}).map((d) => ({ x: d.date, y: d.pct }));
+    const points = dailyTrend(hist, { questionIndices: HERO_Q_INDICES }).map((d) => ({ x: d.date, y: d.pct }));
     renderTrendChart(wrap, [{ label: "전체", color: "#000000", points }], { yMax: 100, ySuffix: "%" });
     legend.innerHTML = `<span><i style="background:#000000"></i>전체 노출 점유율</span>`;
   } else if (CHART_MODE === "engine") {
     const series = PLATFORMS.map((p) => ({
       label: PLATFORM_META[p].name,
       color: PLATFORM_META[p].color,
-      points: dailyTrend(hist, { platform: p }).map((d) => ({ x: d.date, y: d.pct })),
+      points: dailyTrend(hist, { platform: p, questionIndices: HERO_Q_INDICES }).map((d) => ({ x: d.date, y: d.pct })),
     }));
     renderTrendChart(wrap, series, { yMax: 100, ySuffix: "%" });
     legend.innerHTML = PLATFORMS.map((p) => `<span><i style="background:${PLATFORM_META[p].color}"></i>${PLATFORM_META[p].name}</span>`).join("");
   } else {
-    const points = dailyRankTrend(hist, {}).map((d) => ({ x: d.date, y: d.rank }));
+    const points = dailyRankTrend(hist, { questionIndices: HERO_Q_INDICES }).map((d) => ({ x: d.date, y: d.rank }));
     const maxRank = Math.max(5, ...points.map((p) => p.y || 0));
     renderTrendChart(wrap, [{ label: "우리 순위", color: "var(--accent)", points }], { invertY: true, yMax: maxRank, ySuffix: "위" });
     legend.innerHTML = `<span><i style="background:var(--accent)"></i>브랜드 랭킹 내 우리 병원 순위 (낮을수록 좋음)</span>`;
@@ -369,11 +390,6 @@ function renderMatrix(rows) {
   wrap.innerHTML = `<table class="matrix"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
   return wrap;
 }
-
-document.getElementById("periodSelect").addEventListener("change", (e) => {
-  PERIOD_DAYS = +e.target.value;
-  render();
-});
 
 fetch("./data/results.json", { cache: "no-store" })
   .then((r) => r.json())
