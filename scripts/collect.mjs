@@ -1,7 +1,7 @@
 // ============================================================================
 // geo-audit-pipeline / scripts/collect.mjs
 //
-// 이틀에 한 번, 그날 오전/점심/저녁 3번 GitHub Actions가 이 스크립트를 실행합니다 (daily.yml 참고).
+// 이틀에 한 번, 그날 오전/오후 두 번 GitHub Actions가 이 스크립트를 실행합니다 (daily.yml 참고).
 // 1) 각 질문을 ChatGPT / Gemini API에 "웹검색 켠 상태"로 각각 전송합니다. 오전/오후 두 번의
 //    실행이 같은 날짜에 각각 1건씩 이어붙여져서, 하루에 질문당 2건의 독립된 기록이 쌓입니다.
 //    (한 번에 연속으로 2회 반복하지 않고 시간 간격을 두는 이유: 그 사이 웹검색 결과가 바뀔
@@ -88,6 +88,17 @@ function domainOf(url) {
   }
 }
 
+// 같은 채널인데 서브도메인/축약 도메인이 갈라져서 인용 통계가 쪼개지는 걸 막기 위한 정규화.
+// 예: m.blog.naver.com → blog.naver.com, youtu.be → youtube.com
+function normalizeDomain(domain) {
+  if (!domain) return domain;
+  if (domain.endsWith("blog.naver.com")) return "blog.naver.com";
+  if (domain.endsWith("cafe.naver.com")) return "cafe.naver.com";
+  if (domain === "youtu.be" || domain.endsWith("youtube.com")) return "youtube.com";
+  if (domain.endsWith("instagram.com")) return "instagram.com";
+  return domain.replace(/^m\./, ""); // 그 외 m.으로 시작하는 모바일 서브도메인은 일괄 제거
+}
+
 // ---------------------------------------------------------------------------
 // 1) 두 플랫폼에 실제 질문 보내기 (웹검색 도구 켠 상태)
 //    각각 { text, citations: [{domain, url}] } 를 반환
@@ -118,7 +129,7 @@ async function askOpenAI(question) {
   if (!textBlock) throw new Error("OpenAI: 응답에서 본문 텍스트를 찾지 못함");
   const citations = (textBlock.annotations || [])
     .filter((a) => a.type === "url_citation" && a.url)
-    .map((a) => ({ url: a.url, domain: domainOf(a.url) }))
+    .map((a) => ({ url: a.url, domain: normalizeDomain(domainOf(a.url)) }))
     .filter((c) => c.domain);
   return { text: textBlock.text, citations };
 }
@@ -134,7 +145,7 @@ async function askGemini(question) {
     body: JSON.stringify({
       contents: [{ parts: [{ text: question }] }],
       tools: [{ google_search: {} }],
-      generationConfig: { temperature: 0 }, // 매번 같은 조건으로 재현 가능하도록 고정
+      generationConfig: { temperature: 0, seed: 42 }, // 매번 같은 조건으로 재현 가능하도록 고정 (seed는 Gemini만 공식 지원, best-effort)
     }),
   });
   if (!res.ok) throw new Error(`Gemini ${res.status}: ${await res.text()}`);
@@ -143,7 +154,7 @@ async function askGemini(question) {
   const text = (cand?.content?.parts || []).map((p) => p.text || "").join("");
   if (!text) throw new Error("Gemini: 응답에서 본문 텍스트를 찾지 못함");
   const citations = (cand?.groundingMetadata?.groundingChunks || [])
-    .map((c) => ({ url: c.web?.uri, domain: c.web?.uri ? domainOf(c.web.uri) : null }))
+    .map((c) => ({ url: c.web?.uri, domain: c.web?.uri ? normalizeDomain(domainOf(c.web.uri)) : null }))
     .filter((c) => c.domain);
   return { text, citations };
 }
@@ -202,7 +213,7 @@ ${answers.gemini ?? "(호출 실패 — 판정 불가로 처리)"}
     },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1536, temperature: 0 },
+      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1536, temperature: 0, seed: 42 },
     }),
   });
   if (!res.ok) throw new Error(`Judge(Gemini) ${res.status}: ${await res.text()}`);
