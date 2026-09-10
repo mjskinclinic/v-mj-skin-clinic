@@ -154,7 +154,7 @@ select.q-filter { margin-left: auto; }
 .model-chip i { width: 8px; height: 8px; border-radius: 5px; }
 
 /* ---- hero + ranking row (index.html) ---- */
-.hero-row { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; margin-bottom: 20px; align-items: stretch; }
+.hero-row { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; margin-bottom: 20px; align-items: stretch; }
 @media (max-width: 900px) { .hero-row { grid-template-columns: 1fr; } }
 
 .hero-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 4px; flex-wrap: wrap; }
