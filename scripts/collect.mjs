@@ -23,7 +23,10 @@ const GEMINI_MODEL = "gemini-3.7-flash";
 const GEMINI_JUDGE_MODEL = "gemini-3.7-flash"; // 판정에 쓰는 모델 (검색 없이 텍스트만 판단)
 
 const RESULTS_PATH = path.join(process.cwd(), "docs", "data", "results.json");
-const MAX_HISTORY = 120; // 최근 120일치만 보관
+const MAX_HISTORY = 365; // 최근 365일치(1년)만 보관
+const ANSWER_RETENTION_DAYS = 60; // AI 원문 답변(answer)은 최근 이 기간만 보관. 그 이전 기록은
+                                   // exposed/rank/brands/citations 등 통계만 남기고 answer는 비워
+                                   // results.json 용량을 관리합니다.
 
 // ---------------------------------------------------------------------------
 // 측정 대상 & 질문 (원장님이 지정한 10개 질문, 그대로 유지)
@@ -31,23 +34,45 @@ const MAX_HISTORY = 120; // 최근 120일치만 보관
 // ---------------------------------------------------------------------------
 const CLINIC_NAME = "브이앤엠제이피부과 (V&MJ Dermatology / mjskinclinic.com)";
 
+// 각 질문은 { text: 실제로 물어볼 문장, tag: 대시보드 질문 목록에서 묶어서 보고 정렬할 그룹 이름 }
+// ⚠️ 배열 순서를 바꾸거나 중간 항목을 삭제하지 마세요. prompt.html?q=번호가 이 배열의
+//    "위치(인덱스)"로 질문을 구분하기 때문에, 순서가 바뀌면 과거 날짜 데이터가 다른
+//    질문의 것처럼 뒤섞여 보입니다. 새 질문은 항상 배열 맨 뒤에 추가하세요.
 const QUESTIONS = [
-  "강남 울쎄라 잘하는 병원 추천해줘",
-  "압구정 울쎄라 잘하는 병원 추천해줘",
-  "강남 써마지 잘하는 병원 추천해줘",
-  "압구정 써마지 잘하는 병원 추천해줘",
-  "한국에서 울쎄라 잘하는 피부과 추천해줘",
-  "서울에서 울쎄라 잘하는 피부과 추천해줘",
-  "한국에서 써마지 잘하는 피부과 추천해줘",
-  "서울에서 써마지 잘하는 피부과 추천해줘",
-  "울쎄라 잘하는 원장 추천해줘",
-  "써마지 잘하는 원장 추천해줘",
+  { text: "강남 울쎄라 잘하는 병원 추천해줘", tag: "월보고용" },
+  { text: "압구정 울쎄라 잘하는 병원 추천해줘", tag: "월보고용" },
+  { text: "강남 써마지 잘하는 병원 추천해줘", tag: "월보고용" },
+  { text: "압구정 써마지 잘하는 병원 추천해줘", tag: "월보고용" },
+  { text: "한국에서 울쎄라 잘하는 피부과 추천해줘", tag: "월보고용" },
+  { text: "서울에서 울쎄라 잘하는 피부과 추천해줘", tag: "월보고용" },
+  { text: "한국에서 써마지 잘하는 피부과 추천해줘", tag: "월보고용" },
+  { text: "서울에서 써마지 잘하는 피부과 추천해줘", tag: "월보고용" },
+  { text: "울쎄라 잘하는 원장 추천해줘", tag: "월보고용" },
+  { text: "써마지 잘하는 원장 추천해줘", tag: "월보고용" },
+  // ↓ 2026-09-10 추가 (기존 질문과 완전히 겹치는 문장 2개는 제외했음)
+  { text: "써마지 가장 잘하는 의사 추천해줘", tag: "월보고용" },
+  { text: "울쎄라를 가장 잘하는 의사 추천해줘", tag: "월보고용" },
+  { text: "한국에서 써마지 가장 유명한 병원 추천해줘.", tag: "월보고용" },
+  { text: "한국에서 울쎄라 가장 유명한 병원 추천해줘.", tag: "월보고용" },
+  { text: "서울에서 써마지 가장 유명한 병원 추천해줘.", tag: "월보고용" },
+  { text: "서울에서 울쎄라 가장 유명한 병원 추천해줘.", tag: "월보고용" },
+  { text: "울쎄라 전문 병원인 곳 알려줘. 강남이나 압구정 쪽으로 추천해줘.", tag: "월보고용" },
+  { text: "강남 써마지 유명한 곳 추천해줘.", tag: "월보고용" },
+  { text: "강남 울쎄라 유명한 곳 추천해줘.", tag: "월보고용" },
+  { text: "써마지 수면마취로 해도 돼? 마취과 전문의가 있고 써마지 잘하는 피부과 추천해줘.", tag: "월보고용" },
+  { text: "울쎄라 수면마취로 해도 돼? 마취과 전문의가 있고 울쎄라 잘하는 피부과 추천해줘.", tag: "월보고용" },
+  // ↓ 2026-09-10 추가 2차분 (강남 키워드) — 참고: "울쎄라피프라임"이 정식 풀네임(한국에서는 "울쎄라"로 통칭)
+  { text: "강남 울쎄라피프라임 잘하는 병원 추천해줘", tag: "강남키워드" },
+  { text: "강남에서 울쎄라 효과가 가장 좋은 병원을 추천해줘", tag: "강남키워드" },
+  { text: "강남에서 써마지 효과가 가장 좋은 병원을 추천해줘", tag: "강남키워드" },
+  { text: "강남 써마지 잘하는 병원 추천", tag: "강남키워드" },
+  { text: "강남 울쎄라 병원 추천해줘", tag: "강남키워드" },
 ];
 
-// 대시보드의 "시술별 순위" 표에 쓰이는 질문 그룹 (0-based 인덱스)
+// 대시보드의 "시술별 순위" 표에 쓰이는 질문 그룹 (0-based 인덱스, 시술 종류 기준 — 위 tag와는 별개)
 const QUESTION_GROUPS = {
-  "울쎄라": [0, 1, 4, 5, 8],
-  "써마지": [2, 3, 6, 7, 9],
+  "울쎄라": [0, 1, 4, 5, 8, 11, 13, 15, 16, 18, 20, 21, 22, 25],
+  "써마지": [2, 3, 6, 7, 9, 10, 12, 14, 17, 19, 23, 24],
 };
 
 function domainOf(url) {
@@ -185,8 +210,10 @@ ${answers.gemini ?? "(호출 실패 — 판정 불가로 처리)"}
 // 3) 메인 파이프라인
 // ---------------------------------------------------------------------------
 
+const MAX_ANSWER_CHARS = 6000; // results.json이 너무 커지지 않도록 저장용 원문은 이 길이로 자름 (판정 자체는 원문 전체로 함)
+
 function emptyVerdict(note) {
-  return { exposed: null, rank: null, reasoning: note, brands: [], citations: [], error: true };
+  return { exposed: null, rank: null, reasoning: note, brands: [], citations: [], answer: "", error: true };
 }
 
 async function collectQuestion(question) {
@@ -222,7 +249,12 @@ async function collectQuestion(question) {
     if (errors[key]) {
       verdicts[key] = emptyVerdict(`API 호출 실패: ${errors[key]}`);
     } else {
-      verdicts[key] = { ...verdicts[key], citations: citationsByPlatform[key] || [], error: false };
+      verdicts[key] = {
+        ...verdicts[key],
+        citations: citationsByPlatform[key] || [],
+        answer: (answers[key] || "").slice(0, MAX_ANSWER_CHARS),
+        error: false,
+      };
     }
   }
 
@@ -248,12 +280,27 @@ async function loadExisting() {
   }
 }
 
+function purgeOldAnswers(historyArr, refDateStr) {
+  const cutoff = new Date(refDateStr + "T00:00:00");
+  cutoff.setDate(cutoff.getDate() - ANSWER_RETENTION_DAYS);
+  const cutoffStr = cutoff.toISOString().slice(0, 10);
+  for (const snap of historyArr) {
+    if (snap.date >= cutoffStr) continue; // 최근 기록은 원문 그대로 둠
+    for (const key of Object.keys(snap.platforms || {})) {
+      for (const row of snap.platforms[key]?.rows || []) {
+        if (row.answer) row.answer = "";
+      }
+    }
+  }
+  return historyArr;
+}
+
 async function main() {
   console.log(`GEO 측정 시작 — ${new Date().toISOString()}`);
 
   const perQuestion = { gpt: [], gemini: [] };
 
-  for (const question of QUESTIONS) {
+  for (const { text: question } of QUESTIONS) {
     console.log(`질문 진행 중: ${question}`);
     const verdicts = await collectQuestion(question);
     for (const key of ["gpt", "gemini"]) {
@@ -264,7 +311,8 @@ async function main() {
   const snapshot = {
     date: new Date().toISOString().slice(0, 10),
     generatedAt: new Date().toISOString(),
-    questions: QUESTIONS,
+    questions: QUESTIONS.map((q) => q.text),
+    questionTags: QUESTIONS.map((q) => q.tag || ""),
     questionGroups: QUESTION_GROUPS,
     platforms: {
       gpt: { rows: perQuestion.gpt, stats: summarize(perQuestion.gpt) },
@@ -279,6 +327,7 @@ async function main() {
   filtered.push(snapshot);
   filtered.sort((a, b) => a.date.localeCompare(b.date));
   const trimmed = filtered.slice(-MAX_HISTORY);
+  purgeOldAnswers(trimmed, snapshot.date);
 
   const output = { latest: snapshot, history: trimmed };
 
