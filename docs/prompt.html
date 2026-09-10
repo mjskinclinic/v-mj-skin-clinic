@@ -21,6 +21,7 @@
     <thead><tr><th>Domain</th><th>모델</th><th style="text-align:right">인용 횟수</th></tr></thead>
     <tbody id="citationBody"></tbody>
   </table></div>
+  <div class="rank-pager" id="citationPager"></div>
 
   <div class="lane-heading"><h2>실행 기록</h2><span class="n" id="runCount"></span></div>
   <div class="table-wrap"><table>
@@ -193,6 +194,10 @@ function renderRanking() {
   `).join("");
 }
 
+const CITE_PAGE_SIZE = 5;
+let CITE_PAGE = 1;
+let CITE_LIST_FULL = [];
+
 function renderCitations() {
   const runs = runsForQuestion(HIST);
   const counts = new Map();
@@ -207,19 +212,49 @@ function renderCitations() {
       counts.set(key, cur);
     }
   }
+  CITE_LIST_FULL = [...counts.values()].sort((a, b) => b.count - a.count);
+  CITE_PAGE = 1;
+  renderCitationsPage();
+}
+
+function renderCitationsPage() {
   const tbody = document.getElementById("citationBody");
-  const list = [...counts.values()].sort((a, b) => b.count - a.count);
+  const pager = document.getElementById("citationPager");
+  const list = CITE_LIST_FULL;
+
   if (!list.length) {
     tbody.innerHTML = `<tr><td colspan="3" class="table-empty">아직 인용 출처 데이터가 없습니다. 자동 파이프라인이 실행되면 이 답변들이 참고한 도메인이 여기 표시됩니다.</td></tr>`;
+    pager.innerHTML = "";
     return;
   }
-  tbody.innerHTML = list.map((c) => `
+
+  const totalPages = Math.ceil(list.length / CITE_PAGE_SIZE);
+  const start = (CITE_PAGE - 1) * CITE_PAGE_SIZE;
+  const pageItems = list.slice(start, start + CITE_PAGE_SIZE);
+
+  tbody.innerHTML = pageItems.map((c) => `
     <tr>
       <td>${c.domain}</td>
       <td>${[...c.platforms].map((p) => `<span class="platform-tag"><i style="background:${PLATFORM_META[p].color}"></i>${PLATFORM_META[p].name}</span>`).join(" ")}</td>
       <td style="text-align:right" class="mono">${c.count}</td>
     </tr>
   `).join("");
+
+  if (totalPages <= 1) {
+    pager.innerHTML = "";
+    return;
+  }
+  pager.innerHTML = `
+    <button type="button" class="rank-pager-btn" id="citePrev" ${CITE_PAGE === 1 ? "disabled" : ""}>‹ 이전</button>
+    <span class="rank-pager-label mono">페이지 ${CITE_PAGE} of ${totalPages}</span>
+    <button type="button" class="rank-pager-btn" id="citeNext" ${CITE_PAGE === totalPages ? "disabled" : ""}>다음 ›</button>
+  `;
+  document.getElementById("citePrev")?.addEventListener("click", () => {
+    if (CITE_PAGE > 1) { CITE_PAGE -= 1; renderCitationsPage(); }
+  });
+  document.getElementById("citeNext")?.addEventListener("click", () => {
+    if (CITE_PAGE < totalPages) { CITE_PAGE += 1; renderCitationsPage(); }
+  });
 }
 
 function renderRuns() {
