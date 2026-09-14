@@ -27,6 +27,11 @@ const OPENAI_MODEL = "gpt-5.6";
 const GEMINI_MODEL = "gemini-3.7-flash";
 const GEMINI_JUDGE_MODEL = "gemini-3.7-flash"; // 판정에 쓰는 모델 (검색 없이 텍스트만 판단)
 
+// ChatGPT 크레딧 소진 등으로 잠시 멈추고 싶을 때 false로. false면 ChatGPT는 아예
+// 호출하지 않고, 오늘 GPT 쪽 기록도 전혀 건드리지 않습니다(에러 기록도 안 남김).
+// 다시 켜고 싶으면 true로 되돌리면 됩니다.
+const GPT_ENABLED = false;
+
 const RESULTS_PATH = path.join(process.cwd(), "docs", "data", "results.json");
 const MAX_HISTORY = 365; // 최근 365일치(1년)만 보관
 const ANSWER_RETENTION_DAYS = 60; // AI 원문 답변(answer)은 최근 이 기간만 보관. 그 이전 기록은
@@ -242,11 +247,12 @@ async function collectQuestion(question) {
   const citationsByPlatform = {};
   const errors = {};
 
+  const platformCalls = GPT_ENABLED
+    ? [["gpt", askOpenAI], ["gemini", askGemini]]
+    : [["gemini", askGemini]];
+
   await Promise.all(
-    [
-      ["gpt", askOpenAI],
-      ["gemini", askGemini],
-    ].map(async ([key, fn]) => {
+    platformCalls.map(async ([key, fn]) => {
       try {
         const { text, citations } = await fn(question);
         answers[key] = text;
@@ -266,7 +272,7 @@ async function collectQuestion(question) {
     verdicts = { gpt: emptyVerdict("판정 실패"), gemini: emptyVerdict("판정 실패") };
   }
 
-  for (const key of ["gpt", "gemini"]) {
+  for (const key of GPT_ENABLED ? ["gpt", "gemini"] : ["gemini"]) {
     if (errors[key]) {
       verdicts[key] = emptyVerdict(`API 호출 실패: ${errors[key]}`);
     } else {
@@ -353,7 +359,7 @@ async function main() {
   for (const { text: question } of QUESTIONS) {
     console.log(`질문 진행 중: ${question}`);
     const verdicts = await collectQuestion(question);
-    perQuestion.gpt.push(verdicts.gpt);
+    if (GPT_ENABLED) perQuestion.gpt.push(verdicts.gpt);
     perQuestion.gemini.push(verdicts.gemini);
   }
 
@@ -362,7 +368,9 @@ async function main() {
   const history = Array.isArray(existing.history) ? existing.history : [];
   const todayEntry = history.find((h) => h.date === today);
 
-  const gptRows = todayEntry
+  const gptRows = !GPT_ENABLED
+    ? (todayEntry?.platforms?.gpt?.rows || QUESTIONS.map(() => [])) // 꺼져있으면 기존 값 그대로 유지
+    : todayEntry
     ? mergeRows(todayEntry.platforms?.gpt?.rows, perQuestion.gpt) // 오늘 이미 실행한 적 있으면 이어붙임 (지우지 않음)
     : perQuestion.gpt.map((r) => [r]); // 오늘 첫 실행이면 1건짜리 배열로 시작
   const geminiRows = todayEntry
