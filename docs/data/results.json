@@ -93,295 +93,35 @@
     "platforms": {
       "gpt": {
         "rows": [
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ],
-          [
-            {
-              "exposed": null,
-              "rank": null,
-              "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-              "brands": [],
-              "citations": [],
-              "answer": "",
-              "error": true
-            }
-          ]
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
         ],
         "stats": {
-          "total": 26,
+          "total": 0,
           "exposed": 0,
           "top3": 0,
           "top1": 0,
@@ -9806,295 +9546,35 @@
       "platforms": {
         "gpt": {
           "rows": [
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ],
-            [
-              {
-                "exposed": null,
-                "rank": null,
-                "reasoning": "API 호출 실패: OpenAI 400: {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'temperature' is not supported with this model.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": null\n  }\n}",
-                "brands": [],
-                "citations": [],
-                "answer": "",
-                "error": true
-              }
-            ]
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
           ],
           "stats": {
-            "total": 26,
+            "total": 0,
             "exposed": 0,
             "top3": 0,
             "top1": 0,
