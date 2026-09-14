@@ -113,7 +113,6 @@ async function askOpenAI(question) {
     },
     body: JSON.stringify({
       model: OPENAI_MODEL,
-      temperature: 0, // 매번 같은 조건으로 재현 가능하도록 고정 (창의성 랜덤성 제거)
       tools: [{
         type: "web_search",
         // 한국 사용자 관점 검색 결과를 유도하기 위한 위치 힌트 (실제 거주지 IP는 아니며, API가 제공하는 근사 위치 힌트)
