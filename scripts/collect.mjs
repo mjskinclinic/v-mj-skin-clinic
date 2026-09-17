@@ -30,7 +30,7 @@ const GEMINI_JUDGE_MODEL = "gemini-3.7-flash"; // 판정에 쓰는 모델 (검�
 // ChatGPT 크레딧 소진 등으로 잠시 멈추고 싶을 때 false로. false면 ChatGPT는 아예
 // 호출하지 않고, 오늘 GPT 쪽 기록도 전혀 건드리지 않습니다(에러 기록도 안 남김).
 // 다시 켜고 싶으면 true로 되돌리면 됩니다.
-const GPT_ENABLED = false;
+const GPT_ENABLED = true;
 
 const RESULTS_PATH = path.join(process.cwd(), "docs", "data", "results.json");
 const MAX_HISTORY = 365; // 최근 365일치(1년)만 보관
