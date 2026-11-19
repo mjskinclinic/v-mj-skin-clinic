@@ -1,7 +1,7 @@
 {
   "latest": {
     "date": "2026-11-19",
-    "generatedAt": "2026-11-18T19:18:19.219Z",
+    "generatedAt": "2026-11-19T03:55:58.267Z",
     "questions": [
       "강남 울쎄라 잘하는 병원 추천해줘",
       "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -102,9 +102,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -124,9 +122,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -146,9 +142,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -168,9 +162,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -190,9 +182,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -212,9 +202,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -234,9 +222,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -256,9 +242,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -278,9 +262,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -300,9 +282,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -322,9 +302,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -344,9 +322,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -366,9 +342,267 @@
               "citations": [],
               "answer": "",
               "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
             }
           ],
           [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
             {
               "exposed": null,
               "rank": null,
@@ -381,7 +615,7 @@
           ]
         ],
         "stats": {
-          "total": 26,
+          "total": 52,
           "exposed": 0,
           "top3": 0,
           "top1": 0,
@@ -401,9 +635,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -423,9 +655,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -445,9 +675,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -467,9 +695,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -489,9 +715,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -511,9 +735,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -533,9 +755,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -555,9 +775,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -577,9 +795,64 @@
               "citations": [],
               "answer": "",
               "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "판정 실패",
+              "brands": [],
+              "citations": [
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUcGnGKez_3btGGCRhth6Tq69DVZpu6DMwEb86aErKI0kx2PghFaZp1HBOpeKXMdzP0aJ-o-o8ISJ1p0IgDilvJCuDDiKW5I4e2_znUnq6JssEERuD3q7sFLc-owy7HUFGHo02fZjw1k8vMSECSC66qyp6quc4b6Wq_WRFAxe2qkbQ4bpsSS8DVf13R_5H0vTgWQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJBMI5wkiHR5WS5XRTp54ZbuwNTbhfDtIRjhrvBAQm7V8ciDj2CqjHYFRaEH-xLgXoZtTEVMpBFA5S56gskheWrASlT-XxLkJtemtkNu7QODd40hViVBcmGLk3oN9_RFQDdbxik388_jlgmdzMxiXO4aUAN88=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj4CJPWltF3ZcN2di-dWxorIRO_spVpHfdUT7pMQuNr3Kh8tA6ytrsPFMSYbHYaaa_YIIHcYUSd_XP9LWmM3qo3GQ3S-NUzmDedeumIeTV_zTNKhYlHmGUMV0P2cCFWoETnOKmSDLtkc4Ccg1R",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHuZI11_noa94vFm_Zf1Rlq65FxPFGuLRN8UqWz8zWp8Ym_pJyA66jXZLaPRWr72Ua1quxH24jvOMvXsUCoLW7wujkoRLC4rc0ZOkZ11PH5LGMfe9_xFI9XDFkGrOXiV60=",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFh02bHuMJVu-hPwbQVPiuSefp3x-k_itwr8ZZo7PdQLBD6WuH8xsT65-BDjSrgvjzEiDAlwd5ijs3lJdr0LOTJoXpzOAX9BzdRoc9FD81HVs-TToDD-TYbtoTKbmrwVpqhGO0ws769O3T07uycw==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELmMSpCYTY_YkU9Rfxf21HNsOJs9YjLYyzoX5alaBtpZhVEwadZbUierApwAmi_-F_iwfcVse1oz9jXgq6bwECoMgM_-3O8yJ2DYo9-l-m93I9bYPGWNjLnFZsZjFHbPVL-2BoPQ==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXtGRRx2sPh_uqPTA4cDzCCqjVgzqmYOFZuLdS0y9FWtYUziwBVG3IvM7N5OFW_pe1NRvBxMXvsX7Ra8xfTmQ9jnv7_V3dlCTpwdw_S-fi6IlfyofCEUiRypt-37H2FSXjrQUbhA==",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHVyV6jPHPLIWVMmk1jLQm6AOGF0zEhimPSanc-ph3NBqp2OXw1HQkuh-Map4ii8fwO_FKSMF2eSbNjxbSzYN7FFlGlam2-PR4ThB4",
+                  "domain": "vertexaisearch.cloud.google.com"
+                },
+                {
+                  "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKa7y1msFWFxNzSt2en6_jnjrbolvPZLv-6HHDXO_14hrjaVqu_0rmYIEJ4wBmE_MXCbRbKuErpS768x8e205JIdFAd5ftF_7_XoNbJkukPIqcbv3MlYdTupGTnfA3nEoL5assFZXE",
+                  "domain": "vertexaisearch.cloud.google.com"
+                }
+              ],
+              "answer": "울쎄라는 단순 장비 시술이 아니라 **‘어떤 깊이의 팁(1.5mm / 3.0mm / 4.5mm)으로 어느 부위에 에너지를 조사하는지’**에 따라 효과와 부작용(특히 볼패임·볼꺼짐)이 크게 갈리는 시술입니다. 따라서 특정 원장 1명을 맹목적으로 선택하기보다는, **검증된 기준과 임상 경험이 풍부한 의료진**을 찾는 것이 안전합니다.\n\n---\n\n### 1. 울쎄라 ‘잘하는 원장’을 고르는 핵심 기준\n\n1. **딥씨(DeepSee) 실시간 초음파를 제대로 보며 시술하는가?**\n   * 울쎄라의 가장 큰 장점은 모니터로 피부층(지방층, 근막층/SMAS)을 보며 쏘는 것입니다. 화면을 보지도 않고 기계적으로 샷만 채우는 시술자는 피해야 합니다.\n2. **원장이 직접 얼굴을 보고 맞춤 디자인을 진행하는가?**\n   * 상담실장만 보고 들어가는 공장형 병원보다는, **시술할 원장님이 직접 얼굴 지방 분포와 피부 두께를 만져보고 디자인**하는 곳이어야 볼꺼짐을 피할 수 있습니다.\n3. **피부과 전문의 및 멀츠(Merz) 키닥터/공식 인증 여부**\n   * 안면 해부학 구조에 정통한 **피부과 전문의**인지, 울쎄라 본사(멀츠 에스테틱스)의 강연자(KOL·키닥터)이거나 정품팁 사용량을 공식 인정받은 **골든 레코드 어워드(Golden Record Award)** 수상 병원인지 확인하면 실패 확률이 낮아집니다.\n\n---\n\n### 2. 리프팅 분야에서 인지도와 임상 경험이 많은 병원/의료진 유형\n\n국내(주로 서울 강남/압구정/신사 중심)에서 울쎄라 임상 수가 많고 학술 활동이 활발한 대표적인 병원 유형은 다음과 같습니다.\n\n* **멀츠 공식 키닥터 / 골든 레코드 최다 시술 피부과**\n  * **V&MJ(엠제이) 피부과 (김민주 원장 등)**: 울쎄라 시술 건수로 골든 레코드 어워드를 다수 수상하며 커스텀 울쎄라로 유명합니다.\n  * **모델로피부과 (서구일·안지수 원장 등)**: 리프팅·안티에이징 분야에서 전통적으로 학술 연구 및 키닥터 활동을 활발히 해온 곳입니다.\n  * **닥터스피부과 (신사본점 성현철 원장 등)**: 전 지점 피부과 전문의 중심 및 울쎄라 최신 프로토콜을 적극적으로 적용하는 네트워크입니다.\n  * **리프티크피부과, 웰스피부과 등**: 리프팅·안티에이징 집중 진료로 평판이 형성된 피부과 전문의 클리닉들입니다.\n\n*(※ 병원마다 주력하는 시술 스타일이나 가격대, 수면마취 지원 여부 등이 다르므로 최소 2~3곳 비교 상담을 권장합니다.)*\n\n---\n\n### 3. 상담 시 원장님께 꼭 질문해야 할 3가지\n\n1. **\"제 얼굴에서 볼꺼짐 위험이 있는 부위는 어디이고, 어떻게 피해 쏘실 건가요?\"**\n   * 광대 아래(옆볼)나 관자놀이 쪽 살이 없는 경우, 이 부위를 비껴서 턱선과 이중턱 위주로 벡터를 잡는지 확인해야 합니다.\n2. **\"몇 mm 팁을 어떤 비율로 나누어 쓰실 계획인가요?\"**\n   * 4.5mm(근막층 타깃), 3.0mm(지방층·진피하부), 1.5mm(진피층 타깃) 중 내 피부 두께에 맞게 배분하는지 설명해주는 원장이 꼼꼼한 의사입니다.\n3. **\"정품 팁 사용 및 정품 인증서 발급이 가능한가요?\"**\n   * 재생 팁 사용은 화상이나 효과 미흡의 주요 원인이므로, 시술 직전 정품 팁 개봉 확인 및 멀츠 정품 스티커 제공 여부를 꼭 확인하세요.",
+              "error": false
             }
           ],
           [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
             {
               "exposed": null,
               "rank": null,
@@ -599,9 +872,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -621,9 +892,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -643,9 +912,7 @@
               "citations": [],
               "answer": "",
               "error": true
-            }
-          ],
-          [
+            },
             {
               "exposed": null,
               "rank": null,
@@ -665,9 +932,247 @@
               "citations": [],
               "answer": "",
               "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
             }
           ],
           [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            }
+          ],
+          [
+            {
+              "exposed": null,
+              "rank": null,
+              "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+              "brands": [],
+              "citations": [],
+              "answer": "",
+              "error": true
+            },
             {
               "exposed": null,
               "rank": null,
@@ -680,7 +1185,7 @@
           ]
         ],
         "stats": {
-          "total": 26,
+          "total": 52,
           "exposed": 0,
           "top3": 0,
           "top1": 0,
@@ -107630,7 +108135,7 @@
     },
     {
       "date": "2026-11-19",
-      "generatedAt": "2026-11-18T19:18:19.219Z",
+      "generatedAt": "2026-11-19T03:55:58.267Z",
       "questions": [
         "강남 울쎄라 잘하는 병원 추천해줘",
         "압구정 울쎄라 잘하는 병원 추천해줘",
@@ -107731,9 +108236,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107753,9 +108256,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107775,9 +108276,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107797,9 +108296,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107819,9 +108316,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107841,9 +108336,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107863,9 +108356,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107885,9 +108376,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107907,9 +108396,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107929,9 +108416,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107951,9 +108436,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107973,9 +108456,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -107995,9 +108476,267 @@
                 "citations": [],
                 "answer": "",
                 "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
               }
             ],
             [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: OpenAI 429: {\n  \"error\": {\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"credit_balance_exhausted\"\n  }\n}",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108010,7 +108749,7 @@
             ]
           ],
           "stats": {
-            "total": 26,
+            "total": 52,
             "exposed": 0,
             "top3": 0,
             "top1": 0,
@@ -108030,9 +108769,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108052,9 +108789,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108074,9 +108809,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108096,9 +108829,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108118,9 +108849,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108140,9 +108869,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108162,9 +108889,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108184,9 +108909,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108206,9 +108929,64 @@
                 "citations": [],
                 "answer": "",
                 "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "판정 실패",
+                "brands": [],
+                "citations": [
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUcGnGKez_3btGGCRhth6Tq69DVZpu6DMwEb86aErKI0kx2PghFaZp1HBOpeKXMdzP0aJ-o-o8ISJ1p0IgDilvJCuDDiKW5I4e2_znUnq6JssEERuD3q7sFLc-owy7HUFGHo02fZjw1k8vMSECSC66qyp6quc4b6Wq_WRFAxe2qkbQ4bpsSS8DVf13R_5H0vTgWQ==",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJBMI5wkiHR5WS5XRTp54ZbuwNTbhfDtIRjhrvBAQm7V8ciDj2CqjHYFRaEH-xLgXoZtTEVMpBFA5S56gskheWrASlT-XxLkJtemtkNu7QODd40hViVBcmGLk3oN9_RFQDdbxik388_jlgmdzMxiXO4aUAN88=",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj4CJPWltF3ZcN2di-dWxorIRO_spVpHfdUT7pMQuNr3Kh8tA6ytrsPFMSYbHYaaa_YIIHcYUSd_XP9LWmM3qo3GQ3S-NUzmDedeumIeTV_zTNKhYlHmGUMV0P2cCFWoETnOKmSDLtkc4Ccg1R",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHuZI11_noa94vFm_Zf1Rlq65FxPFGuLRN8UqWz8zWp8Ym_pJyA66jXZLaPRWr72Ua1quxH24jvOMvXsUCoLW7wujkoRLC4rc0ZOkZ11PH5LGMfe9_xFI9XDFkGrOXiV60=",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFh02bHuMJVu-hPwbQVPiuSefp3x-k_itwr8ZZo7PdQLBD6WuH8xsT65-BDjSrgvjzEiDAlwd5ijs3lJdr0LOTJoXpzOAX9BzdRoc9FD81HVs-TToDD-TYbtoTKbmrwVpqhGO0ws769O3T07uycw==",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELmMSpCYTY_YkU9Rfxf21HNsOJs9YjLYyzoX5alaBtpZhVEwadZbUierApwAmi_-F_iwfcVse1oz9jXgq6bwECoMgM_-3O8yJ2DYo9-l-m93I9bYPGWNjLnFZsZjFHbPVL-2BoPQ==",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXtGRRx2sPh_uqPTA4cDzCCqjVgzqmYOFZuLdS0y9FWtYUziwBVG3IvM7N5OFW_pe1NRvBxMXvsX7Ra8xfTmQ9jnv7_V3dlCTpwdw_S-fi6IlfyofCEUiRypt-37H2FSXjrQUbhA==",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHVyV6jPHPLIWVMmk1jLQm6AOGF0zEhimPSanc-ph3NBqp2OXw1HQkuh-Map4ii8fwO_FKSMF2eSbNjxbSzYN7FFlGlam2-PR4ThB4",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  },
+                  {
+                    "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKa7y1msFWFxNzSt2en6_jnjrbolvPZLv-6HHDXO_14hrjaVqu_0rmYIEJ4wBmE_MXCbRbKuErpS768x8e205JIdFAd5ftF_7_XoNbJkukPIqcbv3MlYdTupGTnfA3nEoL5assFZXE",
+                    "domain": "vertexaisearch.cloud.google.com"
+                  }
+                ],
+                "answer": "울쎄라는 단순 장비 시술이 아니라 **‘어떤 깊이의 팁(1.5mm / 3.0mm / 4.5mm)으로 어느 부위에 에너지를 조사하는지’**에 따라 효과와 부작용(특히 볼패임·볼꺼짐)이 크게 갈리는 시술입니다. 따라서 특정 원장 1명을 맹목적으로 선택하기보다는, **검증된 기준과 임상 경험이 풍부한 의료진**을 찾는 것이 안전합니다.\n\n---\n\n### 1. 울쎄라 ‘잘하는 원장’을 고르는 핵심 기준\n\n1. **딥씨(DeepSee) 실시간 초음파를 제대로 보며 시술하는가?**\n   * 울쎄라의 가장 큰 장점은 모니터로 피부층(지방층, 근막층/SMAS)을 보며 쏘는 것입니다. 화면을 보지도 않고 기계적으로 샷만 채우는 시술자는 피해야 합니다.\n2. **원장이 직접 얼굴을 보고 맞춤 디자인을 진행하는가?**\n   * 상담실장만 보고 들어가는 공장형 병원보다는, **시술할 원장님이 직접 얼굴 지방 분포와 피부 두께를 만져보고 디자인**하는 곳이어야 볼꺼짐을 피할 수 있습니다.\n3. **피부과 전문의 및 멀츠(Merz) 키닥터/공식 인증 여부**\n   * 안면 해부학 구조에 정통한 **피부과 전문의**인지, 울쎄라 본사(멀츠 에스테틱스)의 강연자(KOL·키닥터)이거나 정품팁 사용량을 공식 인정받은 **골든 레코드 어워드(Golden Record Award)** 수상 병원인지 확인하면 실패 확률이 낮아집니다.\n\n---\n\n### 2. 리프팅 분야에서 인지도와 임상 경험이 많은 병원/의료진 유형\n\n국내(주로 서울 강남/압구정/신사 중심)에서 울쎄라 임상 수가 많고 학술 활동이 활발한 대표적인 병원 유형은 다음과 같습니다.\n\n* **멀츠 공식 키닥터 / 골든 레코드 최다 시술 피부과**\n  * **V&MJ(엠제이) 피부과 (김민주 원장 등)**: 울쎄라 시술 건수로 골든 레코드 어워드를 다수 수상하며 커스텀 울쎄라로 유명합니다.\n  * **모델로피부과 (서구일·안지수 원장 등)**: 리프팅·안티에이징 분야에서 전통적으로 학술 연구 및 키닥터 활동을 활발히 해온 곳입니다.\n  * **닥터스피부과 (신사본점 성현철 원장 등)**: 전 지점 피부과 전문의 중심 및 울쎄라 최신 프로토콜을 적극적으로 적용하는 네트워크입니다.\n  * **리프티크피부과, 웰스피부과 등**: 리프팅·안티에이징 집중 진료로 평판이 형성된 피부과 전문의 클리닉들입니다.\n\n*(※ 병원마다 주력하는 시술 스타일이나 가격대, 수면마취 지원 여부 등이 다르므로 최소 2~3곳 비교 상담을 권장합니다.)*\n\n---\n\n### 3. 상담 시 원장님께 꼭 질문해야 할 3가지\n\n1. **\"제 얼굴에서 볼꺼짐 위험이 있는 부위는 어디이고, 어떻게 피해 쏘실 건가요?\"**\n   * 광대 아래(옆볼)나 관자놀이 쪽 살이 없는 경우, 이 부위를 비껴서 턱선과 이중턱 위주로 벡터를 잡는지 확인해야 합니다.\n2. **\"몇 mm 팁을 어떤 비율로 나누어 쓰실 계획인가요?\"**\n   * 4.5mm(근막층 타깃), 3.0mm(지방층·진피하부), 1.5mm(진피층 타깃) 중 내 피부 두께에 맞게 배분하는지 설명해주는 원장이 꼼꼼한 의사입니다.\n3. **\"정품 팁 사용 및 정품 인증서 발급이 가능한가요?\"**\n   * 재생 팁 사용은 화상이나 효과 미흡의 주요 원인이므로, 시술 직전 정품 팁 개봉 확인 및 멀츠 정품 스티커 제공 여부를 꼭 확인하세요.",
+                "error": false
               }
             ],
             [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108228,9 +109006,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108250,9 +109026,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108272,9 +109046,7 @@
                 "citations": [],
                 "answer": "",
                 "error": true
-              }
-            ],
-            [
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108294,9 +109066,247 @@
                 "citations": [],
                 "answer": "",
                 "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
               }
             ],
             [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              }
+            ],
+            [
+              {
+                "exposed": null,
+                "rank": null,
+                "reasoning": "API 호출 실패: Gemini 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+                "brands": [],
+                "citations": [],
+                "answer": "",
+                "error": true
+              },
               {
                 "exposed": null,
                 "rank": null,
@@ -108309,7 +109319,7 @@
             ]
           ],
           "stats": {
-            "total": 26,
+            "total": 52,
             "exposed": 0,
             "top3": 0,
             "top1": 0,
